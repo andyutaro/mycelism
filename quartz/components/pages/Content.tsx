@@ -1,12 +1,12 @@
-import { ComponentChildren } from "preact"
+import { QuartzComponent, QuartzComponentConstructor } from "../types"
+import { classNames } from "../../util/lang"
 import { htmlToJsx } from "../../util/jsx"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
-  const content = htmlToJsx(fileData.filePath!, tree) as ComponentChildren
-  const classes: string[] = fileData.frontmatter?.cssclasses ?? []
-  const classString = ["popover-hint", ...classes].join(" ")
-  return <article class={classString}>{content}</article>
+const Content: QuartzComponent = ({ fileData, tree }) => {
+  const content = htmlToJsx(fileData.filePath ?? "", tree)
+  const classes = fileData.frontmatter?.cssclasses ?? []
+
+  return <article className={classNames("popover-hint", "content", ...classes)}>{content}</article>
 }
 
 export default (() => Content) satisfies QuartzComponentConstructor

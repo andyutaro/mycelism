@@ -1,0 +1,247 @@
+{
+  "main": {
+    "id": "1f7a8c7e2c39f133",
+    "type": "split",
+    "children": [
+      {
+        "id": "18092353a60cf7d0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0438a3a1640e2dbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/memo/音声だから伸びないとは言いたくないよね.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "音声だから伸びないとは言いたくないよね"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38d399fd6d8d9201",
+    "type": "split",
+    "children": [
+      {
+        "id": "56c6c9df90a78005",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1f9a5ce4f2575da6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "6c6f29af31a1ccc2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "5d6c3050911d43e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          },
+          {
+            "id": "eb652b17820e7919",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 353.5
+  },
+  "right": {
+    "id": "6000c67f9f8cff25",
+    "type": "split",
+    "children": [
+      {
+        "id": "15e9dce90654ed98",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f65bc5201f826a2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "バックリンク"
+            }
+          },
+          {
+            "id": "323bf93fdd428478",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "アウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "536a311580e052f7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "081071be63a7b6f9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "すべてのプロパティ"
+            }
+          },
+          {
+            "id": "36ae0047db257e76",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "episodes/mimoriradio/#1_花が咲いたら村が滅びる〜竹というナゾ植物・その1【ミモリラジオ】.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "#1_花が咲いたら村が滅びる〜竹というナゾ植物・その1【ミモリラジオ】のアウトライン"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:新規ベースを作成": false
+    }
+  },
+  "active": "0438a3a1640e2dbd",
+  "lastOpenFiles": [
+    "notes/memo/無題のファイル.md",
+    "notes/memo/「もうユニコーンガンダムしか買わへんし」.md",
+    "notes/memo/音声だから伸びないとは言いたくないよね.md",
+    "episodes/mimoriradio/#96_「アメリカ産大豆」のふしぎ。世界を飛びかうマメと人〜マメ編ラスト【ミモリラジオ】.md",
+    "episodes/mimoriradio/#85_ウキヨメンタカメ！膨大な「めだかの方言」が示す人とメダカの関係性〜めだか編④【ミモリラジオ】.md",
+    "episodes/mimoriradio/#84_ささやかに生き抜く。メダカの一日・一年・一生を巡る〜めだか編③【ミモリラジオ】.md",
+    "episodes/mimoriradio/#68_トリ頭ですが何か？カラスの圧倒的な賢さと静かな最期〜カラス編・その5【ミモリラジオ】.md",
+    "episodes/mimoriradio/番外編_#13_いなかに本屋の火を灯す。「ハネちゃん」のビビッドな人生【ミモリラジオ】.md",
+    "episodes/mimoriradio/番外編_#18_ノダカズキ伝説の企画。そしてミモリラジオの変化と「学びの一貫」【ミモリラジオ】.md",
+    "notes/memo/市ヶ谷フィッシングクラブ.md",
+    "episodes/mimoriradio/#38_東洋では神、西洋では悪魔。オオカミの複雑なイメージをたどる〜日本のオオカミ編その3【ミモリラジオ】.md",
+    "episodes/mimoriradio/#48_サケの聖地と伝説のサムライ。江戸時代のスマートすぎる資源保護〜サケマス編・ラスト【ミモリラジオ】.md",
+    "episodes/mimoriradio/#46_ヤマメ＝サクラマス！サケ科の「大変身」と多様な生き方〜サケマス編・その2【ミモリラジオ】.md",
+    "episodes/mimoriradio/#37_賢く生きて勝ち上がれ！オオカミの厳しい「ランキング社会」〜日本のオオカミ編その2【ミモリラジオ】.md",
+    "episodes/mimoriradio/#39_北海道開拓とエゾオオカミ。「絶滅」を産んだ社会と自然〜日本のオオカミ編その4【ミモリラジオ】.md",
+    "episodes/mimoriradio/#18_歴史の歩みはキンタマと共に〜「金玉」という森その3【ミモリラジオ】.md",
+    "episodes/mimoriradio/#13_その木はお寺にも戦闘機にもなった。橅-ブナの使い道〜ブナ帯文化論・後編【ミモリラジオ】.md",
+    "episodes/mimoriradio/#16_僕らは余りにも無知だった〜「金玉」という森その1【ミモリラジオ】.md",
+    "episodes/mimoriradio/#9_現代の宗教戦争。ネコの猛威にどう向き合う？〜イエネコ編その3【ミモリラジオ】.md",
+    "episodes/mimoriradio/#11_社会もアイデンティティも「植物」の掌に〜ブナ帯文化論・前編【ミモリラジオ】.md",
+    "episodes/mimoriradio/#2_ゴリラもカエルもタケ命！フシの空洞に生まれる生態系〜「竹」というナゾ植物・その2【ミモリラジオ】.md",
+    "episodes/mimoriradio/#4_キノコ混沌の歴史と、4億年前の革命〜キノコ編・その1【ミモリラジオ】.md",
+    "notes/memo/AIRDOはいいぞ.md",
+    "episodes/mimoriradio/番外編_#19_だから僕らは移住した。おいでよシラオイの森【ミモリラジオ】.md",
+    "episodes/mimoriradio/番外編_#17_自分の特性に向きあえ！MIMORIの膨大な過去プロジェクト【ミモリラジオ】.md",
+    "episodes/mimoriradio/番外編_#16_台本どう作ってる？無意識に目指す「最高のお喋り」と大量のメモ【ミモリラジオ】.md",
+    "episodes/mimoriradio",
+    "episodes/sakanakaigi",
+    "notes/article",
+    "ALL ARTICLEs.base",
+    "assets/mushroom.jpg",
+    "無題のファイル.canvas",
+    "notes/memo",
+    "notes/diary",
+    "inbox/_retired_candidates",
+    "inbox/_processed",
+    "series",
+    "inbox/concept-candidates",
+    "無題のファイル 1.canvas"
+  ]
+}

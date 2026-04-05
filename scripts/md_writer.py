@@ -13,7 +13,7 @@ def write_episode(episode, ai_result, show):
     dir_path = os.path.join(vault_path, 'episodes', show_name)
     os.makedirs(dir_path, exist_ok=True)
 
-    safe_title = episode['title'].replace('/', '／').replace(':', '：')[:60]
+    safe_title = episode["title"].replace(chr(34), "'").replace('/', '／').replace(':', '：')[:60]
     filename = f"{episode['pub_date']}-{safe_title}.md"
     filepath = os.path.join(dir_path, filename)
 
@@ -29,7 +29,7 @@ def write_episode(episode, ai_result, show):
 </audio>'''
 
     content = f"""---
-title: "{episode['title']}"
+title: "{title_yaml}"
 date: {episode['pub_date']}
 show: {show_name}
 audio_url: "{episode.get('audio_url', '')}"

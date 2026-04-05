@@ -6843,7 +6843,7 @@ var NotFoundPage = /* @__PURE__ */ __name(() => {
 // quartz.config.ts
 var config = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Mycelism",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,

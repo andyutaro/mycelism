@@ -1,2 +1,41 @@
-// Mycelism custom styles
-// 追加スタイルはここに記述する
+@use "./variables.scss" as *;
+
+.page > #quartz-body {
+  @media all and (min-width: 1000px) {
+    grid-template-columns: 320px auto 320px !important;
+    grid-template-rows: auto auto auto !important;
+    grid-template-areas:
+      "grid-sidebar-left grid-header grid-sidebar-right"
+      "grid-sidebar-left grid-center grid-sidebar-right"
+      "grid-sidebar-left grid-footer grid-sidebar-right" !important;
+  }
+}
+
+html {
+  overflow-x: auto !important;
+}
+
+html.mobile-no-scroll {
+  overflow: auto !important;
+}
+
+.page > #quartz-body {
+  display: grid !important;
+  grid-template-columns: 320px auto 320px !important;
+  grid-template-areas:
+    "grid-sidebar-left grid-header grid-sidebar-right"
+    "grid-sidebar-left grid-center grid-sidebar-right"
+    "grid-sidebar-left grid-footer grid-sidebar-right" !important;
+}
+
+@media (max-width: 800px) {
+  .page > #quartz-body {
+    grid-template-columns: auto !important;
+    grid-template-areas:
+      "grid-sidebar-left"
+      "grid-header"
+      "grid-center"
+      "grid-sidebar-right"
+      "grid-footer" !important;
+  }
+}

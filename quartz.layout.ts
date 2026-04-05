@@ -26,6 +26,35 @@ const graphOptions = {
   },
 }
 
+const explorerOptions = {
+  folderClickBehavior: "collapse" as const,
+  folderDefaultState: "collapsed" as const,
+  useSavedState: true,
+  filterFn: (node: any) => {
+    return node.name !== "concepts"
+  },
+  sortFn: (a: any, b: any) => {
+    if (!a.isFolder && b.isFolder) return 1
+    if (a.isFolder && !b.isFolder) return -1
+    if (a.isFolder && b.isFolder) {
+      return a.displayName.localeCompare(b.displayName, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      })
+    }
+    const aDate = a.data?.date ? new Date(a.data.date) : new Date(0)
+    const bDate = b.data?.date ? new Date(b.data.date) : new Date(0)
+    return bDate.getTime() - aDate.getTime()
+  },
+  mapFn: (node: any) => {
+    if (node.file && node.data) {
+      const m = (node.data.slug ?? "").match(/\/(\d{4}-\d{2}-\d{2})-/)
+      if (m) node.data.date = new Date(m[1])
+    }
+    return node
+  },
+}
+
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
@@ -43,7 +72,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.Search(),
     Component.Darkmode(),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer(explorerOptions)),
   ],
   right: [
     Component.Graph(graphOptions),
@@ -62,7 +91,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.PageTitle(),
     Component.Search(),
     Component.Darkmode(),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer(explorerOptions)),
   ],
   right: [
     Component.Graph(graphOptions),

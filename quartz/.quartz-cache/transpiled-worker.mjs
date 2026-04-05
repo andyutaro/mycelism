@@ -5810,6 +5810,34 @@ var graphOptions = {
     opacityScale: 1
   }
 };
+var explorerOptions = {
+  folderClickBehavior: "collapse",
+  folderDefaultState: "collapsed",
+  useSavedState: true,
+  filterFn: /* @__PURE__ */ __name((node) => {
+    return node.name !== "concepts";
+  }, "filterFn"),
+  sortFn: /* @__PURE__ */ __name((a, b) => {
+    if (!a.isFolder && b.isFolder) return 1;
+    if (a.isFolder && !b.isFolder) return -1;
+    if (a.isFolder && b.isFolder) {
+      return a.displayName.localeCompare(b.displayName, void 0, {
+        numeric: true,
+        sensitivity: "base"
+      });
+    }
+    const aDate = a.data?.date ? new Date(a.data.date) : /* @__PURE__ */ new Date(0);
+    const bDate = b.data?.date ? new Date(b.data.date) : /* @__PURE__ */ new Date(0);
+    return bDate.getTime() - aDate.getTime();
+  }, "sortFn"),
+  mapFn: /* @__PURE__ */ __name((node) => {
+    if (node.file && node.data) {
+      const m = (node.data.slug ?? "").match(/\/(\d{4}-\d{2}-\d{2})-/);
+      if (m) node.data.date = new Date(m[1]);
+    }
+    return node;
+  }, "mapFn")
+};
 var sharedPageComponents = {
   head: Head_default(),
   header: [],
@@ -5826,7 +5854,7 @@ var defaultContentPageLayout = {
     PageTitle_default(),
     Search_default(),
     Darkmode_default(),
-    Explorer_default()
+    DesktopOnly_default(Explorer_default(explorerOptions))
   ],
   right: [
     Graph_default(graphOptions),
@@ -5844,7 +5872,7 @@ var defaultListPageLayout = {
     PageTitle_default(),
     Search_default(),
     Darkmode_default(),
-    Explorer_default()
+    DesktopOnly_default(Explorer_default(explorerOptions))
   ],
   right: [
     Graph_default(graphOptions),
@@ -6285,7 +6313,6 @@ var ContentIndex = /* @__PURE__ */ __name((opts) => {
       const simplifiedIndex = Object.fromEntries(
         Array.from(linkIndex).map(([slug, content2]) => {
           delete content2.description;
-          delete content2.date;
           return [slug, content2];
         })
       );

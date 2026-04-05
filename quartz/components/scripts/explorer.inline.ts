@@ -31,7 +31,7 @@ function toggleExplorer(this: HTMLElement) {
 
   if (!explorerCollapsed) {
     // Stop <html> from being scrollable when mobile explorer is open
-    document.documentElement.classList.add("mobile-no-scroll")
+    // document.documentElement.classList.add("mobile-no-scroll")
   } else {
     document.documentElement.classList.remove("mobile-no-scroll")
   }
@@ -291,12 +291,16 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 })
 
 window.addEventListener("resize", function () {
-  // Desktop explorer opens by default, and it stays open when the window is resized
-  // to mobile screen size. Applies `no-scroll` to <html> in this edge case.
+  // Only apply mobile-no-scroll on actual mobile screens
+  const isMobile = window.innerWidth <= 800
   const explorer = document.querySelector(".explorer")
-  if (explorer && !explorer.classList.contains("collapsed")) {
-    document.documentElement.classList.add("mobile-no-scroll")
+  if (isMobile && explorer && !explorer.classList.contains("collapsed")) {
+    // document.documentElement.classList.add("mobile-no-scroll")
     return
+  }
+  // Remove mobile-no-scroll when resizing to desktop
+  if (!isMobile) {
+    document.documentElement.classList.remove("mobile-no-scroll")
   }
 })
 

@@ -190,7 +190,7 @@ a {
 
   & > #quartz-body {
     display: grid;
-    grid-template-columns: #{map.get($desktopGrid, templateColumns)};
+    grid-template-columns: 320px auto 320px;
     grid-template-rows: #{map.get($desktopGrid, templateRows)};
     column-gap: #{map.get($desktopGrid, columnGap)};
     row-gap: #{map.get($desktopGrid, rowGap)};

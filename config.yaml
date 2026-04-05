@@ -1,0 +1,27 @@
+vault_path: "/Users/andy/quartz/content"
+
+shows:
+  - name: captions
+    rss_url: "https://anchor.fm/s/f20aee28/podcast/rss"
+    spotify_show_id: "34phiuFlCBcfscYLP5iCyb"
+    status: active
+    max_keywords: 4
+    extraction_notes: "近況報告・活動報告・番組告知の内容はキーワード抽出から除外。トーク中で触れたテーマ・場所・概念のみ抽出する"
+
+  - name: on-airdo
+    rss_url: "https://anchor.fm/s/fe6f8048/podcast/rss"
+    spotify_show_id: "1EjsDlGdwwEDc1xsNxpEAP"
+    status: active
+    max_keywords: 6
+
+  - name: sakanakaigi
+    rss_url: "https://anchor.fm/s/1039cb824/podcast/rss"
+    spotify_show_id: "2oyDL4w0U7hRmwIFRC7jDK"
+    status: active
+    max_keywords: 6
+
+  - name: mimoriradio
+    rss_url: "https://anchor.fm/s/ccd5236c/podcast/rss"
+    spotify_show_id: "0rkdfNkYUCfMyQmki7fdc1"
+    status: archived
+    max_keywords: 6

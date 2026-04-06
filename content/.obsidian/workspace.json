@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "18092353a60cf7d0",
+        "id": "ca21f78e002f85d2",
         "type": "tabs",
         "children": [
           {
-            "id": "0438a3a1640e2dbd",
+            "id": "eed59c101233f561",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/memo/音声だから伸びないとは言いたくないよね.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "音声だから伸びないとは言いたくないよね"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "グラフビュー"
             }
           }
         ]
@@ -98,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 353.5
+    "width": 236.5
   },
   "right": {
     "id": "6000c67f9f8cff25",
@@ -202,11 +188,24 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "0438a3a1640e2dbd",
+  "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "concepts/公開収録.md",
+    "private/今日やること.md",
+    "concepts/クジラの座礁.md",
+    "concepts/クジラ進化.md",
+    "concepts/クジラジラミ.md",
+    "concepts/クジラ.md",
+    "index.md",
+    "private",
+    "concepts/Global Shapers.md",
+    "episodes/on-airdo/2025-04-10-.md",
+    "concepts/カラス.md",
+    "episodes/sakanakaigi/2025-07-16-オナガワ② 🐟 女川の話をしよう！ギンザケ養殖と新しい動きが生まれる町の面白さ.md",
+    "notes/memo/新しい自己を作るための学び.md",
+    "notes/memo/音声だから伸びないとは言いたくないよね.md",
     "notes/memo/無題のファイル.md",
     "notes/memo/「もうユニコーンガンダムしか買わへんし」.md",
-    "notes/memo/音声だから伸びないとは言いたくないよね.md",
     "episodes/mimoriradio/#96_「アメリカ産大豆」のふしぎ。世界を飛びかうマメと人〜マメ編ラスト【ミモリラジオ】.md",
     "episodes/mimoriradio/#85_ウキヨメンタカメ！膨大な「めだかの方言」が示す人とメダカの関係性〜めだか編④【ミモリラジオ】.md",
     "episodes/mimoriradio/#84_ささやかに生き抜く。メダカの一日・一年・一生を巡る〜めだか編③【ミモリラジオ】.md",
@@ -218,18 +217,6 @@
     "episodes/mimoriradio/#48_サケの聖地と伝説のサムライ。江戸時代のスマートすぎる資源保護〜サケマス編・ラスト【ミモリラジオ】.md",
     "episodes/mimoriradio/#46_ヤマメ＝サクラマス！サケ科の「大変身」と多様な生き方〜サケマス編・その2【ミモリラジオ】.md",
     "episodes/mimoriradio/#37_賢く生きて勝ち上がれ！オオカミの厳しい「ランキング社会」〜日本のオオカミ編その2【ミモリラジオ】.md",
-    "episodes/mimoriradio/#39_北海道開拓とエゾオオカミ。「絶滅」を産んだ社会と自然〜日本のオオカミ編その4【ミモリラジオ】.md",
-    "episodes/mimoriradio/#18_歴史の歩みはキンタマと共に〜「金玉」という森その3【ミモリラジオ】.md",
-    "episodes/mimoriradio/#13_その木はお寺にも戦闘機にもなった。橅-ブナの使い道〜ブナ帯文化論・後編【ミモリラジオ】.md",
-    "episodes/mimoriradio/#16_僕らは余りにも無知だった〜「金玉」という森その1【ミモリラジオ】.md",
-    "episodes/mimoriradio/#9_現代の宗教戦争。ネコの猛威にどう向き合う？〜イエネコ編その3【ミモリラジオ】.md",
-    "episodes/mimoriradio/#11_社会もアイデンティティも「植物」の掌に〜ブナ帯文化論・前編【ミモリラジオ】.md",
-    "episodes/mimoriradio/#2_ゴリラもカエルもタケ命！フシの空洞に生まれる生態系〜「竹」というナゾ植物・その2【ミモリラジオ】.md",
-    "episodes/mimoriradio/#4_キノコ混沌の歴史と、4億年前の革命〜キノコ編・その1【ミモリラジオ】.md",
-    "notes/memo/AIRDOはいいぞ.md",
-    "episodes/mimoriradio/番外編_#19_だから僕らは移住した。おいでよシラオイの森【ミモリラジオ】.md",
-    "episodes/mimoriradio/番外編_#17_自分の特性に向きあえ！MIMORIの膨大な過去プロジェクト【ミモリラジオ】.md",
-    "episodes/mimoriradio/番外編_#16_台本どう作ってる？無意識に目指す「最高のお喋り」と大量のメモ【ミモリラジオ】.md",
     "episodes/mimoriradio",
     "episodes/sakanakaigi",
     "notes/article",
@@ -241,7 +228,6 @@
     "inbox/_retired_candidates",
     "inbox/_processed",
     "series",
-    "inbox/concept-candidates",
     "無題のファイル 1.canvas"
   ]
 }

@@ -10,7 +10,7 @@ shows:
   name: on-airdo
   rss_url: https://anchor.fm/s/fe6f8048/podcast/rss
   spotify_show_id: 1EjsDlGdwwEDc1xsNxpEAP
-  status: active
+  status: inactive
   whisper_prompt: パーソナリティはAIRDO社員のリオとポッドキャストディレクターのAndyです。番組名はON-AIRDOです。北海道の航空会社の正式名称はAIRDO（エア・ドゥ）です。AIRDOOではありません。旭川、札幌、函館、白老町、道の駅などの北海道の地名が多く登場します。
 - max_keywords: 6
   name: sakanakaigi

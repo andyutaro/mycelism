@@ -126,6 +126,15 @@ def process_listen_show(show_name, podcast_id, processed):
 
     print(f"  完了: {done}件 / スキップ: {skipped}件 / トランスクリプトなし: {no_transcript}件")
 
+def get_fresh_audio_url(show_rss, episode_title):
+    """RSSから最新の音声URLを取得"""
+    import feedparser
+    feed = feedparser.parse(show_rss)
+    for entry in feed.entries:
+        if entry.title[:20] in episode_title or episode_title[:20] in entry.title:
+            return entry.enclosures[0].href if entry.enclosures else None
+    return None
+
 def process_whisper_show(show_name, processed):
     """Whisper APIでトランスクリプトを取得して保存"""
     config = load_config()
@@ -152,7 +161,10 @@ def process_whisper_show(show_name, processed):
         if not m or not m.group(1):
             print(f"  ⚠️ audio_urlなし: {filename[:40]}")
             continue
-        audio_url = m.group(1)
+        # RSSから最新URLを取得（保存済みURLは期限切れの場合あり）
+        episode_title = filename[11:].replace('.md', '')
+        fresh_url = get_fresh_audio_url(show['rss_url'], episode_title)
+        audio_url = fresh_url if fresh_url else m.group(1)
         print(f"  🎙 {filename[:50]}...")
         success = False
         for attempt in range(3):

@@ -154,13 +154,23 @@ def process_whisper_show(show_name, processed):
             continue
         audio_url = m.group(1)
         print(f"  🎙 {filename[:50]}...")
-        try:
-            transcript = get_transcript_whisper(audio_url, whisper_prompt)
-            update_transcript_in_md(md_path, transcript)
-            print(f"  ✅ 完了")
-            done += 1
-        except Exception as e:
-            print(f"  ❌ エラー: {e}")
+        success = False
+        for attempt in range(3):
+            try:
+                transcript = get_transcript_whisper(audio_url, whisper_prompt)
+                update_transcript_in_md(md_path, transcript)
+                print(f"  ✅ 完了")
+                done += 1
+                success = True
+                break
+            except Exception as e:
+                if attempt < 2:
+                    import time
+                    print(f"  ⚠️ リトライ {attempt+1}/3: {e}")
+                    time.sleep(10)
+                else:
+                    print(f"  ❌ エラー: {e}")
+        if not success:
             continue
         processed[filename] = 'done'
         save_processed(processed)

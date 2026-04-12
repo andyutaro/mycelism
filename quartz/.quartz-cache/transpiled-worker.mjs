@@ -5810,7 +5810,7 @@ var graphOptions = {
     opacityScale: 1,
     showTags: false,
     focusOnHover: true,
-    enableRadial: false
+    enableRadial: true
   }
 };
 var explorerOptions = {

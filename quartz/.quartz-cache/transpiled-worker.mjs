@@ -5803,11 +5803,14 @@ var graphOptions = {
     zoom: true,
     depth: -1,
     scale: 0.88,
-    repelForce: 1.75,
-    centerForce: 0.04,
-    linkDistance: 185,
-    fontSize: 0.7,
-    opacityScale: 1
+    repelForce: 0.8,
+    centerForce: 0.02,
+    linkDistance: 80,
+    fontSize: 0.6,
+    opacityScale: 1,
+    showTags: false,
+    focusOnHover: true,
+    enableRadial: false
   }
 };
 var explorerOptions = {

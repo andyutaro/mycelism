@@ -15,6 +15,9 @@ def write_episode(episode, ai_result, show):
 
     safe_title = episode["title"].replace(chr(34), "'").replace('/', '／').replace(':', '：')[:60]
     title_yaml = episode["title"].replace('"', "'")
+    if not safe_title.strip():
+        print(f"  ⚠️ タイトルが空のためスキップ: {episode['pub_date']}")
+        return None
     filename = f"{episode['pub_date']}-{safe_title}.md"
     filepath = os.path.join(dir_path, filename)
 

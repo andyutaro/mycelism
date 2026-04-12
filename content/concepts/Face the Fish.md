@@ -13,4 +13,4 @@ tags:
 
 ## 参照元
 
-- [[episodes/sakanakaigi/2026-03-25-Face the Fish🎣 サカナや水辺との関わりを見つめ直す、新しい釣りプロジェクト|Face the Fish🎣 サカナや水辺との関わりを見つめ直す、新しい釣りプロ]] (2026-03-25)
+- [[episodes/sakanakaigi/2026-03-25-Face the Fish🎣 サカナや水辺との関わりを見つめ直す、新しい釣りプロジェクト]] (2026-03-25)

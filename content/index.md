@@ -13,5 +13,4 @@ title: Mycelism
 
 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです
 
-
-<a href="#" onclick="event.preventDefault(); event.stopPropagation(); var o=document.querySelector('.global-graph-outer'); if(o){o.classList.toggle('active');}">グラフビューを開く</a> 
+<button onclick="event.preventDefault(); event.stopPropagation(); var o=document.querySelector('.global-graph-outer'); if(o){o.classList.toggle('active');}">グラフビューを開く</button>

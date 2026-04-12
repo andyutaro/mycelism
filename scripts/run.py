@@ -47,6 +47,29 @@ def main():
                 print(f"  ❌ エラー: {e}")
                 continue
 
+    # 新エピソードがあれば各種更新
+    if total_new > 0:
+        import subprocess
+        base = os.path.dirname(os.path.dirname(__file__))
+
+        print(f"\n🔗 シリーズリンクを更新中...")
+        try:
+            subprocess.run(['python3', 'scripts/series_linker.py'], cwd=base)
+        except Exception as e:
+            print(f"  ⚠️ シリーズリンク更新エラー: {e}")
+
+        print(f"\n📝 concept説明文を更新中...")
+        try:
+            subprocess.run(['python3', 'scripts/concept_enricher.py', '--all'], cwd=base)
+        except Exception as e:
+            print(f"  ⚠️ concept更新エラー: {e}")
+
+        print(f"\n🎙 トランスクリプトを取得中...")
+        try:
+            subprocess.run(['python3', '-u', 'scripts/transcript_fetcher.py', '--all'], cwd=base)
+        except Exception as e:
+            print(f"  ⚠️ トランスクリプト取得エラー: {e}")
+
     print(f"\n🌿 完了！ 新規処理: {total_new}件")
 
 if __name__ == '__main__':

@@ -198,7 +198,11 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    } else if (d.id.startsWith("episodes/")) {
+      return visited.has(d.id) ? "#4ade80" : "#86efac"
+    } else if (d.id.startsWith("concepts/")) {
+      return visited.has(d.id) ? "#a78bfa" : "#c4b5fd"
+    } else if (d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]

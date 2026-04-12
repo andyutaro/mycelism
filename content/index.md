@@ -13,4 +13,5 @@ title: Mycelism
 
 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです
 
-[グラフで探索する →](/mycelism/graph) 
+
+<a href="#" onclick="document.querySelector('.global-graph-icon').click(); return false;">グラフビューを開く</a> 

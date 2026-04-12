@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/article/ポッドキャストにおけるプロデュース.md",
+                "file": "concepts/侵略的外来種ワースト100.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ポッドキャストにおけるプロデュース"
+              "title": "侵略的外来種ワースト100"
             }
           }
         ]
@@ -204,6 +204,14 @@
   },
   "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "notes/article/Captions.md",
+    "concepts/46通知.md",
+    "concepts/女川町.md",
+    "concepts/もののけ姫.md",
+    "concepts/Global Shapers.md",
+    "concepts/クジラ.md",
+    "episodes/mimoriradio/2023-01-05-番外編#1 「世界竹サミット」に参加したノダカズキ〜クジラや海もアツい【ミモリラジオ】.md",
+    "notes/article/ポッドキャストにおけるプロデュース.md",
     "notes/article/rooom@andyの内容.md",
     "concepts/北海道.md",
     "notes/article/Captionsの内容.md",
@@ -216,7 +224,6 @@
     "private/MTG/Madness/260408Madness Japan挨拶.md",
     "notes/memo/なぜだか喋り足りない。.md",
     "notes/memo/「もうユニコーンガンダムしか買わへんし」.md",
-    "notes/article/ポッドキャストにおけるプロデュース.md",
     "private/MTG/Madness",
     "private/MTG",
     "notes/memo/メンバーシップでやること.md",
@@ -226,14 +233,7 @@
     "notes/memo/Seekersの設計思想.md",
     "notes/memo/260330桃山商事さんたち.md",
     "notes/memo/トマトアンドオニオン.md",
-    "index.md",
-    "concepts/公開収録.md",
-    "concepts/クジラの座礁.md",
-    "concepts/クジラ進化.md",
-    "concepts/クジラジラミ.md",
-    "concepts/クジラ.md",
     "private",
-    "concepts/Global Shapers.md",
     "episodes/mimoriradio",
     "episodes/sakanakaigi",
     "notes/article",

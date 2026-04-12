@@ -70,18 +70,19 @@ def main():
         except Exception as e:
             print(f"  ⚠️ トランスクリプト取得エラー: {e}")
 
-    # git push
-    if total_new > 0:
-        print(f"\n📤 GitHubにpush中...")
-        try:
-            import subprocess
-            base = os.path.dirname(os.path.dirname(__file__))
-            subprocess.run(['git', 'add', '.'], cwd=base)
-            subprocess.run(['git', 'commit', '-m', f'update: {total_new}件の新エピソードを追加'], cwd=base)
-            subprocess.run(['git', 'push'], cwd=base)
-            print(f"  ✅ push完了")
-        except Exception as e:
-            print(f"  ⚠️ pushエラー: {e}")
+    # ビルド＆git push（常に実行）
+    print(f"\n🔨 ビルド中...")
+    try:
+        import subprocess
+        base = os.path.dirname(os.path.dirname(__file__))
+        subprocess.run(['npx', 'quartz', 'build'], cwd=base)
+        subprocess.run(['git', 'add', '.'], cwd=base)
+        msg = f'update: {total_new}件の新エピソードを追加' if total_new > 0 else 'update: コンテンツ更新'
+        subprocess.run(['git', 'commit', '-m', msg], cwd=base)
+        subprocess.run(['git', 'push'], cwd=base)
+        print(f"  ✅ push完了")
+    except Exception as e:
+        print(f"  ⚠️ pushエラー: {e}")
 
     print(f"\n🌿 完了！ 新規処理: {total_new}件")
 

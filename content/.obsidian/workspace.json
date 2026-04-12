@@ -24,7 +24,7 @@
                   "showSearch": false,
                   "searchQuery": "",
                   "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
+                  "unlinkedCollapsed": false
                 }
               },
               "icon": "lucide-file",
@@ -204,11 +204,12 @@
   },
   "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "notes/article/デジタルガーデン.md",
+    "notes/article/デジタルガーデンの意図.md",
+    "index.md",
     "graph.md",
     "mycelism/graph.md",
-    "index.md",
     "mycelism",
-    "notes/article/デジタルガーデン.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "private/TODO/今日やること.md",
     "concepts/釣り.md",
@@ -230,7 +231,6 @@
     "episodes/mimoriradio/2023-01-10-14 あいまいな「薬草」と渦巻く資本主義〜薬草と社会その1【ミモリラジオ】.md",
     "concepts/46通知.md",
     "episodes/mimoriradio/2024-01-19-93 食卓に乗る自然。マメの神秘を観る〜マメ編①【ミモリラジオ】.md",
-    "episodes/mimoriradio/2024-01-13-92 トイレの形は自然の形。うんこ観の古今東西〜うんこ編ラスト【ミモリラジオ】.md",
     "private/TODO",
     "private/MTG/Madness",
     "private/MTG",

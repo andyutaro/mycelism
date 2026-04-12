@@ -6,6 +6,18 @@
       <description>Last 10 notes on Mycelism</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>graph</title>
+    <link>https://quartz.jzhao.xyz/graph</link>
+    <guid>https://quartz.jzhao.xyz/graph</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Sun, 12 Apr 2026 08:55:44 GMT</pubDate>
+  </item><item>
+    <title>デジタルガーデン</title>
+    <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</link>
+    <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</guid>
+    <description><![CDATA[ 僕が編み出したわけでもなく、そこそこ歴史がある概念です。 そこでClaudeに整理してもらいました。 デジタルガーデンとは、従来のブログや SNS とは異なる知識管理・公開の哲学です。 核心的な考え方 情報を「完成品」として発信するのではなく、思考の過程そのものを公開・育てていく場所。庭師が植物を手入れするように、アイデアを継続的に育てていくイメージです。 ブログとの違い ブログ → 時系列、完成した記事を投稿 デジタルガーデン → 非線形、未完成のメモも公開し、相互リンクで育てる 特徴 常に成長中：記事に「完成」はなく、随時更新される 相互リンク：概念同士がつながり、知識グラフを形成 学習の... ]]></description>
+    <pubDate>Sun, 12 Apr 2026 08:55:44 GMT</pubDate>
+  </item><item>
     <title>Mycelism</title>
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
@@ -52,18 +64,6 @@
     <link>https://quartz.jzhao.xyz/concepts/Global-Shapers</link>
     <guid>https://quartz.jzhao.xyz/concepts/Global-Shapers</guid>
     <description><![CDATA[ Global Shapers Global Shapersは、世界経済フォーラム（World Economic Forum）が組織する若者向けの国際的なコミュニティである。このコミュニティは、30歳以下の若者の声を吸い上げ、世界各国での政治や経済における意思決定に反映させることを目的としている。世界中にハブを持ち、各地域で多様なプロジェクトを進行しており、参加者は基本的にボランティアとして活動している。プロジェクトの内容は、気候変動やインクルーシブなコミュニティ作りなど多岐にわたり、若者が主導する実践的な活動を通じて、社会の課題に立ち向かっている。 ミモリラジオでの扱い ポッドキャスト『ミモリ... ]]></description>
-    <pubDate>Sun, 12 Apr 2026 04:43:36 GMT</pubDate>
-  </item><item>
-    <title>MIMORI</title>
-    <link>https://quartz.jzhao.xyz/concepts/MIMORI</link>
-    <guid>https://quartz.jzhao.xyz/concepts/MIMORI</guid>
-    <description><![CDATA[ MIMORI 「ミモリラジオ」は自然界の様々なテーマを深く掘り下げ、リスナーにその面白さを伝えるトーク番組です。この番組を通して、ホストたちは自らの背景や興味、そして「ミモリ」という概念の背景にある想いを語ります。「ミモリ」は自然と人間の生活を結ぶ橋であり、地球や自然界に対する深い愛情や理解を促進するものです。ホストたちの個人的な経験や学びの旅を通じて、「ミモリ」という言葉は彼らの人生哲学や視点を象徴しており、特に自然界における多様な視点を理解し、共感する重要性を示しています。 ミモリラジオでの扱い 番外編#2では、ホストたちが「ミモリ」が何を意味するのかについて詳しく語っています。「ミモリラ... ]]></description>
-    <pubDate>Sun, 12 Apr 2026 04:43:36 GMT</pubDate>
-  </item><item>
-    <title>SAKANA BOOKS</title>
-    <link>https://quartz.jzhao.xyz/concepts/SAKANA-BOOKS</link>
-    <guid>https://quartz.jzhao.xyz/concepts/SAKANA-BOOKS</guid>
-    <description><![CDATA[ 関連 サケマス SAKANA BOOKS SAKANA BOOKSは新宿に位置するユニークな魚専門書店であり、その店長浦上うみは元々映画理論を学びながらも、魚に対する強い情熱からキャリアチェンジを果たしました。この書店では、美しいビジュアルアートブックから詳細な学術書、親しみやすい絵本まで幅広い選書が行われ、魚についての知識を深めたいと願う初心者から専門家までを魅了しています。特に、一般の人々に対して魚への興味を喚起することを目標としています。浦上うみはまた、魚愛好家として水族館巡りを楽しむだけでなく、最近では水族館の楽しみ方を多くの人々に伝える活動も行っています。 ミモリラジオでの扱い 49... ]]></description>
     <pubDate>Sun, 12 Apr 2026 04:43:36 GMT</pubDate>
   </item>
     </channel>

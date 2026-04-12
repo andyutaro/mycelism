@@ -6,6 +6,12 @@
       <description>Last 10 notes on Mycelism</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Mycelism</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く. ]]></description>
+    <pubDate>Sun, 12 Apr 2026 09:01:17 GMT</pubDate>
+  </item><item>
     <title>デジタルガーデン</title>
     <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</link>
     <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</guid>
@@ -17,12 +23,6 @@
     <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%81%AE%E6%84%8F%E5%9B%B3</guid>
     <description><![CDATA[ README 観点 観点 メディアと表現 メモ ポッドキャストをベースとしたデジタルガーデンは、僕にとって次のような意味を持つ。 SNSではできない未完成なメモを公開できる場所 複数のデバイスをまたぐメモアプリ ポッドキャストのアーカイブ置き場 時系列性を排除した、概念ベースでのポッドキャスト配信サイト ポッドキャストから抽出された概念と、自分で手書きするノートが混ざることで、普通のSNSとは違う時間の流れができる。 仮説 SNSではこんなにたくさん無造作に投稿できない メモアプリは飽きて突散らかしてしまうし僕のメモ以上のことが起きない 拡張性がありながら、無造作であることが許されるデジタルガ... ]]></description>
     <pubDate>Sun, 12 Apr 2026 08:59:25 GMT</pubDate>
-  </item><item>
-    <title>Mycelism</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
-    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフで探索する →. ]]></description>
-    <pubDate>Sun, 12 Apr 2026 08:50:52 GMT</pubDate>
   </item><item>
     <title>2025年振り返り</title>
     <link>https://quartz.jzhao.xyz/concepts/2025%E5%B9%B4%E6%8C%AF%E3%82%8A%E8%BF%94%E3%82%8A</link>

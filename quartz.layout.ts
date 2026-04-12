@@ -18,14 +18,14 @@ const graphOptions = {
     zoom: true,
     depth: -1,
     scale: 0.88,
-    repelForce: 0.5,
-    centerForce: 2.0,
-    linkDistance: 50,
+    repelForce: 1.5,
+    centerForce: 0.8,
+    linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
     showTags: false,
     focusOnHover: true,
-    enableRadial: true,
+    enableRadial: false,
   },
 }
 

@@ -6,17 +6,17 @@
       <description>Last 10 notes on Mycelism</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>graph</title>
-    <link>https://quartz.jzhao.xyz/graph</link>
-    <guid>https://quartz.jzhao.xyz/graph</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Sun, 12 Apr 2026 08:55:44 GMT</pubDate>
-  </item><item>
     <title>デジタルガーデン</title>
     <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</link>
     <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</guid>
     <description><![CDATA[ 僕が編み出したわけでもなく、そこそこ歴史がある概念です。 そこでClaudeに整理してもらいました。 デジタルガーデンとは、従来のブログや SNS とは異なる知識管理・公開の哲学です。 核心的な考え方 情報を「完成品」として発信するのではなく、思考の過程そのものを公開・育てていく場所。庭師が植物を手入れするように、アイデアを継続的に育てていくイメージです。 ブログとの違い ブログ → 時系列、完成した記事を投稿 デジタルガーデン → 非線形、未完成のメモも公開し、相互リンクで育てる 特徴 常に成長中：記事に「完成」はなく、随時更新される 相互リンク：概念同士がつながり、知識グラフを形成 学習の... ]]></description>
-    <pubDate>Sun, 12 Apr 2026 08:55:44 GMT</pubDate>
+    <pubDate>Sun, 12 Apr 2026 08:59:25 GMT</pubDate>
+  </item><item>
+    <title>デジタルガーデンの意図</title>
+    <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%81%AE%E6%84%8F%E5%9B%B3</link>
+    <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%81%AE%E6%84%8F%E5%9B%B3</guid>
+    <description><![CDATA[ README 観点 観点 メディアと表現 メモ ポッドキャストをベースとしたデジタルガーデンは、僕にとって次のような意味を持つ。 SNSではできない未完成なメモを公開できる場所 複数のデバイスをまたぐメモアプリ ポッドキャストのアーカイブ置き場 時系列性を排除した、概念ベースでのポッドキャスト配信サイト ポッドキャストから抽出された概念と、自分で手書きするノートが混ざることで、普通のSNSとは違う時間の流れができる。 仮説 SNSではこんなにたくさん無造作に投稿できない メモアプリは飽きて突散らかしてしまうし僕のメモ以上のことが起きない 拡張性がありながら、無造作であることが許されるデジタルガ... ]]></description>
+    <pubDate>Sun, 12 Apr 2026 08:59:25 GMT</pubDate>
   </item><item>
     <title>Mycelism</title>
     <link>https://quartz.jzhao.xyz/</link>

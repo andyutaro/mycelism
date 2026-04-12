@@ -66,6 +66,7 @@ export default ((opts?: Partial<GraphOptions>) => {
     return (
       <div class={classNames(displayClass, "graph")}>
         <h3>{i18n(cfg.locale).components.graph.title}</h3>
+        <button class="global-graph-open" onClick="document.querySelector('.global-graph-icon').dispatchEvent(new MouseEvent('click', {bubbles: true}))">グラフ全体を開く →</button>
         <div class="graph-outer">
           <div class="graph-container" data-cfg={JSON.stringify(localGraph)}></div>
           <button class="global-graph-icon" aria-label="Global Graph">

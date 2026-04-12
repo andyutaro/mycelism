@@ -11,10 +11,24 @@
             "id": "eed59c101233f561",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "グラフビュー"
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -84,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "6000c67f9f8cff25",
@@ -101,7 +114,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "index.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
@@ -110,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "バックリンク"
+              "title": "indexへのバックリンク"
             }
           },
           {
@@ -170,7 +184,8 @@
               "title": "#1_花が咲いたら村が滅びる〜竹というナゾ植物・その1【ミモリラジオ】のアウトライン"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -189,9 +204,15 @@
   },
   "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "graph.md",
+    "mycelism/graph.md",
+    "index.md",
+    "mycelism",
+    "notes/article/デジタルガーデン.md",
+    "notes/article/ポッドキャストにおけるプロデュース.md",
+    "private/TODO/今日やること.md",
     "concepts/釣り.md",
     "episodes/mimoriradio/2023-04-11-番外編6 andyと言う人間。観森を作る試行錯誤〜番外編・パーソナリティ編〜【ミモリラジオ】.md",
-    "index.md",
     "concepts/ギョキョウ.md",
     "concepts/コトバ.md",
     "concepts/オナガワ.md",
@@ -201,7 +222,6 @@
     "concepts/金玉.md",
     "concepts/ネコ.md",
     "episodes/mimoriradio/2023-05-23-44 カミナリ雲にタコを揚げよ！偉人のクレイジーな実験と避雷針〜カミナリ編・ラスト【ミモリラジオ】.md",
-    "private/TODO/今日やること.md",
     "episodes/mimoriradio/2023-01-17-番外編2 地球が好きすぎるヒト、森と都市を近づけたいヒト【ミモリラジオ】.md",
     "concepts/MIMORI.md",
     "episodes/sakanakaigi/2026-03-25-Face the Fish🎣 サカナや水辺との関わりを見つめ直す、新しい釣りプロジェクト.md",
@@ -211,10 +231,6 @@
     "concepts/46通知.md",
     "episodes/mimoriradio/2024-01-19-93 食卓に乗る自然。マメの神秘を観る〜マメ編①【ミモリラジオ】.md",
     "episodes/mimoriradio/2024-01-13-92 トイレの形は自然の形。うんこ観の古今東西〜うんこ編ラスト【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-11-10-番外編 18 ノダカズキ伝説の企画。そしてミモリラジオの変化と「学びの一貫」【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-01-20-16 僕らは余りにも無知だった〜「金玉」という森その1【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-07-21-57 コケが暮らしを支えてる。耐久生物クマムシから国の電力まで〜コケ編・その4【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-06-09-48 サケの聖地と伝説のサムライ。江戸時代のスマートすぎる資源保護〜サケマス編・ラスト【ミモリラジオ】.md",
     "private/TODO",
     "private/MTG/Madness",
     "private/MTG",
@@ -226,7 +242,6 @@
     "assets/mushroom.jpg",
     "無題のファイル.canvas",
     "notes/memo",
-    "notes/diary",
     "無題のファイル 1.canvas"
   ]
 }

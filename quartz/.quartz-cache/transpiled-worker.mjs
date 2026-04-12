@@ -5141,6 +5141,7 @@ var Head_default = /* @__PURE__ */ __name((() => {
       /* @__PURE__ */ jsx18("link", { rel: "icon", href: iconPath }),
       /* @__PURE__ */ jsx18("meta", { name: "description", content: description }),
       /* @__PURE__ */ jsx18("meta", { name: "generator", content: "Quartz" }),
+      /* @__PURE__ */ jsx18("meta", { name: "robots", content: "noindex, nofollow" }),
       css.map((resource) => CSSResourceToStyleElement(resource, true)),
       js.filter((resource) => resource.loadTime === "beforeDOMReady").map((res) => JSResourceToScriptElement(res, true)),
       additionalHead.map((resource) => {
@@ -5803,14 +5804,14 @@ var graphOptions = {
     zoom: true,
     depth: -1,
     scale: 0.88,
-    repelForce: 1.5,
-    centerForce: 0.8,
-    linkDistance: 30,
+    repelForce: 0.3,
+    centerForce: 0.9,
+    linkDistance: 25,
     fontSize: 0.6,
     opacityScale: 1,
     showTags: false,
     focusOnHover: true,
-    enableRadial: false
+    enableRadial: true
   }
 };
 var explorerOptions = {

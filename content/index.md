@@ -5,12 +5,17 @@ title: Mycelism
 
 これはポッドキャストベースの[[デジタルガーデン]]として作成してみたものです。
 
+---
+
 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容
+
 ・ささっと書いたメモや、清書したノート
+
+---
 
 そう言ったものが延々と増え続けていきます。
 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。
 
 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです
 
-<button onclick="event.preventDefault(); event.stopPropagation(); var o=document.querySelector('.global-graph-outer'); if(o){o.classList.toggle('active');}">グラフビューを開く</button>
+<button onclick="document.querySelector('.global-graph-icon').dispatchEvent(new MouseEvent('click', {bubbles: true}))">グラフビューを開く</button>

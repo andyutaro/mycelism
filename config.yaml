@@ -1,11 +1,11 @@
 shows:
 - extraction_notes: 近況報告・活動報告・番組告知の内容はキーワード抽出から除外。トーク中で触れたテーマ・場所・概念のみ抽出する
   max_keywords: 4
-  name: captions
+  name: longpost
   rss_url: https://anchor.fm/s/f20aee28/podcast/rss
   spotify_show_id: 34phiuFlCBcfscYLP5iCyb
   status: active
-  whisper_prompt: パーソナリティはAndyです。ポッドキャスト制作やメディアについて話す番組です。
+  whisper_prompt: パーソナリティはAndyです。番組名はロングポストです。ポッドキャスト制作やメディアについて話す番組です。
 - max_keywords: 6
   name: on-airdo
   rss_url: https://anchor.fm/s/fe6f8048/podcast/rss

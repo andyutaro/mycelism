@@ -2039,7 +2039,7 @@ tiny-lru/dist/tiny-lru.js:
                 C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
                 S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
                 s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
-                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z`})})})]}),jsx26("div",{class:"global-graph-outer",children:jsx26("div",{class:"global-graph-container","data-cfg":JSON.stringify(globalGraph)})})]})},"Graph");return Graph.css=graph_default,Graph.afterDOMLoaded=graph_inline_default,Graph}),"default");var backlinks_default=`/**
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z`})})})]}),jsx26("div",{class:"global-graph-outer",children:jsx26("div",{class:"global-graph-container","data-cfg":JSON.stringify(globalGraph)})}),jsx26("button",{class:"global-graph-open",onClick:"document.querySelector('.global-graph-icon').dispatchEvent(new MouseEvent('click', {bubbles: true}))",children:"\u30B0\u30E9\u30D5\u30D3\u30E5\u30FC\u3092\u958B\u304F"})]})},"Graph");return Graph.css=graph_default,Graph.afterDOMLoaded=graph_inline_default,Graph}),"default");var backlinks_default=`/**
  * Layout breakpoints
  * $mobile: screen width below this value will use mobile styles
  * $desktop: screen width above this value will use desktop styles

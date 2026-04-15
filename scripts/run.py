@@ -70,7 +70,53 @@ def main():
         except Exception as e:
             print(f"  ⚠️ トランスクリプト取得エラー: {e}")
 
+    base = os.path.dirname(os.path.dirname(__file__))
+    update_index_updates(base)
     print(f"\n🌿 完了！ 新規処理: {total_new}件")
+
+
+def update_index_updates(base):
+    """index.mdのUpdatesセクションを最新5件で更新"""
+    import glob
+    import re
+    from datetime import datetime
+
+    # episodesとnotesから最新ファイルを取得
+    patterns = [
+        os.path.join(base, 'content/episodes/**/*.md'),
+        os.path.join(base, 'content/notes/**/*.md'),
+    ]
+    files = []
+    for pattern in patterns:
+        files.extend(glob.glob(pattern, recursive=True))
+
+    # 更新日時でソート
+    files.sort(key=lambda f: os.path.getmtime(f), reverse=True)
+    latest = files[:5]
+
+    # リスト生成
+    lines = []
+    for f in latest:
+        rel = f.replace(os.path.join(base, 'content/'), '').replace('.md', '')
+        name = os.path.basename(f).replace('.md', '')
+        date = datetime.fromtimestamp(os.path.getmtime(f)).strftime('%Y-%m-%d')
+        lines.append(f"- [[{rel}|{name}]] - {date}")
+
+    updates_text = "## Updates\n" + "\n".join(lines) + "\n"
+
+    # index.md を更新
+    index_path = os.path.join(base, 'content/index.md')
+    with open(index_path, 'r') as f:
+        content = f.read()
+
+    if '## Updates' in content:
+        content = re.sub(r'## Updates.*?(?=\n## |\Z)', updates_text, content, flags=re.DOTALL)
+    else:
+        content = content.rstrip() + '\n\n' + updates_text
+
+    with open(index_path, 'w') as f:
+        f.write(content)
+    print("📋 Updatesセクションを更新しました")
 
 if __name__ == '__main__':
     main()

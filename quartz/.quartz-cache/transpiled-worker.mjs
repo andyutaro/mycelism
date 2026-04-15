@@ -5586,7 +5586,8 @@ var Graph_default = /* @__PURE__ */ __name(((opts) => {
           }
         ) })
       ] }),
-      /* @__PURE__ */ jsx26("div", { class: "global-graph-outer", children: /* @__PURE__ */ jsx26("div", { class: "global-graph-container", "data-cfg": JSON.stringify(globalGraph) }) })
+      /* @__PURE__ */ jsx26("div", { class: "global-graph-outer", children: /* @__PURE__ */ jsx26("div", { class: "global-graph-container", "data-cfg": JSON.stringify(globalGraph) }) }),
+      /* @__PURE__ */ jsx26("button", { class: "global-graph-open", onClick: "document.querySelector('.global-graph-icon').dispatchEvent(new MouseEvent('click', {bubbles: true}))", children: "\u30B0\u30E9\u30D5\u30D3\u30E5\u30FC\u3092\u958B\u304F" })
     ] });
   }, "Graph");
   Graph.css = graph_default;

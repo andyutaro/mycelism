@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "notes/article/Captionsの内容.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -24,11 +24,11 @@
                   "showSearch": false,
                   "searchQuery": "",
                   "backlinkCollapsed": false,
-                  "unlinkedCollapsed": false
+                  "unlinkedCollapsed": true
                 }
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Captionsの内容"
             }
           }
         ]
@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 463.5
   },
   "right": {
     "id": "6000c67f9f8cff25",
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "private/TODO/今日やること.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "indexへのバックリンク"
+              "title": "今日やることへのバックリンク"
             }
           },
           {
@@ -204,14 +204,25 @@
   },
   "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "notes/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md",
+    "notes/article/Captionsの内容.md",
+    "notes/article/無題のファイル.md",
+    "notes/article/ポッドキャストにおけるプロデュース.md",
+    "notes/article/rooom@andyの内容.md",
+    "notes/article/ブランデッドポッドキャストの核心.md",
+    "notes/diary/書き散らし260330.md",
+    "notes/diary/書き散らし260329.md",
+    "notes/diary/書き散らし260327.md",
+    "notes/diary/書き散らし260326.md",
+    "private/TODO/今日やること.md",
+    "index.md",
+    "notes/article/Captions.md",
+    "notes/memo/この話題で一緒に喋れる友達がいないシリーズ.md",
     "notes/article/デジタルガーデン.md",
     "notes/article/デジタルガーデンの意図.md",
-    "index.md",
     "graph.md",
     "mycelism/graph.md",
     "mycelism",
-    "notes/article/ポッドキャストにおけるプロデュース.md",
-    "private/TODO/今日やること.md",
     "concepts/釣り.md",
     "episodes/mimoriradio/2023-04-11-番外編6 andyと言う人間。観森を作る試行錯誤〜番外編・パーソナリティ編〜【ミモリラジオ】.md",
     "concepts/ギョキョウ.md",
@@ -220,17 +231,6 @@
     "concepts/カキ.md",
     "concepts/サケマス.md",
     "concepts/カミナリ.md",
-    "concepts/金玉.md",
-    "concepts/ネコ.md",
-    "episodes/mimoriradio/2023-05-23-44 カミナリ雲にタコを揚げよ！偉人のクレイジーな実験と避雷針〜カミナリ編・ラスト【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-01-17-番外編2 地球が好きすぎるヒト、森と都市を近づけたいヒト【ミモリラジオ】.md",
-    "concepts/MIMORI.md",
-    "episodes/sakanakaigi/2026-03-25-Face the Fish🎣 サカナや水辺との関わりを見つめ直す、新しい釣りプロジェクト.md",
-    "concepts/Face the Fish.md",
-    "episodes/mimoriradio/2022-11-30-8 なぜ侵略的外来種？ネコの特殊能力と「飛べない小鳥」の悲劇〜イエネコ編その2【ミモリラジオ】.md",
-    "episodes/mimoriradio/2023-01-10-14 あいまいな「薬草」と渦巻く資本主義〜薬草と社会その1【ミモリラジオ】.md",
-    "concepts/46通知.md",
-    "episodes/mimoriradio/2024-01-19-93 食卓に乗る自然。マメの神秘を観る〜マメ編①【ミモリラジオ】.md",
     "private/TODO",
     "private/MTG/Madness",
     "private/MTG",

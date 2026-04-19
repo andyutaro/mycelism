@@ -11,7 +11,7 @@ PROCESSED_FILE = '/Users/andy/quartz/processed_concepts.json'
 SHOW_NAMES = {
     'sakanakaigi': 'サカナカイギ',
     'mimoriradio': 'ミモリラジオ',
-    'captions': 'Captions',
+    'longpost': 'ロングポスト',
 }
 
 def load_processed():

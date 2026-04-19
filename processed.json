@@ -72,7 +72,8 @@
       "cd6e8c04-35f6-4933-89d1-534c403927c6",
       "9ecf201d-b367-42fb-a38e-cdb7136b1766",
       "2f43cbca-2eff-4da0-a093-ea34c79cae70",
-      "15cc6239-3b28-40ac-afde-6bcecda16b9d"
+      "15cc6239-3b28-40ac-afde-6bcecda16b9d",
+      "f27c2d57-c7bd-475a-ac60-e8e6ac581057"
     ],
     "sakanakaigi": [
       "c3c3a694-cb6e-46ab-8cca-76856355ee6f",
@@ -247,6 +248,9 @@
       "5c5deec7-abf2-444c-b5bc-9c93c01abdde",
       "35aefc36-4925-42bd-abd2-6d7d7e5713fb",
       "975ec246-d75c-475f-93e4-dd71edcbf6c5"
+    ],
+    "longpost": [
+      "03ae9313-7be2-4fe9-9fda-0367fc442f27"
     ]
   },
   "articles": {}

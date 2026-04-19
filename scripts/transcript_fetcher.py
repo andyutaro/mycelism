@@ -12,7 +12,7 @@ PROCESSED_FILE = '/Users/andy/quartz/processed_transcripts.json'
 LISTEN_SHOWS = {
     'sakanakaigi': '01khxgmkwpazf4axtsmh04wvh9',
     'mimoriradio':  '01khxg4sm73tkv2xw8bgh8cdmd',
-    'captions':     '01knxjrb66jaxjvvaybnjz0662',
+    'longpost':     '01knxjrb66jaxjvvaybnjz0662',
 }
 
 def load_config():

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/diary/ロングポストテーマ.md",
+                "file": "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ロングポストテーマ"
+              "title": "2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026"
             }
           }
         ]
@@ -204,6 +204,7 @@
   },
   "active": "eed59c101233f561",
   "lastOpenFiles": [
+    "notes/diary/ロングポストテーマ.md",
     "concepts/織田コレクション.md",
     "concepts/点心.md",
     "concepts/自家焙煎コーヒー.md",
@@ -218,7 +219,6 @@
     "private/MTG/BrandShift/BrandShift高橋さんとの相談事.md",
     "private/MTG/BrandShift",
     "private/TODO/今日やること.md",
-    "notes/diary/ロングポストテーマ.md",
     "notes/article/Seekers.md",
     "notes/article/ブランデッドポッドキャストの核心.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",

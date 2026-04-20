@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/MTG/Madness/MADNESS Podcastの検討.md",
+                "file": "notes/diary/260420_ロングポスト_生活.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "MADNESS Podcastの検討"
+              "title": "260420_ロングポスト_生活"
             }
           }
         ],
@@ -123,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5
+    "width": 289.5
   },
   "right": {
     "id": "6000c67f9f8cff25",
@@ -229,16 +229,16 @@
   },
   "active": "94750fe2f323f465",
   "lastOpenFiles": [
-    "private/MTG/Madness/260408Madness Japan挨拶.md",
-    "private/MTG/Madness/MADNESS Podcastの検討.md",
-    "notes/article/Captionsの内容.md",
-    "private/TODO/今日やること.md",
     "notes/diary/260419_ロングポスト_制作.md",
     "notes/diary/260420_ロングポスト_生活.md",
+    "notes/diary/ロングポストテーマ.md",
+    "private/MTG/Madness/MADNESS Podcastの検討.md",
+    "private/MTG/Madness/260408Madness Japan挨拶.md",
+    "notes/article/Captionsの内容.md",
+    "private/TODO/今日やること.md",
     "notes/memo/ロングポストと@andyは投資過程の証明.md",
     "notes/article/ロングポストについての考え事.md",
     "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
-    "notes/diary/ロングポストテーマ.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "episodes/longpost/2025-03-01-ビデオポッドキャストする？自我と欲望の置きどころoO.md",
     "concepts/織田コレクション.md",

@@ -72,6 +72,15 @@ def main():
 
     base = os.path.dirname(os.path.dirname(__file__))
     update_index_updates(base)
+
+    # ビルド＆push
+    import subprocess
+    print(f"\n🏗 ビルド中...")
+    subprocess.run(['npx', 'quartz', 'build'], cwd=base)
+    print(f"\n📤 GitHubにpush中...")
+    subprocess.run(['git', 'add', '-A'], cwd=base)
+    subprocess.run(['git', 'commit', '-m', 'auto update'], cwd=base)
+    subprocess.run(['git', 'push'], cwd=base)
     print(f"\n🌿 完了！ 新規処理: {total_new}件")
 
 

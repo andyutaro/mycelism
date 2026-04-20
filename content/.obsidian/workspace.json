@@ -30,8 +30,33 @@
               "icon": "lucide-file",
               "title": "2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026"
             }
+          },
+          {
+            "id": "94750fe2f323f465",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "private/MTG/Madness/MADNESS Podcastの検討.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "MADNESS Podcastの検討"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -202,9 +227,20 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "eed59c101233f561",
+  "active": "94750fe2f323f465",
   "lastOpenFiles": [
+    "private/MTG/Madness/260408Madness Japan挨拶.md",
+    "private/MTG/Madness/MADNESS Podcastの検討.md",
+    "notes/article/Captionsの内容.md",
+    "private/TODO/今日やること.md",
+    "notes/diary/260419_ロングポスト_制作.md",
+    "notes/diary/260420_ロングポスト_生活.md",
+    "notes/memo/ロングポストと@andyは投資過程の証明.md",
+    "notes/article/ロングポストについての考え事.md",
+    "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
     "notes/diary/ロングポストテーマ.md",
+    "notes/article/ポッドキャストにおけるプロデュース.md",
+    "episodes/longpost/2025-03-01-ビデオポッドキャストする？自我と欲望の置きどころoO.md",
     "concepts/織田コレクション.md",
     "concepts/点心.md",
     "concepts/自家焙煎コーヒー.md",
@@ -214,26 +250,15 @@
     "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
     "episodes/on-airdo",
     "concepts/専業ポッドキャスター.md",
-    "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
-    "notes/diary/ロングポスト-1.md",
     "private/MTG/BrandShift/BrandShift高橋さんとの相談事.md",
     "private/MTG/BrandShift",
-    "private/TODO/今日やること.md",
     "notes/article/Seekers.md",
     "notes/article/ブランデッドポッドキャストの核心.md",
-    "notes/article/ポッドキャストにおけるプロデュース.md",
-    "notes/article/Captionsの内容.md",
-    "notes/article/無題のファイル.md",
     "Seekers_企画書.docx",
-    "private/MTG/Madness/MADNESS Podcastの検討.md",
-    "private/MTG/Madness/260408Madness Japan挨拶.md",
     "notes/memo/自己承認ではなく自己寛容なのでは？.md",
-    "episodes/longpost/2025-03-01-ビデオポッドキャストする？自我と欲望の置きどころoO.md",
     "episodes/longpost",
     "notes/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md",
     "notes/article/rooom@andyの内容.md",
-    "notes/diary/書き散らし260330.md",
-    "notes/diary/書き散らし260329.md",
     "mycelism",
     "private/TODO",
     "private/MTG/Madness",

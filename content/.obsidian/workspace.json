@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ca21f78e002f85d2",
+        "id": "3bc49bdece293109",
         "type": "tabs",
         "children": [
           {
-            "id": "eed59c101233f561",
+            "id": "8e60a968134f4951",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
+                "file": "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026"
-            }
-          },
-          {
-            "id": "94750fe2f323f465",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/diary/260420_ロングポスト_生活.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "260420_ロングポスト_生活"
+              "title": "インディーズは「最後に聞かれるポッドキャスト」を目指そう"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -227,22 +202,24 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "1f9a5ce4f2575da6",
+  "active": "8e60a968134f4951",
   "lastOpenFiles": [
+    "notes/memo/「編集し終わった音源について、音質だけ聞きやすく調整かける編集工程」のことをトリートメントって呼んでしまっている。.md",
+    "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
+    "private/TODO/今日やること.md",
+    "notes/diary/260420_ロングポスト_生活.md",
+    "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
     "concepts/苫小牧市.md",
     "concepts/運転免許更新.md",
     "concepts/近視.md",
     "episodes/longpost/2026-04-20-【生活】ポッドキャストしすぎで近視になってメガネを買いに行った話.md",
     "notes/diary/260419_ロングポスト_制作.md",
-    "notes/diary/260420_ロングポスト_生活.md",
     "notes/diary/ロングポストテーマ.md",
     "private/MTG/Madness/MADNESS Podcastの検討.md",
     "private/MTG/Madness/260408Madness Japan挨拶.md",
     "notes/article/Captionsの内容.md",
-    "private/TODO/今日やること.md",
     "notes/memo/ロングポストと@andyは投資過程の証明.md",
     "notes/article/ロングポストについての考え事.md",
-    "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "episodes/longpost/2025-03-01-ビデオポッドキャストする？自我と欲望の置きどころoO.md",
     "concepts/織田コレクション.md",
@@ -254,9 +231,7 @@
     "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
     "episodes/on-airdo",
     "concepts/専業ポッドキャスター.md",
-    "private/MTG/BrandShift/BrandShift高橋さんとの相談事.md",
     "private/MTG/BrandShift",
-    "notes/article/Seekers.md",
     "Seekers_企画書.docx",
     "episodes/longpost",
     "mycelism",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/private_private/ざっくりざっくり新企画.md",
+                "file": "private/TODO/やること.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ざっくりざっくり新企画"
+              "title": "やること"
             }
           }
         ]
@@ -202,12 +202,22 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "1f9a5ce4f2575da6",
+  "active": "883bf7e9287b1d9e",
   "lastOpenFiles": [
+    "episodes/on-airdo/2026-04-23-#70 網走の流氷リベンジ旅と幌延のトナカイ牧場。次の冬が楽しみになるおたより回【おんえあどぅ】.md",
+    "notes/memo/僕が共感できないもの.md",
+    "concepts/豊富温泉.md",
+    "concepts/幌延町.md",
+    "concepts/網走.md",
+    "concepts/トナカイ観光牧場.md",
+    "concepts/砕氷船.md",
+    "concepts/流氷.md",
+    "private/TODO/やること.md",
+    "index.md",
+    "private/private_private/ざっくりざっくり新企画.md",
+    "無題のファイル.md",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
-    "private/TODO/今日やること.md",
-    "private/private_private/ざっくりざっくり新企画.md",
     "notes/article/ブランデッドポッドキャストの核心.md",
     "notes/article/めちゃくちゃよかったXのスレッド.md",
     "episodes/sakanakaigi/2026-04-22-桃山商事🍑🍑三陸エリアはどう見えた？防潮堤アートプロジェクトと、ポキャニキ談義.md",
@@ -219,18 +229,9 @@
     "concepts/三陸エリア.md",
     "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
     "private/MTG/Madness/MADNESS Podcastの検討.md",
-    "無題のファイル.md",
     "private/MTG/Madness/260408Madness Japan挨拶.md",
     "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
     "notes/memo/「編集し終わった音源について、音質だけ聞きやすく調整かける編集工程」のことをトリートメントって呼んでしまっている。.md",
-    "notes/diary/260420_ロングポスト_生活.md",
-    "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
-    "concepts/苫小牧市.md",
-    "concepts/運転免許更新.md",
-    "concepts/近視.md",
-    "episodes/longpost/2026-04-20-【生活】ポッドキャストしすぎで近視になってメガネを買いに行った話.md",
-    "notes/diary/260419_ロングポスト_制作.md",
-    "notes/diary/ロングポストテーマ.md",
     "episodes/on-airdo",
     "private/MTG/BrandShift",
     "Seekers_企画書.docx",
@@ -239,7 +240,6 @@
     "private/TODO",
     "private/MTG/Madness",
     "private/MTG",
-    "private",
     "assets/mushroom.jpg",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"

@@ -220,5 +220,5 @@ if __name__ == '__main__':
         for show_name, podcast_id in LISTEN_SHOWS.items():
             process_listen_show(show_name, podcast_id, processed)
         # Whisper対応番組
-        process_whisper_show('on-airdo', processed)
+        # process_whisper_show('on-airdo', processed)  # 一時無効化
         print("\n🌿 全処理完了！")

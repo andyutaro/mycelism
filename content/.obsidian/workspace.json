@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3bc49bdece293109",
+        "id": "19548e5bc126d16e",
         "type": "tabs",
         "children": [
           {
-            "id": "8e60a968134f4951",
+            "id": "883bf7e9287b1d9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
+                "file": "concepts/腐女子文化.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "インディーズは「最後に聞かれるポッドキャスト」を目指そう"
+              "title": "腐女子文化"
             }
           }
         ]
@@ -202,11 +202,22 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "8e60a968134f4951",
+  "active": "883bf7e9287b1d9e",
   "lastOpenFiles": [
-    "notes/memo/「編集し終わった音源について、音質だけ聞きやすく調整かける編集工程」のことをトリートメントって呼んでしまっている。.md",
-    "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
     "private/TODO/今日やること.md",
+    "concepts/腐女子文化.md",
+    "concepts/サブカルチャー.md",
+    "concepts/地域アート.md",
+    "concepts/ポキャニキ.md",
+    "concepts/防潮堤アートプロジェクト.md",
+    "concepts/三陸エリア.md",
+    "episodes/sakanakaigi/2026-04-22-桃山商事🍑🍑三陸エリアはどう見えた？防潮堤アートプロジェクトと、ポキャニキ談義.md",
+    "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
+    "private/MTG/Madness/MADNESS Podcastの検討.md",
+    "無題のファイル.md",
+    "private/MTG/Madness/260408Madness Japan挨拶.md",
+    "notes/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
+    "notes/memo/「編集し終わった音源について、音質だけ聞きやすく調整かける編集工程」のことをトリートメントって呼んでしまっている。.md",
     "notes/diary/260420_ロングポスト_生活.md",
     "episodes/longpost/2026-04-18-【制作】北海道ぐらしの専業ポッドキャスターです〜自己紹介2026.md",
     "concepts/苫小牧市.md",
@@ -215,22 +226,11 @@
     "episodes/longpost/2026-04-20-【生活】ポッドキャストしすぎで近視になってメガネを買いに行った話.md",
     "notes/diary/260419_ロングポスト_制作.md",
     "notes/diary/ロングポストテーマ.md",
-    "private/MTG/Madness/MADNESS Podcastの検討.md",
-    "private/MTG/Madness/260408Madness Japan挨拶.md",
     "notes/article/Captionsの内容.md",
     "notes/memo/ロングポストと@andyは投資過程の証明.md",
     "notes/article/ロングポストについての考え事.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
-    "episodes/longpost/2025-03-01-ビデオポッドキャストする？自我と欲望の置きどころoO.md",
-    "concepts/織田コレクション.md",
-    "concepts/点心.md",
-    "concepts/自家焙煎コーヒー.md",
-    "concepts/写真の町.md",
-    "concepts/湧水.md",
-    "concepts/東川町.md",
-    "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
     "episodes/on-airdo",
-    "concepts/専業ポッドキャスター.md",
     "private/MTG/BrandShift",
     "Seekers_企画書.docx",
     "episodes/longpost",

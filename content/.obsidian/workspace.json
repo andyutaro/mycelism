@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/article/めちゃくちゃよかったXのスレッド.md",
+                "file": "private/private_private/ざっくりざっくり新企画.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "めちゃくちゃよかったXのスレッド"
+              "title": "ざっくりざっくり新企画"
             }
           }
         ]
@@ -202,13 +202,17 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "883bf7e9287b1d9e",
+  "active": "1f9a5ce4f2575da6",
   "lastOpenFiles": [
-    "episodes/sakanakaigi/2026-04-22-桃山商事🍑🍑三陸エリアはどう見えた？防潮堤アートプロジェクトと、ポキャニキ談義.md",
+    "private/private_private",
+    "private/MTG/BrandShift/無題のフォルダ",
+    "private/TODO/今日やること.md",
+    "private/private_private/ざっくりざっくり新企画.md",
+    "notes/article/ブランデッドポッドキャストの核心.md",
     "notes/article/めちゃくちゃよかったXのスレッド.md",
+    "episodes/sakanakaigi/2026-04-22-桃山商事🍑🍑三陸エリアはどう見えた？防潮堤アートプロジェクトと、ポキャニキ談義.md",
     "concepts/腐女子文化.md",
     "concepts/ポキャニキ.md",
-    "private/TODO/今日やること.md",
     "concepts/サブカルチャー.md",
     "concepts/地域アート.md",
     "concepts/防潮堤アートプロジェクト.md",
@@ -227,9 +231,6 @@
     "episodes/longpost/2026-04-20-【生活】ポッドキャストしすぎで近視になってメガネを買いに行った話.md",
     "notes/diary/260419_ロングポスト_制作.md",
     "notes/diary/ロングポストテーマ.md",
-    "notes/article/Captionsの内容.md",
-    "notes/memo/ロングポストと@andyは投資過程の証明.md",
-    "notes/article/ロングポストについての考え事.md",
     "episodes/on-airdo",
     "private/MTG/BrandShift",
     "Seekers_企画書.docx",
@@ -239,7 +240,6 @@
     "private/MTG/Madness",
     "private/MTG",
     "private",
-    "episodes/mimoriradio",
     "assets/mushroom.jpg",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"

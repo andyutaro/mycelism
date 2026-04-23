@@ -9,13 +9,18 @@ client = anthropic.Anthropic(api_key=os.environ.get('ANTHROPIC_API_KEY'))
 def process_episode(episode, show):
     title = episode['title']
     description = episode['description']
+    transcript = episode.get('transcript', '')
     max_keywords = show.get('max_keywords', 6)
     extraction_notes = show.get('extraction_notes', '')
+
+    # 文字起こしがあれば優先、なければdescriptionを使用
+    content_source = transcript[:3000] if transcript and len(transcript) > 50 else description
+    source_label = "文字起こし（抜粋）" if transcript and len(transcript) > 50 else "説明文"
 
     prompt = f"""以下はポッドキャストのエピソード情報です。
 
 タイトル: {title}
-説明文: {description}
+{source_label}: {content_source}
 
 以下の4つを生成してください。必ずJSON形式で返してください。
 

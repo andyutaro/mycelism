@@ -18,6 +18,38 @@ def save_processed(data):
     with open(path, 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+
+LISTEN_SHOWS = {
+    'sakanakaigi': '01khxgmkwpazf4axtsmh04wvh9',
+    'mimoriradio':  '01khxg4sm73tkv2xw8bgh8cdmd',
+    'longpost':     '01knxjrb66jaxjvvaybnjz0662',
+}
+
+def fetch_listen_transcript(show_name, title):
+    """LISTENからtranscriptを取得"""
+    import requests
+    podcast_id = LISTEN_SHOWS.get(show_name)
+    if not podcast_id:
+        return ''
+    try:
+        query = """
+        query {
+          podcast(id: "%s") {
+            episodes(first: 50) {
+              data { id title pubDate transcriptTxt }
+            }
+          }
+        }
+        """ % podcast_id
+        r = requests.post('https://listen.style/graphql', json={'query': query}, timeout=10)
+        episodes = r.json()['data']['podcast']['episodes']['data']
+        for ep in episodes:
+            if ep.get('title', '').strip() == title.strip():
+                return ep.get('transcriptTxt') or ''
+    except:
+        pass
+    return ''
+
 def fetch_new_episodes(show):
     feed = feedparser.parse(show['rss_url'])
     processed = load_processed()
@@ -51,6 +83,7 @@ def fetch_new_episodes(show):
         except:
             pass
 
+        transcript = fetch_listen_transcript(show['name'], entry.get('title', ''))
         new_episodes.append({
             'id': ep_id,
             'title': entry.get('title', ''),
@@ -59,6 +92,7 @@ def fetch_new_episodes(show):
             'audio_url': audio_url,
             'spotify_url': spotify_url,
             'apple_url': apple_url,
+            'transcript': transcript,
         })
 
     return new_episodes

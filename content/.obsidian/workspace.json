@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/article/わあああああああああああ」.md",
+                "file": "notes/diary/ロングポストテーマ.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "わあああああああああああ」"
+              "title": "ロングポストテーマ"
             }
           }
         ]
@@ -189,7 +189,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,34 +205,34 @@
   },
   "active": "883bf7e9287b1d9e",
   "lastOpenFiles": [
+    "concepts/祖師ヶ谷大蔵.md",
+    "concepts/Googleフォーム.md",
+    "concepts/サイバー攻撃.md",
+    "episodes/longpost/2026-04-28-【生活】おたよりフォームにサイバー攻撃。.md",
+    "concepts/フィラー.md",
+    "concepts/音声編集.md",
+    "episodes/longpost/2026-04-24-【制作】ポッドキャストを作る時のこだわり。.md",
+    "notes/diary/0428ロングポスト_生活.md",
     "private/TODO/やること.md",
-    "notes/article/わあああああああああああ」.md",
-    "private/TODO/今日やること.md",
-    "notes/diary/260420_ロングポスト_生活.md",
-    "episodes/on-airdo/2026-04-23-#70 網走の流氷リベンジ旅と幌延のトナカイ牧場。次の冬が楽しみになるおたより回【おんえあどぅ】.md",
+    "notes/diary/260419_ロングポスト_制作.md",
+    "notes/diary/ロングポストテーマ.md",
+    "notes/memo/ありがち。.md",
     "notes/memo/僕が共感できないもの.md",
-    "concepts/豊富温泉.md",
-    "concepts/幌延町.md",
-    "concepts/網走.md",
-    "concepts/トナカイ観光牧場.md",
-    "concepts/砕氷船.md",
-    "concepts/流氷.md",
-    "index.md",
-    "private/private_private/ざっくりざっくり新企画.md",
-    "無題のファイル.md",
+    "private/TODO/今日やること.md",
+    "notes/article/デジタルガーデンの意図.md",
+    "ムリウイ感情まみれ定食イベント.md",
+    "notes/article/ロングポストトークテーマ案.md",
+    "notes/article/わあああああああああああ」.md",
+    "notes/article/Captionsの内容.md",
+    "concepts/インプット.md",
+    "concepts/イネ科.md",
+    "concepts/アルファ.md",
+    "episodes/mimoriradio/2023-01-27-18 歴史の歩みはキンタマと共に〜「金玉」という森その3【ミモリラジオ】.md",
+    "notes/article/ブランデッドポッドキャストの核心.md",
+    "concepts/TNR.md",
+    "concepts/Spotify.md",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
-    "notes/article/ブランデッドポッドキャストの核心.md",
-    "notes/article/めちゃくちゃよかったXのスレッド.md",
-    "episodes/sakanakaigi/2026-04-22-桃山商事🍑🍑三陸エリアはどう見えた？防潮堤アートプロジェクトと、ポキャニキ談義.md",
-    "concepts/腐女子文化.md",
-    "concepts/ポキャニキ.md",
-    "concepts/サブカルチャー.md",
-    "concepts/地域アート.md",
-    "concepts/防潮堤アートプロジェクト.md",
-    "concepts/三陸エリア.md",
-    "episodes/on-airdo/2026-04-16-#69 湧水が流れる美しいまち「東川町」を巡ろう〜朝ごはんは点心で、休憩はおしゃれなカフェで〜【おんえあどぅ】.md",
-    "private/MTG/Madness/MADNESS Podcastの検討.md",
     "episodes/on-airdo",
     "private/MTG/BrandShift",
     "Seekers_企画書.docx",

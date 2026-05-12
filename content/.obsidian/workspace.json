@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/MTG/Madness/DEMO台本_オルタナティブフィッシング.md",
+                "file": "private/private_private/ざっくりざっくり新企画.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,10 +28,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "DEMO台本_オルタナティブフィッシング"
+              "title": "ざっくりざっくり新企画"
+            }
+          },
+          {
+            "id": "7415d975c0430fdc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -203,14 +214,27 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "883bf7e9287b1d9e",
+  "active": "7415d975c0430fdc",
   "lastOpenFiles": [
+    "private/private_private/ざっくりざっくり新企画.md",
+    "notes/diary/260504_ロングポスト_制作.md",
+    "notes/memo/260510_PodcastEXPO2日目.md",
+    "notes/memo/260509PodcastEXPO.md",
+    "notes/diary/260508_書き散らし.md",
+    "notes/diary/書き散らし260502.md",
+    "private/MTG/Madness/260508_DEMO収録の印象.md",
+    "private/MTG/Madness/DEMO台本_オルタナティブフィッシング.md",
+    "private/MTG/Madness/MADNESS Podcastの検討.md",
+    "private/MTG/Madness/260408Madness Japan挨拶.md",
+    "private/MTG/Madness/企画検討.md",
+    "notes/article/ロングポストトークテーマ案.md",
+    "private/TODO/やること.md",
+    "index.md",
     "concepts/作品と人格.md",
     "concepts/イヤホン難聴.md",
     "concepts/ながら聴き.md",
     "concepts/ポッドキャスト視聴習慣.md",
     "episodes/longpost/2026-05-04-制作｜声バレしていた話・いつポッドキャスト聴いてるの？.md",
-    "private/private_private/ざっくりざっくり新企画.md",
     "notes/memo/Seekersの設計思想.md",
     "notes/memo/「もうユニコーンガンダムしか買わへんし」.md",
     "notes/memo/トマトアンドオニオン.md",
@@ -218,19 +242,6 @@
     "notes/memo/ローカルポッドキャストフェストーキョー.md",
     "notes/memo/音声だから伸びないとは言いたくないよね.md",
     "notes/memo/豪華ゲストはいるのに質素ゲストはいない.md",
-    "notes/memo/市ヶ谷フィッシングクラブ.md",
-    "notes/memo/自己承認ではなく自己寛容なのでは？.md",
-    "notes/memo/東京書籍.md",
-    "notes/memo/北区のポッドキャストアイデア.md",
-    "private/MTG/Madness/DEMO台本_オルタナティブフィッシング.md",
-    "private/MTG/Madness/MADNESS Podcastの検討.md",
-    "private/MTG/Madness/企画検討.md",
-    "private/TODO/やること.md",
-    "notes/diary/書き散らし260502.md",
-    "notes/diary/260504_ロングポスト_制作.md",
-    "notes/diary/260428_ロングポスト_生活.md",
-    "notes/diary/260420_ロングポスト_生活.md",
-    "private/MTG/Madness/260408Madness Japan挨拶.md",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
     "episodes/on-airdo",

@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "19548e5bc126d16e",
+        "id": "40bfb25bbe18f256",
         "type": "tabs",
         "children": [
           {
-            "id": "883bf7e9287b1d9e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "private/private_private/ざっくりざっくり新企画.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": true,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "ざっくりざっくり新企画"
-            }
-          },
-          {
-            "id": "7415d975c0430fdc",
+            "id": "dae912ec0398de56",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -41,8 +17,7 @@
               "title": "新規タブ"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,21 +189,24 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "7415d975c0430fdc",
+  "active": "dae912ec0398de56",
   "lastOpenFiles": [
     "private/private_private/ざっくりざっくり新企画.md",
+    "notes/diary/260528_ロングポスト_生活.md",
+    "notes/diary/書き散らし260330.md",
+    "notes/diary/書き散らし260502.md",
     "notes/diary/260504_ロングポスト_制作.md",
+    "notes/diary/260508_書き散らし.md",
+    "notes/diary/260518_ロングポスト_制作.md",
+    "private/TODO/やること.md",
     "notes/memo/260510_PodcastEXPO2日目.md",
     "notes/memo/260509PodcastEXPO.md",
-    "notes/diary/260508_書き散らし.md",
-    "notes/diary/書き散らし260502.md",
     "private/MTG/Madness/260508_DEMO収録の印象.md",
     "private/MTG/Madness/DEMO台本_オルタナティブフィッシング.md",
     "private/MTG/Madness/MADNESS Podcastの検討.md",
     "private/MTG/Madness/260408Madness Japan挨拶.md",
     "private/MTG/Madness/企画検討.md",
     "notes/article/ロングポストトークテーマ案.md",
-    "private/TODO/やること.md",
     "index.md",
     "concepts/作品と人格.md",
     "concepts/イヤホン難聴.md",
@@ -239,9 +217,6 @@
     "notes/memo/「もうユニコーンガンダムしか買わへんし」.md",
     "notes/memo/トマトアンドオニオン.md",
     "notes/memo/メンバーシップでやること.md",
-    "notes/memo/ローカルポッドキャストフェストーキョー.md",
-    "notes/memo/音声だから伸びないとは言いたくないよね.md",
-    "notes/memo/豪華ゲストはいるのに質素ゲストはいない.md",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
     "episodes/on-airdo",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "private/MTG/Madness/企画検討.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "企画検討"
             }
           }
         ]
@@ -205,6 +205,16 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "private/private_private/ざっくりざっくり新企画.md",
+    "notes/memo/この先に見える作品2026.6.6.md",
+    "notes/memo/ポッドキャストとAIでふと思ったこと2026.6.6.md",
+    "notes/article/研究/研究前提に関するgeminiへの詰め.md",
+    "notes/memo/現代的な研究がわからない.md",
+    "notes/article/研究",
+    "private/MTG/Madness/企画検討.md",
+    "notes/diary/260605_ロングポスト_制作.md",
+    "notes/diary/260528_ロングポスト_生活.md",
+    "private/TODO/やること.md",
     "concepts/調理法.md",
     "concepts/サカナ図鑑.md",
     "concepts/カレイ.md",
@@ -220,17 +230,8 @@
     "concepts/番組構成.md",
     "episodes/longpost/2026-05-26-制作｜ポッドキャストの「本編／番外編」バランスを考える（※過去一のグダりが含まれます）.md",
     "notes/article/最近のサカナカイギの編集工程.md",
-    "private/MTG/Madness/企画検討.md",
-    "private/TODO/やること.md",
     "notes/diary/260526_ロングポスト_制作.md",
     "notes/diary/書き散らし260502.md",
-    "private/private_private/ざっくりざっくり新企画.md",
-    "notes/diary/260528_ロングポスト_生活.md",
-    "notes/diary/書き散らし260330.md",
-    "notes/diary/260504_ロングポスト_制作.md",
-    "notes/diary/260508_書き散らし.md",
-    "notes/diary/260518_ロングポスト_制作.md",
-    "notes/memo/260510_PodcastEXPO2日目.md",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
     "episodes/on-airdo",
@@ -240,7 +241,6 @@
     "mycelism",
     "private/TODO",
     "private/MTG/Madness",
-    "private/MTG",
     "assets/mushroom.jpg",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"

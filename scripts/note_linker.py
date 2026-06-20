@@ -30,6 +30,12 @@ NOTES_DIR = os.path.join(VAULT_PATH, 'notes')  # memo/diary/article等、notes�
 PROCESSED_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'processed_notes.json')
 
 
+class ParseError(Exception):
+    """AIの返答形式が想定外だった場合に投げる。'本当に関連なし'(None)とは明確に区別する。
+    main側でこの例外を捕まえた場合は processed に記録せず、次回また再試行させる。"""
+    pass
+
+
 def load_processed():
     if os.path.exists(PROCESSED_FILE):
         with open(PROCESSED_FILE, 'r', encoding='utf-8') as f:
@@ -83,7 +89,10 @@ def find_links_for_note(target_note, other_notes):
 
     prompt = f"""以下は、ある人物が書いた「新しいメモ」と、これまでに書かれた「既存のメモ一覧」です。
 
-# 新しいメモ
+# 新しいメモのタイトル
+{target_note['title']}
+
+# 新しいメモの本文
 {target_note['body']}
 
 # 既存のメモ一覧（タイトルと冒頭抜粋）
@@ -94,36 +103,64 @@ def find_links_for_note(target_note, other_notes):
 新しいメモの本文中の「既存の語句」をそのまま [[ノートのタイトル]] という形式で囲んでください。
 
 厳守事項:
-- 本文の言葉や言い回し、語順は一切変更しないこと。既存の語句を [[ ]] で囲むだけ。
+- 本文の言葉や言い回し、語順、改行は一切変更しないこと。既存の語句を [[ ]] で囲むだけ。
 - 新しい文章や説明、要約、考察を追加しないこと。
 - 関連が薄い、こじつけになりそうな場合は絶対にリンクを作らないこと。関連が本当にないなら、本文をそのまま返す。
 - リンクは多くても3つまで。確信度の高いものだけ。
-- 「新しいメモ」のタイトル自体や、無関係な既存メモへのリンクは作らないこと。
+- 「新しいメモ」自身のタイトル（{target_note['title']}）へのリンクは絶対に作らないこと（自己参照は禁止）。
+- すでに本文中に [[ ]] が存在する場合、それらはそのまま残し、二重にリンクを追加しないこと。
 
-返答は以下のJSON形式のみ。説明文は不要。
-{{
-  "updated_body": "（[[ ]]を埋め込んだ、あるいは変更なしの本文全文）",
-  "linked_titles": ["リンクしたノートのタイトル", ...]
-}}
+返答は以下の形式で、説明文やコードブロック記号(```)は一切付けないこと。
+本文はエスケープせず、改行はそのまま改行として出力すること。
+
+最初に区切り行 ===BODY=== を1行だけ書き、その次の行から本文全文を出力する。
+本文が終わったら区切り行 ===LINKS=== を1行だけ書き、その次の行にリンクしたタイトルをカンマ区切りで1行で書く（関連なしの場合は空行のままでよい）。
+
+出力例:
+===BODY===
+（ここから本文。複数行になってもよい。最後の行まで本文が続く）
+===LINKS===
+タイトルA,タイトルB
 """
 
     message = client.messages.create(
         model="claude-sonnet-4-6",
-        max_tokens=2000,
+        max_tokens=8000,
         messages=[{"role": "user", "content": prompt}]
     )
 
-    text = message.content[0].text
-    text = text.replace('```json', '').replace('```', '').strip()
+    if message.stop_reason == 'max_tokens':
+        raise ParseError(
+            f"出力が長すぎてmax_tokensで切れた: {target_note['title']} "
+            f"(本文が長すぎる可能性。max_tokensをさらに増やすか、本文を分割してください)"
+        )
+
+    text = message.content[0].text.strip()
+
+    if '===BODY===' not in text or '===LINKS===' not in text:
+        preview = text[:300].replace('\n', '\\n')
+        raise ParseError(f"想定外の返答形式: {target_note['title']} / 応答の先頭300字: {preview}")
+
     try:
-        result = json.loads(text)
-    except json.JSONDecodeError:
-        print(f"  ⚠️ JSON解析エラー、スキップ: {target_note['title']}")
+        body_part = text.split('===BODY===', 1)[1].split('===LINKS===')[0]
+        links_part = text.split('===LINKS===', 1)[1]
+    except IndexError:
+        raise ParseError(f"返答の分割に失敗: {target_note['title']}")
+
+    updated_body = body_part.strip('\n')
+    linked_titles_raw = [t.strip() for t in links_part.strip().split(',') if t.strip()]
+
+    # 自己参照と、existing other_notesに存在しないタイトルを除外（AIの誤りに対する二重の安全策）
+    valid_titles = {n['title'] for n in other_notes}
+    linked_titles = [
+        t for t in linked_titles_raw
+        if t != target_note['title'] and t in valid_titles
+    ]
+
+    if not linked_titles:
         return None
 
-    if not result.get('linked_titles'):
-        return None
-    return result
+    return {'updated_body': updated_body, 'linked_titles': linked_titles}
 
 
 def add_backlink(linked_note_path, from_title):
@@ -166,8 +203,11 @@ def main():
 
         try:
             result = find_links_for_note(note, other_notes)
+        except ParseError as e:
+            print(f"  ⚠️ 解析エラー(次回再試行されます): {e}")
+            continue
         except Exception as e:
-            print(f"  ❌ エラー: {e}")
+            print(f"  ❌ 予期しないエラー(次回再試行されます): {e}")
             continue
 
         if result is None:

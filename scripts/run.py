@@ -73,8 +73,16 @@ def main():
     base = os.path.dirname(os.path.dirname(__file__))
     update_index_updates(base)
 
-    # ビルド＆push
+    # notes(memo/diary/article)同士の意味的リンクを更新
+    # ポッドキャストの新着有無とは無関係に、毎回チェックする
     import subprocess
+    print(f"\n🔗 ノート間リンクを解析中...")
+    try:
+        subprocess.run(['python3', 'scripts/note_linker.py'], cwd=base)
+    except Exception as e:
+        print(f"  ⚠️ ノートリンク更新エラー: {e}")
+
+    # ビルド＆push
     print(f"\n🏗 ビルド中...")
     subprocess.run(['npx', 'quartz', 'build'], cwd=base)
     print(f"\n📤 GitHubにpush中...")

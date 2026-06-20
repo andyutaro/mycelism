@@ -1,66 +1,12 @@
-cat ~/quartz/logs/launchd_stdout.log
-cat ~/quartz/logs/launchd_stderr.log
 
-
-sleep 10
-cat ~/quartz/logs/launchd_stdout.log
-cat ~/quartz/logs/launchd_stderr.log
-
-
-
-
-
-
-[
-[A
-
-
-ls -la ~/Library/LaunchAgents/ | grep -i myc
-
-
-
-Emitted 1187 files to `public` in 761ms
-Done processing 1138 files in 6s
-[main f4a5e84f] auto update
- 2 files changed, 6 insertions(+), 4 deletions(-)
-🌿 Mycelism 更新を開始します...
-
-📻 longpost を処理中...
-  新着: 1件
-  処理中: 制作｜AIでポッドキャストはどうなっていく？...
-  ❌ エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CcEVueP1coPNS4GddyrwW'}
-
-📻 on-airdo を処理中...
-  新着: 2件
-  処理中: #77 貝のお祭りに世界磯ガニ釣り選手権大会。一度聴いたら忘れない北海道のニッチ...
-  ❌ エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CcEVujsfEG649iCTybHos'}
-  処理中: #78 番外編・AIRDOリオの北海道旅と、ラムしゃぶの話【おんえあどぅ】...
-  ❌ エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CcEVumsTuSDJrVzc7ACdv'}
-
-📻 sakanakaigi を処理中...
-  新着: 2件
-  処理中: 番外編🐟メンバーシップをはじめました！...
-  ❌ エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CcEVuuGU2ftquKSZapZ63'}
-  処理中: オフシーズン🐟アングラーと漁師は「オフ」をどう過ごす？...
-  ❌ エラー: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-sonnet-4-20250514'}, 'request_id': 'req_011CcEVuwSRvyPrCvGdLDCYb'}
-
-📻 mimoriradio を処理中...
-  新着なし
-📋 Updatesセクションを更新しました
-
-🏗 ビルド中...
-
-📤 GitHubにpush中...
-
-🌿 完了！ 新規処理: 0件
 
  Quartz v4.5.2  
 
-Cleaned output directory `public` in 26ms
-Found 1162 input files from `content` in 14ms
+Cleaned output directory `public` in 32ms
+Found 1162 input files from `content` in 13ms
 Parsing input files using 4 threads
 Parsed 1162 Markdown files in 5s
-Filtered out 0 files in 301μs
+Filtered out 0 files in 727μs
 Emitting files
-Emitted 1211 files to `public` in 788ms
+Emitted 1211 files to `public` in 755ms
 Done processing 1162 files in 6s

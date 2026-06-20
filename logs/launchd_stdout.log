@@ -256,3 +256,17 @@ Done processing 1225 files in 7s
 📤 GitHubにpush中...
 
 🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 28ms
+Found 1225 input files from `content` in 14ms
+Parsing input files using 4 threads
+Parsed 1225 Markdown files in 6s
+Filtered out 0 files in 362μs
+Emitting files
+Emitted 1279 files to `public` in 774ms
+Done processing 1225 files in 7s

@@ -53,3 +53,14 @@ Done processing 1138 files in 6s
 📤 GitHubにpush中...
 
 🌿 完了！ 新規処理: 0件
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 26ms
+Found 1162 input files from `content` in 14ms
+Parsing input files using 4 threads
+Parsed 1162 Markdown files in 5s
+Filtered out 0 files in 301μs
+Emitting files
+Emitted 1211 files to `public` in 788ms
+Done processing 1162 files in 6s

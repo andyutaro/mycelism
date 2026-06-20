@@ -10,3 +10,162 @@ Filtered out 0 files in 727μs
 Emitting files
 Emitted 1211 files to `public` in 755ms
 Done processing 1162 files in 6s
+[main 4c1723c3] auto update
+ 2 files changed, 5 insertions(+), 70 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 54ms
+Found 1225 input files from `content` in 13ms
+Parsing input files using 4 threads
+
+Warning: content/notes_backup_20260620/article/Captionsの内容.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/Seekers.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/rooom@andyの内容.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/めちゃくちゃよかったXのスレッド.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/デジタルガーデン.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/デジタルガーデンの意図.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/ブランデッドポッドキャストの核心.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/ポッドキャストにおけるプロデュース.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/ロングポストについての考え事.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/ロングポストトークテーマ案.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/最近のサカナカイギの編集工程.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/article/研究/研究前提に関するgeminiへの詰め.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260419_ロングポスト_制作.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260420_ロングポスト_生活.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260428_ロングポスト_生活.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260504_ロングポスト_制作.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260508_書き散らし.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260518_ロングポスト_制作.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260526_ロングポスト_制作.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260528_ロングポスト_生活.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/260605_ロングポスト_制作.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/ロングポストテーマ.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/書き散らし260326.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/書き散らし260327.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/書き散らし260329.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/書き散らし260330.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/diary/書き散らし260502.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/260330桃山商事さんたち.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/260509PodcastEXPO.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/260510_PodcastEXPO2日目.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/AIRDOはいいぞ.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/Captionsのアイデア.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/Captionsトークテーマ.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/Seekersの設計思想.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/「もうユニコーンガンダムしか買わへんし」.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/「編集し終わった音源について、音質だけ聞きやすく調整かける編集工程」のことをトリートメントって呼んでしまっている。.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/このデジタルガーデンプロジェクトの名前を「MYCELISM」と呼ぼう.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/この先に見える作品2026.6.6.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/この話題で一緒に喋れる友達がいないシリーズ.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/しぶさわくんFM.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/なぜだか喋り足りない。.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/やっぱりオリジナル番組あってこそだと思う.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/ダダ漏れをアフォードする考え方.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/デモ音源（ポッドキャスト）.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/トマトアンドオニオン.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/フリーランスのバックオフィス.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/ポッドキャスターを「やらせていただいている」について.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/ポッドキャストとAIでふと思ったこと2026.6.6.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/メンバーシップでやること.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/ロングポストと@andyは投資過程の証明.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/ローカルポッドキャストフェストーキョー.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/使用価値ゼロのものの価格は青天井.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/北区のポッドキャストアイデア.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/市ヶ谷フィッシングクラブ.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/新しい自己を作るための学び.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/東京書籍.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/現代的な研究がわからない.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/自己承認ではなく自己寛容なのでは？.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/街で拾った言葉.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/豪華ゲストはいるのに質素ゲストはいない.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/notes_backup_20260620/memo/音声だから伸びないとは言いたくないよね.md isn't yet tracked by git, dates will be inaccurate
+Parsed 1225 Markdown files in 6s
+Filtered out 0 files in 365μs
+Emitting files
+Emitted 1279 files to `public` in 946ms
+Done processing 1225 files in 7s

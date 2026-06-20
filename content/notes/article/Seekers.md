@@ -268,3 +268,7 @@ Seekersがある世界のAndyと、ない世界のAndyで、5年後の収益に�
   
 
 **Andy  /  AtAndy  —  2026**
+
+## 関連メモ
+- [[rooom@andyの内容]]
+- [[260509PodcastEXPO]]

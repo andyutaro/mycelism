@@ -435,3 +435,43 @@ Filtered out 0 files in 401μs
 Emitting files
 Emitted 1214 files to `public` in 705ms
 Done processing 1163 files in 7s
+[main aa5750f9] auto update
+ 4 files changed, 23 insertions(+), 3 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-21...
+    ✅ リンク追加: ['このデジタルガーデンプロジェクトの名前を「MYCELISM」と呼ぼう']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 50ms
+Found 1163 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1163 Markdown files in 6s
+Filtered out 0 files in 368μs
+Emitting files
+Emitted 1214 files to `public` in 751ms
+Done processing 1163 files in 7s

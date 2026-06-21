@@ -28,7 +28,6 @@ import re
 import html as html_module
 import uuid
 import datetime
-import webbrowser
 
 PORT = 8765
 
@@ -59,16 +58,17 @@ def html_to_text(raw_html):
     """
     text = raw_html
 
-    # 画像 -> Markdown画像記法（パスはdiary/images/からの相対参照）
+    # 画像 -> Markdown画像記法（パスはQuartzルートから見た絶対パスに変換）
+    # 例: images/foo.png -> /notes/diary/images/foo.png
     text = re.sub(
         r'<img[^>]*class="embed-image"[^>]*src="([^"]+)"[^>]*>',
-        lambda m: f'\n![]({m.group(1)})\n',
+        lambda m: f'\n![](/notes/diary/{m.group(1)})\n',
         text
     )
-    # PDFリンク
+    # PDFリンク（同様に絶対パスへ変換）
     text = re.sub(
         r'<a[^>]*class="embed-pdf"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
-        lambda m: f'\n[{re.sub("<.*?>", "", m.group(2))}]({m.group(1)})\n',
+        lambda m: f'\n[{re.sub("<.*?>", "", m.group(2))}](/notes/diary/{m.group(1)})\n',
         text,
         flags=re.DOTALL
     )
@@ -101,6 +101,8 @@ def convert_embed_src_to_original(embed_src):
     """埋め込み用URL(iframeのsrc)を、人間が読んで分かる元のURL形式に戻す(完全な逆変換ではなく実用上の近似)"""
     if 'open.spotify.com/embed/episode/' in embed_src:
         return embed_src.replace('/embed/episode/', '/episode/')
+    if 'open.spotify.com/embed/show/' in embed_src:
+        return embed_src.replace('/embed/show/', '/show/')
     if 'embed.podcasts.apple.com' in embed_src:
         return embed_src.replace('embed.podcasts.apple.com', 'podcasts.apple.com')
     if 'youtube.com/embed/' in embed_src:
@@ -181,16 +183,22 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
             self._serve_index()
         elif self.path == '/api/load':
             self._handle_load()
-        elif self.path.startswith('/images/'):
+        elif self.path == '/api/today':
+            self._handle_today()
+        elif self.path.startswith('/images/') or self.path.startswith('/notes/diary/images/'):
             self._serve_image()
         else:
             self.send_error(404)
 
+    def _handle_today(self):
+        # ブラウザ側が「日付が変わったか」を定期的に確認するための軽量API
+        self._send_json({'date': datetime.date.today().isoformat()})
+
     def _serve_image(self):
-        # /images/ファイル名 の形式のみ許可。パストラバーサル(../など)を防ぐため
-        # basenameだけを取り出してIMAGES_DIR内に限定する。
-        requested = self.path[len('/images/'):]
-        filename = os.path.basename(requested)  # ディレクトリ部分を除去
+        # /images/ファイル名 または /notes/diary/images/ファイル名 のどちらの形式でも受け付ける。
+        # (前者はscribe内での再表示用、後者はQuartz本番サイトと同じ絶対パス形式)
+        # パストラバーサル(../など)を防ぐため、basenameだけを取り出してIMAGES_DIR内に限定する。
+        filename = os.path.basename(self.path)
         filepath = os.path.join(IMAGES_DIR, filename)
 
         if not os.path.isfile(filepath):
@@ -294,11 +302,9 @@ def main():
     with socketserver.TCPServer(('127.0.0.1', PORT), ScribeHandler) as httpd:
         url = f'http://localhost:{PORT}'
         print(f'🖋  scribe is running at {url}')
+        print(f'   ブラウザでこのURLを開いてください: {url}')
         print(f'   保存先: {DIARY_DIR}')
-        try:
-            webbrowser.open(url)
-        except Exception:
-            pass
+        print(f'   (再起動のたびに新しいタブが開くのを防ぐため、自動オープンはしていません)')
         httpd.serve_forever()
 
 

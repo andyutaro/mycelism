@@ -168,7 +168,32 @@ async function doSave() {
   }
 }
 
-editor.addEventListener('input', scheduleSave);
+editor.addEventListener('input', () => {
+  scheduleSave();
+  keepCaretCentered();
+});
+
+// カーソル(キャレット)が画面の下半分より下に来たら、画面の中央あたりに来るようスクロールする。
+// ブラウザ標準の「キャレットを表示領域内に収める」スクロールは、キャレットを画面の
+// 一番下ギリギリに置こうとするため、それより手前で能動的にスクロールさせることで
+// 「画面の最下端に張り付く」感覚を避ける。
+function keepCaretCentered() {
+  const sel = window.getSelection();
+  if (!sel.rangeCount) return;
+  const range = sel.getRangeAt(0).cloneRange();
+  range.collapse(true);
+  const rect = range.getClientRects()[0];
+  if (!rect) return;
+
+  const viewportHeight = window.innerHeight;
+  const threshold = viewportHeight * 0.55; // 画面の55%より下に来たらスクロールする
+
+  if (rect.top > threshold) {
+    const wrap = document.getElementById('editor-wrap');
+    const delta = rect.top - (viewportHeight * 0.4); // 画面の40%の高さの位置まで戻す
+    wrap.scrollTop += delta;
+  }
+}
 
 // ページを閉じる/離れる前に即時保存
 window.addEventListener('beforeunload', () => {

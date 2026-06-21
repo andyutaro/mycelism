@@ -11,12 +11,24 @@
             "id": "dae912ec0398de56",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "notes/diary/images/20260621_cb3cf93b.png"
+                "file": "notes/diary/2026-06-21.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "20260621_cb3cf93b"
+              "icon": "lucide-file",
+              "title": "2026-06-21"
             }
           }
         ]
@@ -194,6 +206,7 @@
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
     "notes/diary/images/20260621_7dbc450e.png",
+    "notes/diary/images/20260621_cb3cf93b.png",
     "notes/article/デジタルガーデン.md",
     "notes/article/Seekers.md",
     "private/TODO/やること.md",

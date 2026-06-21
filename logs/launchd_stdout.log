@@ -388,3 +388,32 @@ Filtered out 0 files in 360μs
 Emitting files
 Emitted 1214 files to `public` in 785ms
 Done processing 1163 files in 7s
+[main 25b9e789] auto update
+ 11 files changed, 741 insertions(+), 21 deletions(-)
+ create mode 100644 content/notes/diary/2026-06-21.md
+ create mode 100644 content/notes/diary/images/20260621_7dbc450e.png
+ create mode 100644 content/notes/diary/images/20260621_cb3cf93b.png
+ create mode 100644 scripts/scribe_index.html
+ create mode 100644 scripts/scribe_server.py
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件

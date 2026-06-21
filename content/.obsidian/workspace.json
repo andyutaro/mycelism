@@ -11,24 +11,12 @@
             "id": "dae912ec0398de56",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "notes/article/デジタルガーデン.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "notes/diary/images/20260621_cb3cf93b.png"
               },
-              "icon": "lucide-file",
-              "title": "デジタルガーデン"
+              "icon": "lucide-image",
+              "title": "20260621_cb3cf93b"
             }
           }
         ]
@@ -205,6 +193,8 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "notes/diary/images/20260621_7dbc450e.png",
+    "notes/article/デジタルガーデン.md",
     "notes/article/Seekers.md",
     "private/TODO/やること.md",
     "notes_backup_20260620/article/研究/研究前提に関するgeminiへの詰め.md",
@@ -229,8 +219,6 @@
     "notes_backup_20260620/memo/ダダ漏れをアフォードする考え方.md",
     "notes_backup_20260620/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md",
     "notes_backup_20260620/memo/インディーズは「最後に聞かれるポッドキャスト」を目指そう.md",
-    "notes_backup_20260620/memo/やっぱりオリジナル番組あってこそだと思う.md",
-    "notes_backup_20260620/memo/なぜだか喋り足りない。.md",
     "notes_backup_20260620/article/研究",
     "notes_backup_20260620/memo",
     "notes_backup_20260620/diary",

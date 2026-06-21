@@ -20,7 +20,7 @@ title: Mycelism
 --- 
 ## Updates
 - [[notes/diary/2026-06-21|2026-06-21]] - 2026-06-21
+- [[notes/article/デジタルガーデン|デジタルガーデン]] - 2026-06-21
 - [[notes/memo/この話題で一緒に喋れる友達がいないシリーズ|この話題で一緒に喋れる友達がいないシリーズ]] - 2026-06-20
 - [[notes/article/ブランデッドポッドキャストの核心|ブランデッドポッドキャストの核心]] - 2026-06-20
 - [[notes/article/rooom@andyの内容|rooom@andyの内容]] - 2026-06-20
-- [[notes/article/Seekers|Seekers]] - 2026-06-20

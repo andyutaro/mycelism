@@ -39,3 +39,16 @@ html.mobile-no-scroll {
       "grid-footer" !important;
   }
 }
+
+// 記事本文中の画像が、スクリーンショットなどの実寸サイズのまま
+// 表示されて記事のレイアウトを壊さないように、最大幅と最大高さを制限する。
+// (scribeで貼った画像が、本文の横幅を超えてはみ出る問題への対処)
+article img {
+  max-width: 100%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 6px;
+  object-fit: contain;
+}

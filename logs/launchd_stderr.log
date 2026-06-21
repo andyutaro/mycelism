@@ -5,3 +5,8 @@ To github.com:andyutaro/mycelism.git
    4c1723c3..e8b8191e  main -> main
 To github.com:andyutaro/mycelism.git
    446093e1..89f175c9  main -> main
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

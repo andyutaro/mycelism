@@ -9,8 +9,20 @@
     <title>Mycelism</title>
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
-    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates この話題で一緒に喋れる友達がいないシリーズ -... ]]></description>
-    <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
+    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates 2026-06-21 - 2026-06-21... ]]></description>
+    <pubDate>Sun, 21 Jun 2026 02:39:00 GMT</pubDate>
+  </item><item>
+    <title>デジタルガーデン</title>
+    <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</link>
+    <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</guid>
+    <description><![CDATA[ 僕が編み出したわけでもなく、そこそこ歴史がある概念です。 そこでClaudeに整理してもらいました。 デジタルガーデンとは、従来のブログや SNS とは異なる知識管理・公開の哲学です。 核心的な考え方 情報を「完成品」として発信するのではなく、思考の過程そのものを公開・育てていく場所。庭師が植物を手入れするように、アイデアを継続的に育てていくイメージです。 ブログとの違い ブログ → 時系列、完成した記事を投稿 デジタルガーデン → 非線形、未完成のメモも公開し、相互リンクで育てる 特徴 常に成長中：記事に「完成」はなく、随時更新される 相互リンク：概念同士がつながり、知識グラフを形成 学習の... ]]></description>
+    <pubDate>Sun, 21 Jun 2026 02:39:00 GMT</pubDate>
+  </item><item>
+    <title>2026-06-21</title>
+    <link>https://quartz.jzhao.xyz/notes/diary/2026-06-21</link>
+    <guid>https://quartz.jzhao.xyz/notes/diary/2026-06-21</guid>
+    <description><![CDATA[ 【2026/6/21 ノート】 claudeを使用して僕用のリサーチノートを作った。 僕のインプットは非常に雑多である。ゆえに今はオブシディアンだけでは足りず、以前と変わらずスティッキーズを使ってしまっている。しかしスティッキーズはなにぶん出来ることの幅が狭すぎる。 ゆえに1日分のノートを雑多に書き出して、これをObsidianに統合するという運用がいいのではと思いこれを作るに至った。 試しにスティッキーズたちのスクショ画像を貼ってみる。 うーんどうやら見られないようだ。ここは要改善 次にポッドキャストエピソードのリンクを貼ってみる open.spotify.com/episode/3Yw48... ]]></description>
+    <pubDate>Sun, 21 Jun 2026 02:39:00 GMT</pubDate>
   </item><item>
     <title>Seekers</title>
     <link>https://quartz.jzhao.xyz/notes/article/Seekers</link>
@@ -52,18 +64,6 @@
     <link>https://quartz.jzhao.xyz/notes/diary/%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%9D%E3%82%B9%E3%83%88%E3%83%86%E3%83%BC%E3%83%9E</link>
     <guid>https://quartz.jzhao.xyz/notes/diary/%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%9D%E3%82%B9%E3%83%88%E3%83%86%E3%83%BC%E3%83%9E</guid>
     <description><![CDATA[ ・趣旨：InstagramやXの投稿欄に収まらなかった考えごとを、長く話すポッドキャスト。北海道でポッドキャストを作って暮らすAndyが、制作の思考と生活の背景を週2で更新する。 A面：ポッドキャスト制作トークテーマ案 ビデオポッドキャストの何が違和感なのか、マクルーハン的に考えてみた 音声オンリーで作る理由を改めて言語化する サカナカイギを1年やって見えてきた「即興」の意味 ポッドキャストの編集とは何をしているのか ブランデッドポッドキャストの本質はプロモーションじゃないという話 メンバーシップを始める理由と、自動広告を拒否する理由 Seekersという番組を50万円かけて作ろうとしている話... ]]></description>
-    <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
-  </item><item>
-    <title>「もうユニコーンガンダムしか買わへんし」</title>
-    <link>https://quartz.jzhao.xyz/notes/memo/%E3%80%8C%E3%82%82%E3%81%86%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%B3%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0%E3%81%97%E3%81%8B%E8%B2%B7%E3%82%8F%E3%81%B8%E3%82%93%E3%81%97%E3%80%8D</link>
-    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%80%8C%E3%82%82%E3%81%86%E3%83%A6%E3%83%8B%E3%82%B3%E3%83%BC%E3%83%B3%E3%82%AC%E3%83%B3%E3%83%80%E3%83%A0%E3%81%97%E3%81%8B%E8%B2%B7%E3%82%8F%E3%81%B8%E3%82%93%E3%81%97%E3%80%8D</guid>
-    <description><![CDATA[ 街で拾った言葉 秋葉原で通り過ぎた二人組の、片方がそう言いながら僕とすれ違った。ユニコーンガンダムの何がそんなに彼を惹きつけるのか。 関連メモ 街で拾った言葉 . ]]></description>
-    <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
-  </item><item>
-    <title>この先に見える作品2026.6.6</title>
-    <link>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</link>
-    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</guid>
-    <description><![CDATA[ 僕のWebsite。これはこのデジタルガーデンMycelismの発展盤であり、僕のライフログを取り込み自動で進化しつづける作新としてのWebsiteてまある。DOMMUNE的でもある 僕の制作するポッドキャストや論文、写真、ブログ、書き散らしの日記、あるいはプロダクトにキュレーションしたモノゴト、はたまたそれらをハブとした独特なネットワーク、それらを緩やかに取り込み延々と拡張を続けていく 拡張の先にありうる破綻。あるいは破綻を織り込んだ作品とするか、破綻しない仕組みを作るか。 関連メモ デジタルガーデン . ]]></description>
     <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
   </item>
     </channel>

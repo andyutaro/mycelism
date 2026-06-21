@@ -10,19 +10,25 @@
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
     <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates 2026-06-21 - 2026-06-21... ]]></description>
-    <pubDate>Sun, 21 Jun 2026 06:02:51 GMT</pubDate>
+    <pubDate>Sun, 21 Jun 2026 09:25:09 GMT</pubDate>
   </item><item>
     <title>デジタルガーデン</title>
     <link>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</link>
     <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3</guid>
     <description><![CDATA[ 僕が編み出したわけでもなく、そこそこ歴史がある概念です。 そこでClaudeに整理してもらいました。 デジタルガーデンとは、従来のブログや SNS とは異なる知識管理・公開の哲学です。 核心的な考え方 情報を「完成品」として発信するのではなく、思考の過程そのものを公開・育てていく場所。庭師が植物を手入れするように、アイデアを継続的に育てていくイメージです。 ブログとの違い ブログ → 時系列、完成した記事を投稿 デジタルガーデン → 非線形、未完成のメモも公開し、相互リンクで育てる 特徴 常に成長中：記事に「完成」はなく、随時更新される 相互リンク：概念同士がつながり、知識グラフを形成 学習の... ]]></description>
-    <pubDate>Sun, 21 Jun 2026 06:02:51 GMT</pubDate>
+    <pubDate>Sun, 21 Jun 2026 09:25:09 GMT</pubDate>
   </item><item>
     <title>2026-06-21</title>
     <link>https://quartz.jzhao.xyz/notes/diary/2026-06-21</link>
     <guid>https://quartz.jzhao.xyz/notes/diary/2026-06-21</guid>
     <description><![CDATA[ 【2026/6/21 ノート】 claudeを使用して僕用のリサーチノートを作った。 僕のインプットは非常に雑多である。ゆえに今はオブシディアンだけでは足りず、以前と変わらずスティッキーズを使ってしまっている。しかしスティッキーズはなにぶん出来ることの幅が狭すぎる。 ゆえに1日分のノートを雑多に書き出して、これをObsidianに統合するという運用がいいのではと思いこれを作るに至った。 試しにスティッキーズたちのスクショ画像を貼ってみる。 次にポッドキャストエピソードのリンクを貼ってみる open.spotify.com/episode/3Yw48GwG3XXurfaPxAxOnd これは僕の... ]]></description>
-    <pubDate>Sun, 21 Jun 2026 06:02:51 GMT</pubDate>
+    <pubDate>Sun, 21 Jun 2026 09:25:09 GMT</pubDate>
+  </item><item>
+    <title>この先に見える作品2026.6.6</title>
+    <link>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</link>
+    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</guid>
+    <description><![CDATA[ 僕のWebsite。これはこのデジタルガーデンMycelismの発展盤であり、僕のライフログを取り込み自動で進化しつづける作新としてのWebsiteてまある。DOMMUNE的でもある 僕の制作するポッドキャストや論文、写真、ブログ、書き散らしの日記、あるいはプロダクトにキュレーションしたモノゴト、はたまたそれらをハブとした独特なネットワーク、それらを緩やかに取り込み延々と拡張を続けていく 拡張の先にありうる破綻。あるいは破綻を織り込んだ作品とするか、破綻しない仕組みを作るか。 関連メモ デジタルガーデン 2026-06-21 . ]]></description>
+    <pubDate>Sun, 21 Jun 2026 09:25:09 GMT</pubDate>
   </item><item>
     <title>このデジタルガーデンプロジェクトの名前を「MYCELISM」と呼ぼう</title>
     <link>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D%E3%82%92%E3%80%8CMYCELISM%E3%80%8D%E3%81%A8%E5%91%BC%E3%81%BC%E3%81%86</link>
@@ -58,12 +64,6 @@
     <link>https://quartz.jzhao.xyz/notes/article/%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9</link>
     <guid>https://quartz.jzhao.xyz/notes/article/%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%97%E3%83%AD%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9</guid>
     <description><![CDATA[ ・Madness湯田さんとの打ち合わせの中でこういう言葉が出た ・例えば採用にいいとか言われるけど、ポッドキャストの良いところは企業のビジョン形成を、リスナーも巻き込んだプロセスの中で育成することができることにあるという言葉がでた ・本当は広報やマーケや人事じゃなくて、経営層が、その経営プロセスの中に組み込んでこそ威力を発揮するものである ・例えば忙しい仕事の時間で「これから10年を見据えた、自社の大切にしたい思想について議論を交わしたい。2時間かけて。」と言われた時に、なかなかハイとは言いづらい。トークの内容が抽象的かつ重すぎるし、仕事に活かせる感じもいまいち想像しづらい。しかしトップからす... ]]></description>
-    <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
-  </item><item>
-    <title>260526_ロングポスト_制作</title>
-    <link>https://quartz.jzhao.xyz/notes/diary/260526_%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%9D%E3%82%B9%E3%83%88_%E5%88%B6%E4%BD%9C</link>
-    <guid>https://quartz.jzhao.xyz/notes/diary/260526_%E3%83%AD%E3%83%B3%E3%82%B0%E3%83%9D%E3%82%B9%E3%83%88_%E5%88%B6%E4%BD%9C</guid>
-    <description><![CDATA[ 「こんばんは。ポッドキャスターのAndyです今回は2026年⚪︎月⚪︎日のロングポストですよろしくお願いします。」みたいな感じでいい。 ・明日はサカナカイギ収録のため女川町に行って滞在 ・おたよりのコーナー ・おすすめのコーナー 関連メモ この話題で一緒に喋れる友達がいないシリーズ . ]]></description>
     <pubDate>Sat, 20 Jun 2026 14:23:30 GMT</pubDate>
   </item>
     </channel>

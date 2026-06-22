@@ -11,12 +11,24 @@
             "id": "dae912ec0398de56",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "notes/diary/images/20260621_7dbc450e.png"
+                "file": "notes/diary/2026-06-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-image",
-              "title": "20260621_7dbc450e"
+              "icon": "lucide-file",
+              "title": "2026-06-22"
             }
           }
         ]
@@ -193,9 +205,12 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "notes/article/ポッドキャストにおけるプロデュース.md",
+    "notes/diary/2026-06-22.md",
+    "ミモリラジオ.md",
+    "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",
     "notes/diary/images/20260621_cb3cf93b.png",
-    "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/2026-06-21.md",
     "notes/article/デジタルガーデン.md",
     "notes/article/Seekers.md",
@@ -219,8 +234,6 @@
     "notes_backup_20260620/memo/フリーランスのバックオフィス.md",
     "notes_backup_20260620/memo/トマトアンドオニオン.md",
     "notes_backup_20260620/memo/デモ音源（ポッドキャスト）.md",
-    "notes_backup_20260620/memo/ダダ漏れをアフォードする考え方.md",
-    "notes_backup_20260620/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md",
     "notes_backup_20260620/article/研究",
     "notes_backup_20260620/memo",
     "notes_backup_20260620/diary",

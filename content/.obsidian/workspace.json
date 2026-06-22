@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/diary/2026-06-22.md",
+                "file": "private/TODO/やること.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-22"
+              "title": "やること"
             }
           }
         ]
@@ -205,8 +205,8 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
-    "notes/article/ポッドキャストにおけるプロデュース.md",
     "notes/diary/2026-06-22.md",
+    "notes/article/ポッドキャストにおけるプロデュース.md",
     "ミモリラジオ.md",
     "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",

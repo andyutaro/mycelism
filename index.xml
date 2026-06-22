@@ -10,24 +10,36 @@
     <link>https://quartz.jzhao.xyz/</link>
     <guid>https://quartz.jzhao.xyz/</guid>
     <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates 2026-06-22 - 2026-06-22... ]]></description>
-    <pubDate>Mon, 22 Jun 2026 07:22:34 GMT</pubDate>
-  </item><item>
-    <title>Seekers</title>
-    <link>https://quartz.jzhao.xyz/notes/article/Seekers</link>
-    <guid>https://quartz.jzhao.xyz/notes/article/Seekers</guid>
-    <description><![CDATA[ 個人的に突出するためにやるべきことは下記。要するに「僕が持つ、既存のインタビュー音源やインタビュー映像への不満からスタートする」のが最もいいと思う。 ①予習にリソースを割く ・インタビュー対象の著作を数冊読む ・ ②飲み物を用意する ・スポンサーをつけてアルコールやソフトドリンクを調達する ③収録時間を「無制限」とする ・1日押さえてもらい3時間や4時間などしゃべる ④権威ではなく「喋れる若手」をSeekersの中心とする ・会話のテンポや空気感を重視する ⑤他者に対するネガティブな批判を禁止し、容赦なくカットする ・ここでは心地の良いおしゃべりが聞けるというリスナーの信頼を裏切らない ⑥タイ... ]]></description>
-    <pubDate>Mon, 22 Jun 2026 07:22:34 GMT</pubDate>
+    <pubDate>Mon, 22 Jun 2026 13:17:14 GMT</pubDate>
   </item><item>
     <title>2026-06-22</title>
     <link>https://quartz.jzhao.xyz/notes/diary/2026-06-22</link>
     <guid>https://quartz.jzhao.xyz/notes/diary/2026-06-22</guid>
     <description><![CDATA[ メディアは「出来事を伝える場所」から「自ら何かが起きる場所」への転換を進めている。そこで良質な議論が作られる箱を作り出し、そこから抽出した良質な議論のアウトラインを有料のニュースレターにするのもいいかもね。そこにリハックなどは先行して動いているわけだけど、もっと地味でエンタメに振りすぎないやり方でやりたい。ここにREDEのネットワークとかは相性がいいかも あるいはREDEをベースとした僕のポッドキャストとしてやってもいいかもね 昨夜ベッドに入ってから「俺は今の状況のどこに不満を感じているんだろう」と考えた。北海道の田舎に住んでいるフリーランスとしては十分暮らせるし機材への投資もできるくらいに稼... ]]></description>
-    <pubDate>Mon, 22 Jun 2026 07:22:34 GMT</pubDate>
+    <pubDate>Mon, 22 Jun 2026 13:17:14 GMT</pubDate>
   </item><item>
     <title>Seekersの設計思想</title>
     <link>https://quartz.jzhao.xyz/notes/memo/Seekers%E3%81%AE%E8%A8%AD%E8%A8%88%E6%80%9D%E6%83%B3</link>
     <guid>https://quartz.jzhao.xyz/notes/memo/Seekers%E3%81%AE%E8%A8%AD%E8%A8%88%E6%80%9D%E6%83%B3</guid>
     <description><![CDATA[ ・ハイエンドオーディオコンテンツとしての制作 ・第一に内容の深さ ・第二に対等な語り ・第三に優秀な音質 ・第四に企画の広がり ・ターゲットの明確化が重要になる ・予想されるのはSeekerの孤独問題 ・研究者はアカデミアと在野を問わず孤独 ・経営者もSeekerとして孤独になりやすい ・他のSeekerの話を移動中に聴いていく ・コレジャナイを挙げていく ・ゆる言語学ラジオ：露悪的過ぎる ・コテンラジオ：テーマはもっと広く ・ゴールデンラッシュ：ビジュアル売りしない ・TAKRAMRADIO：インタビューでなく対談 ・低空飛行Podcast：数時間にわたりはなす ・現代のポッドキャストシーン... ]]></description>
+    <pubDate>Mon, 22 Jun 2026 13:17:14 GMT</pubDate>
+  </item><item>
+    <title>インディーズは「最後に聞かれるポッドキャスト」を目指そう</title>
+    <link>https://quartz.jzhao.xyz/notes/memo/%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%E3%81%AF%E3%80%8C%E6%9C%80%E5%BE%8C%E3%81%AB%E8%81%9E%E3%81%8B%E3%82%8C%E3%82%8B%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%80%8D%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%9D%E3%81%86</link>
+    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%82%A4%E3%83%B3%E3%83%87%E3%82%A3%E3%83%BC%E3%82%BA%E3%81%AF%E3%80%8C%E6%9C%80%E5%BE%8C%E3%81%AB%E8%81%9E%E3%81%8B%E3%82%8C%E3%82%8B%E3%83%9D%E3%83%83%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%80%8D%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%9D%E3%81%86</guid>
+    <description><![CDATA[ ラオウかな？でもそう思います。 ポッドキャストというものの存在を知らせてくれる番組と、ポッドキャストの真髄を味わってもらえる番組。 どちらも必要ですが、インディーズは色々な意味で後者をやれる人たちだと思っています。どっちもやれたら最高ですね、これは樋口清典さんやSHIBUさんなどポッドキャスト発な方々もよくされている印象です。良きかな〜〜 関連メモ 2026-06-22 . ]]></description>
+    <pubDate>Mon, 22 Jun 2026 13:17:14 GMT</pubDate>
+  </item><item>
+    <title>音声だから伸びないとは言いたくないよね</title>
+    <link>https://quartz.jzhao.xyz/notes/memo/%E9%9F%B3%E5%A3%B0%E3%81%A0%E3%81%8B%E3%82%89%E4%BC%B8%E3%81%B3%E3%81%AA%E3%81%84%E3%81%A8%E3%81%AF%E8%A8%80%E3%81%84%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD</link>
+    <guid>https://quartz.jzhao.xyz/notes/memo/%E9%9F%B3%E5%A3%B0%E3%81%A0%E3%81%8B%E3%82%89%E4%BC%B8%E3%81%B3%E3%81%AA%E3%81%84%E3%81%A8%E3%81%AF%E8%A8%80%E3%81%84%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%82%88%E3%81%AD</guid>
+    <description><![CDATA[ 音声だからこそ伸びる、をやってこそだよ そんだけのものを全力でやってこうよ〜〜 関連メモ Seekersの設計思想 . ]]></description>
+    <pubDate>Mon, 22 Jun 2026 13:17:14 GMT</pubDate>
+  </item><item>
+    <title>Seekers</title>
+    <link>https://quartz.jzhao.xyz/notes/article/Seekers</link>
+    <guid>https://quartz.jzhao.xyz/notes/article/Seekers</guid>
+    <description><![CDATA[ 個人的に突出するためにやるべきことは下記。要するに「僕が持つ、既存のインタビュー音源やインタビュー映像への不満からスタートする」のが最もいいと思う。 ①予習にリソースを割く ・インタビュー対象の著作を数冊読む ・ ②飲み物を用意する ・スポンサーをつけてアルコールやソフトドリンクを調達する ③収録時間を「無制限」とする ・1日押さえてもらい3時間や4時間などしゃべる ④権威ではなく「喋れる若手」をSeekersの中心とする ・会話のテンポや空気感を重視する ⑤他者に対するネガティブな批判を禁止し、容赦なくカットする ・ここでは心地の良いおしゃべりが聞けるというリスナーの信頼を裏切らない ⑥タイ... ]]></description>
     <pubDate>Mon, 22 Jun 2026 07:22:34 GMT</pubDate>
   </item><item>
     <title>やっぱりオリジナル番組あってこそだと思う</title>
@@ -52,18 +64,6 @@
     <link>https://quartz.jzhao.xyz/notes/diary/2026-06-21</link>
     <guid>https://quartz.jzhao.xyz/notes/diary/2026-06-21</guid>
     <description><![CDATA[ 【2026/6/21 ノート】 claudeを使用して僕用のリサーチノートを作った。 僕のインプットは非常に雑多である。ゆえに今はオブシディアンだけでは足りず、以前と変わらずスティッキーズを使ってしまっている。しかしスティッキーズはなにぶん出来ることの幅が狭すぎる。 ゆえに1日分のノートを雑多に書き出して、これをObsidianに統合するという運用がいいのではと思いこれを作るに至った。 試しにスティッキーズたちのスクショ画像を貼ってみる。 次にポッドキャストエピソードのリンクを貼ってみる open.spotify.com/episode/3Yw48GwG3XXurfaPxAxOnd これは僕の... ]]></description>
-    <pubDate>Sun, 21 Jun 2026 10:27:01 GMT</pubDate>
-  </item><item>
-    <title>このデジタルガーデンプロジェクトの名前を「MYCELISM」と呼ぼう</title>
-    <link>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D%E3%82%92%E3%80%8CMYCELISM%E3%80%8D%E3%81%A8%E5%91%BC%E3%81%BC%E3%81%86</link>
-    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E5%90%8D%E5%89%8D%E3%82%92%E3%80%8CMYCELISM%E3%80%8D%E3%81%A8%E5%91%BC%E3%81%BC%E3%81%86</guid>
-    <description><![CDATA[ 関連メモ 2026-06-21 デジタルガーデン この先に見える作品2026.6.6 . ]]></description>
-    <pubDate>Sun, 21 Jun 2026 10:27:01 GMT</pubDate>
-  </item><item>
-    <title>この先に見える作品2026.6.6</title>
-    <link>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</link>
-    <guid>https://quartz.jzhao.xyz/notes/memo/%E3%81%93%E3%81%AE%E5%85%88%E3%81%AB%E8%A6%8B%E3%81%88%E3%82%8B%E4%BD%9C%E5%93%812026.6.6</guid>
-    <description><![CDATA[ 僕のWebsite。これはこのデジタルガーデンMycelismの発展盤であり、僕のライフログを取り込み自動で進化しつづける作新としてのWebsiteてまある。DOMMUNE的でもある 僕の制作するポッドキャストや論文、写真、ブログ、書き散らしの日記、あるいはプロダクトにキュレーションしたモノゴト、はたまたそれらをハブとした独特なネットワーク、それらを緩やかに取り込み延々と拡張を続けていく 拡張の先にありうる破綻。あるいは破綻を織り込んだ作品とするか、破綻しない仕組みを作るか。 関連メモ デジタルガーデン 2026-06-21 . ]]></description>
     <pubDate>Sun, 21 Jun 2026 10:27:01 GMT</pubDate>
   </item>
     </channel>

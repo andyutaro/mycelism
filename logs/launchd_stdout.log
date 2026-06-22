@@ -1010,3 +1010,45 @@ Filtered out 0 files in 368μs
 Emitting files
 Emitted 1217 files to `public` in 729ms
 Done processing 1165 files in 8s
+[main 91566721] auto update
+ 8 files changed, 81 insertions(+), 10 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-22...
+    ✅ リンク追加: ['ポッドキャストにおけるプロデュース', 'インディーズは「最後に聞かれるポッドキャスト」を目指そう']
+  解析中: Seekersの設計思想...
+    ✅ リンク追加: ['音声だから伸びないとは言いたくないよね']
+
+🌿 完了: 2件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 45ms
+Found 1165 input files from `content` in 13ms
+Parsing input files using 4 threads
+Parsed 1165 Markdown files in 7s
+Filtered out 0 files in 383μs
+Emitting files
+Emitted 1217 files to `public` in 724ms
+Done processing 1165 files in 8s

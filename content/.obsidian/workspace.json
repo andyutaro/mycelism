@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "notes/diary/2026-06-22.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "2026-06-22"
             }
           }
         ]
@@ -205,6 +205,7 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "private/TODO/やること.md",
     "notes/diary/2026-06-22.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "ミモリラジオ.md",
@@ -214,7 +215,6 @@
     "notes/diary/2026-06-21.md",
     "notes/article/デジタルガーデン.md",
     "notes/article/Seekers.md",
-    "private/TODO/やること.md",
     "notes_backup_20260620/article/研究/研究前提に関するgeminiへの詰め.md",
     "notes_backup_20260620/memo/音声だから伸びないとは言いたくないよね.md",
     "notes_backup_20260620/memo/豪華ゲストはいるのに質素ゲストはいない.md",

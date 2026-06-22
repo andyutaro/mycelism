@@ -838,3 +838,44 @@ Filtered out 0 files in 659μs
 Emitting files
 Emitted 1216 files to `public` in 794ms
 Done processing 1164 files in 8s
+[main ae4fe1f8] auto update
+ 5 files changed, 57 insertions(+), 2 deletions(-)
+ create mode 100644 content/notes/diary/2026-06-22.md
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-22...
+    ✅ リンク追加: ['ポッドキャストにおけるプロデュース']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 55ms
+Found 1164 input files from `content` in 15ms
+Parsing input files using 4 threads
+Parsed 1164 Markdown files in 7s
+Filtered out 0 files in 366μs
+Emitting files
+Emitted 1216 files to `public` in 830ms
+Done processing 1164 files in 8s

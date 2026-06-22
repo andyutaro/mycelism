@@ -1076,3 +1076,23 @@ Done processing 1165 files in 8s
 📤 GitHubにpush中...
 
 🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-22...
+    ✅ リンク追加: ['ポッドキャストにおけるプロデュース', 'やっぱりオリジナル番組あってこそだと思う']
+  解析中: インディーズは「最後に聞かれるポッドキャスト」を目指そう...
+    → 関連なし
+  解析中: 音声だから伸びないとは言いたくないよね...
+    → 関連なし
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 62ms
+Found 1165 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1165 Markdown files in 8s
+Filtered out 0 files in 369μs
+Emitting files
+Emitted 1217 files to `public` in 750ms
+Done processing 1165 files in 8s

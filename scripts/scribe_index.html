@@ -76,6 +76,14 @@
     max-width: 100%;
     border-radius: 6px;
     margin: 14px 0;
+    cursor: pointer;
+  }
+
+  /* 削除可能な埋め込み要素(画像/PDF/ポッドキャストカード)がクリックで選択された状態 */
+  .embed-selected {
+    outline: 2px solid #7fb0e0;
+    outline-offset: 3px;
+    border-radius: 6px;
   }
 
   /* PDF */
@@ -91,6 +99,7 @@
     text-decoration: none;
     width: fit-content;
     font-size: 14px;
+    cursor: pointer;
   }
 
   /* ポッドキャスト埋め込みカード */
@@ -98,6 +107,7 @@
     display: block;
     margin: 14px 0;
     border-radius: 10px;
+    cursor: pointer;
     overflow: hidden;
     background: rgba(255,255,255,0.03);
   }
@@ -151,12 +161,35 @@ function scheduleSave() {
   saveTimer = setTimeout(doSave, SAVE_DELAY);
 }
 
-async function doSave() {
+// 保存時、表示用の選択状態クラス(embed-selected)が混ざらないよう、
+// クローンを作ってそこから除去した上でHTML文字列を取り出す。
+// (編集中の画面そのものの選択表示には影響を与えない)
+function getSaveableHtml() {
+  const clone = editor.cloneNode(true);
+  clone.querySelectorAll('.embed-selected').forEach(el => el.classList.remove('embed-selected'));
+  return clone.innerHTML;
+}
+
+async function doSave(forceDate) {
+  // forceDateが指定されていない通常の自動保存の場合のみ、保存直前に
+  // 「ブラウザが認識している日付」と「サーバーの現在日付」を比較する。
+  // 食い違っていたら、この内容は「今日」のものではないので保存せずリロードする
+  // (実際の保存はcheckDateChange側がforceDate付きで別途行う)。
+  if (!forceDate && openedDate !== null) {
+    const current = await fetchServerDate();
+    if (current && current !== openedDate) {
+      location.reload();
+      return;
+    }
+  }
+
   try {
+    const body = { html: getSaveableHtml() };
+    if (forceDate) body.target_date = forceDate;
     const res = await fetch('/api/save', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ html: editor.innerHTML })
+      body: JSON.stringify(body)
     });
     if (res.ok) {
       showStatus('保存済み');
@@ -196,17 +229,21 @@ function keepCaretCentered() {
 }
 
 // ページを閉じる/離れる前に即時保存
+// openedDateが分かっていれば、必ずその日付を明示して保存する
+// (「今ブラウザが思っている日」に書くべきで、サーバー側の現在日付に依存させない)
 window.addEventListener('beforeunload', () => {
   if (saveTimer) {
     clearTimeout(saveTimer);
-    navigator.sendBeacon && navigator.sendBeacon('/api/save', JSON.stringify({ html: editor.innerHTML }));
+    const body = { html: getSaveableHtml() };
+    if (openedDate) body.target_date = openedDate;
+    navigator.sendBeacon && navigator.sendBeacon('/api/save', JSON.stringify(body));
   }
 });
 
 // 起動時に今日の分を読み込む
 async function loadToday() {
   try {
-    const res = await fetch('/api/load');
+    const res = await fetch('/api/load', { cache: 'no-store' });
     const data = await res.json();
     if (data.html) {
       editor.innerHTML = data.html;
@@ -372,6 +409,109 @@ async function handleFile(file) {
 }
 
 loadToday();
+
+// ---- 埋め込み要素(画像・PDF・ポッドキャストカード)の選択と削除 ----
+// これらはcontenteditable="false"の「島」としてエディタ内に存在するため、
+// 通常のテキストのようにクリック選択やBackspace削除ができない。
+// そのため、クリックで選択状態にし、その状態でBackspace/Deleteキーが押されたら
+// 要素そのものをDOMから削除する、という専用の操作を用意する。
+let selectedEmbed = null;
+
+function selectEmbed(el) {
+  if (selectedEmbed && selectedEmbed !== el) {
+    selectedEmbed.classList.remove('embed-selected');
+  }
+  selectedEmbed = el;
+  el.classList.add('embed-selected');
+}
+
+function clearEmbedSelection() {
+  if (selectedEmbed) {
+    selectedEmbed.classList.remove('embed-selected');
+    selectedEmbed = null;
+  }
+}
+
+editor.addEventListener('click', (e) => {
+  const embed = e.target.closest('.embed-image, .embed-pdf, .embed-podcast');
+  if (embed) {
+    // PDFリンクはシングルクリックでは開かせず、選択だけにする(ダブルクリックで開く)
+    if (embed.classList.contains('embed-pdf')) {
+      e.preventDefault();
+    }
+    selectEmbed(embed);
+  } else {
+    clearEmbedSelection();
+  }
+});
+
+// PDFはダブルクリックで開く
+editor.addEventListener('dblclick', (e) => {
+  const pdfLink = e.target.closest('.embed-pdf');
+  if (pdfLink) {
+    window.open(pdfLink.href, '_blank');
+  }
+});
+
+editor.addEventListener('keydown', (e) => {
+  if (selectedEmbed && (e.key === 'Backspace' || e.key === 'Delete')) {
+    e.preventDefault();
+    selectedEmbed.remove();
+    selectedEmbed = null;
+    scheduleSave();
+  }
+});
+
+// エディタの外をクリックしたら選択解除
+document.addEventListener('click', (e) => {
+  if (!editor.contains(e.target)) {
+    clearEmbedSelection();
+  }
+});
+
+// ---- 日付をまたいだ場合の自動切り替え ----
+// このタブを開いたままにしていても、日付が変わった瞬間に気づけるよう、
+// 1分ごとにサーバーへ「今日の日付」を問い合わせる。変わっていたら、
+// 編集中の内容を保存してから自動的にページをリロードし、まっさらな新しい日に切り替える。
+let openedDate = null;
+
+async function fetchServerDate() {
+  try {
+    const res = await fetch('/api/today', { cache: 'no-store' });
+    const data = await res.json();
+    return data.date;
+  } catch (e) {
+    return null;
+  }
+}
+
+async function checkDateChange() {
+  const current = await fetchServerDate();
+  if (!current) return;
+  if (openedDate === null) {
+    openedDate = current;
+    return;
+  }
+  if (current !== openedDate) {
+    // 日付が変わった: 直前の内容は「古い日(openedDate)」のものなので、
+    // 必ずその古い日付を明示して保存する(今日のファイルに書いてはいけない)。
+    const previousDate = openedDate;
+    clearTimeout(saveTimer);
+    await doSave(previousDate);
+    location.reload();
+  }
+}
+
+setInterval(checkDateChange, 60 * 1000); // 1分ごとに確認
+checkDateChange(); // 起動時に一度、現在の日付を記録しておく
+
+// Macのスリープ復帰やタブの再アクティブ化を検知し、即座に日付をチェックする。
+// setIntervalはスリープ中は実行されないため、復帰した瞬間に1分待たず確認する。
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    checkDateChange();
+  }
+});
 </script>
 </body>
 </html>

@@ -60,29 +60,33 @@ def html_to_text(raw_html):
 
     # 画像 -> Markdown画像記法（パスはQuartzルートから見た絶対パスに変換）
     # 例: images/foo.png -> /notes/diary/images/foo.png
+    # class属性は "embed-image" 単体とは限らず、選択状態などで他のクラスと併記される
+    # 場合もあるため、クラス名を含むかどうかで判定する(完全一致にしない)。
     text = re.sub(
-        r'<img[^>]*class="embed-image"[^>]*src="([^"]+)"[^>]*>',
+        r'<img[^>]*class="[^"]*embed-image[^"]*"[^>]*src="([^"]+)"[^>]*>',
         lambda m: f'\n![](/notes/diary/{m.group(1)})\n',
         text
     )
     # PDFリンク（同様に絶対パスへ変換）
     text = re.sub(
-        r'<a[^>]*class="embed-pdf"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+        r'<a[^>]*class="[^"]*embed-pdf[^"]*"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
         lambda m: f'\n[{re.sub("<.*?>", "", m.group(2))}](/notes/diary/{m.group(1)})\n',
         text,
         flags=re.DOTALL
     )
     # ポッドキャスト埋め込み(iframe) -> 元のURLを復元できないため、iframeのsrcをそのままリンクとして残す
     text = re.sub(
-        r'<div[^>]*class="embed-podcast"[^>]*>\s*<iframe[^>]*src="([^"]+)"[^>]*>.*?</iframe>\s*</div>',
+        r'<div[^>]*class="[^"]*embed-podcast[^"]*"[^>]*>\s*<iframe[^>]*src="([^"]+)"[^>]*>.*?</iframe>\s*</div>',
         lambda m: f'\n{convert_embed_src_to_original(m.group(1))}\n',
         text,
         flags=re.DOTALL
     )
 
     # 改行系タグをテキストの改行に変換
-    text = re.sub(r'<br\s*/?>', '\n', text)
-    text = re.sub(r'</div>', '\n', text)
+    # Markdownでは単一の改行は無視され同じ段落として扱われてしまうため、
+    # 見た目の行区切りを保つには「空行」(2つの改行)として保存する必要がある。
+    text = re.sub(r'<br\s*/?>', '\n\n', text)
+    text = re.sub(r'</div>', '\n\n', text)
     text = re.sub(r'<div[^>]*>', '', text)
 
     # 残った全てのHTMLタグを除去
@@ -175,6 +179,8 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header('Content-Type', 'application/json; charset=utf-8')
         self.send_header('Content-Length', str(len(body)))
+        # /api/load, /api/today は常に最新の状態を返す必要があるため、キャッシュを禁止する
+        self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
         self.end_headers()
         self.wfile.write(body)
 
@@ -257,8 +263,23 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
             self._send_json({'ok': False}, status=400)
             return
 
+        # 通常は「今日」のファイルに保存する。ただし、日付をまたいだ直後など
+        # 「この内容は元々別の日に書かれたものだ」と分かっている場合は、
+        # クライアント側から target_date (YYYY-MM-DD) を明示的に指定できる。
+        # これにより、日付が変わった後の内容を誤って新しい日のファイルに
+        # 書き込んでしまう事故を防ぐ。
+        target_date = data.get('target_date')
+        if target_date:
+            try:
+                datetime.date.fromisoformat(target_date)  # 形式の妥当性チェック
+                save_path = os.path.join(DIARY_DIR, f'{target_date}.md')
+            except ValueError:
+                save_path = today_path()
+        else:
+            save_path = today_path()
+
         text = html_to_text(data.get('html', ''))
-        with open(today_path(), 'w', encoding='utf-8') as f:
+        with open(save_path, 'w', encoding='utf-8') as f:
             f.write(text)
         self._send_json({'ok': True})
 

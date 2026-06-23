@@ -68,3 +68,30 @@ To github.com:andyutaro/mycelism.git
 warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
 To github.com:andyutaro/mycelism.git
    8f40fa2d..1ff91258  main -> main
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   1ff91258..0cca0d96  main -> main
+Traceback (most recent call last):
+  File "/Users/andy/quartz/scripts/run.py", line 139, in <module>
+    main()
+  File "/Users/andy/quartz/scripts/run.py", line 19, in main
+    new_episodes = fetch_new_episodes(show)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andy/quartz/scripts/fetcher.py", line 54, in fetch_new_episodes
+    feed = feedparser.parse(show['rss_url'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andy/quartz/venv/lib/python3.11/site-packages/feedparser/api.py", line 216, in parse
+    data = _open_resource(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andy/quartz/venv/lib/python3.11/site-packages/feedparser/api.py", line 115, in _open_resource
+    return http.get(url_file_stream_or_string, etag, modified, agent, referrer, handlers, request_headers, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/andy/quartz/venv/lib/python3.11/site-packages/feedparser/http.py", line 172, in get
+    data = f.read()
+           ^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 494, in read
+    s = self._safe_read(self.length)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 648, in _safe_read
+    raise IncompleteRead(data, amt - len(data))
+http.client.IncompleteRead: IncompleteRead(12339 bytes read, 138247 more expected)

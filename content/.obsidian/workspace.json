@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "notes/diary/2026-06-23.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "2026-06-23"
             }
           }
         ]
@@ -205,14 +205,14 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
-    "notes/diary/2026-06-22.md",
+    "notes/diary/2026-06-21.md",
     "private/TODO/やること.md",
+    "notes/diary/2026-06-22.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "ミモリラジオ.md",
     "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",
     "notes/diary/images/20260621_cb3cf93b.png",
-    "notes/diary/2026-06-21.md",
     "notes/article/デジタルガーデン.md",
     "notes/article/Seekers.md",
     "notes_backup_20260620/article/研究/研究前提に関するgeminiへの詰め.md",

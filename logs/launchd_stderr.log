@@ -98,3 +98,6 @@ http.client.IncompleteRead: IncompleteRead(12339 bytes read, 138247 more expecte
 warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
 To github.com:andyutaro/mycelism.git
    0cca0d96..f6c009fa  main -> main
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   f6c009fa..2df55ca6  main -> main

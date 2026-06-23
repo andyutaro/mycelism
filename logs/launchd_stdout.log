@@ -1313,3 +1313,45 @@ Filtered out 0 files in 747μs
 Emitting files
 Emitted 1218 files to `public` in 859ms
 Done processing 1166 files in 9s
+[main f89a5aa3] auto update
+ 7 files changed, 109 insertions(+), 9 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-23...
+    ✅ リンク追加: ['ロングポストと@andyは投資過程の証明']
+  解析中: ポッドキャストとAIでふと思ったこと2026.6.6...
+    ✅ リンク追加: ['この先に見える作品2026.6.6']
+
+🌿 完了: 2件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 58ms
+Found 1166 input files from `content` in 19ms
+Parsing input files using 4 threads
+Parsed 1166 Markdown files in 9s
+Filtered out 0 files in 483μs
+Emitting files
+Emitted 1218 files to `public` in 910ms
+Done processing 1166 files in 10s

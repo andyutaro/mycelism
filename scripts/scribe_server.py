@@ -62,35 +62,64 @@ def html_to_text(raw_html):
     # 例: images/foo.png -> /notes/diary/images/foo.png
     # class属性は "embed-image" 単体とは限らず、選択状態などで他のクラスと併記される
     # 場合もあるため、クラス名を含むかどうかで判定する(完全一致にしない)。
+    # 前後に改行は付与しない(改行の管理は後続のdiv構造解析に一本化するため)。
     text = re.sub(
         r'<img[^>]*class="[^"]*embed-image[^"]*"[^>]*src="([^"]+)"[^>]*>',
-        lambda m: f'\n![](/notes/diary/{m.group(1)})\n',
+        lambda m: f'![](/notes/diary/{m.group(1)})',
         text
     )
     # PDFリンク（同様に絶対パスへ変換）
     text = re.sub(
         r'<a[^>]*class="[^"]*embed-pdf[^"]*"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
-        lambda m: f'\n[{re.sub("<.*?>", "", m.group(2))}](/notes/diary/{m.group(1)})\n',
+        lambda m: f'[{re.sub("<.*?>", "", m.group(2))}](/notes/diary/{m.group(1)})',
         text,
         flags=re.DOTALL
     )
     # ポッドキャスト埋め込み(iframe) -> 元のURLを復元できないため、iframeのsrcをそのままリンクとして残す
     text = re.sub(
         r'<div[^>]*class="[^"]*embed-podcast[^"]*"[^>]*>\s*<iframe[^>]*src="([^"]+)"[^>]*>.*?</iframe>\s*</div>',
-        lambda m: f'\n{convert_embed_src_to_original(m.group(1))}\n',
+        lambda m: convert_embed_src_to_original(m.group(1)),
         text,
         flags=re.DOTALL
     )
 
-    # 改行系タグをテキストの改行に変換
-    # Markdownでは単一の改行は無視され同じ段落として扱われてしまうため、
-    # 見た目の行区切りを保つには「空行」(2つの改行)として保存する必要がある。
-    # ブラウザは複数行のプレーンテキストをペーストした際、各行を<div>で囲むことが多い
-    # (例: <div>1行目</div><div>2行目</div>)。このとき開始タグの前にも改行を入れないと、
-    # 直前のテキストと次の行がくっついてしまうため、開始・終了タグの両方を改行として扱う。
-    text = re.sub(r'<br\s*/?>', '\n\n', text)
-    text = re.sub(r'</div>', '\n\n', text)
-    text = re.sub(r'<div[^>]*>', '\n\n', text)
+    # 改行系タグをテキストの改行に変換する。
+    #
+    # ブラウザのcontenteditableでは、Enterキーを押すたびに新しい<div>が
+    # 作られる。つまり「1個の<div>」が「1行」に対応する。空行を作りたい場合、
+    # その行のdivは中身が空(<br>のみ、または完全に空)になる。
+    # ここでは正規表現の繰り返し書き換えによる数え上げの重複を避けるため、
+    # HTMLをdivの境界で分割し、各行を素直に\nで連結し直す。
+    #
+    # 例: <div>1行目</div><div><br></div><div>3行目</div>
+    #   -> ["1行目", "", "3行目"] -> "1行目\n\n3行目" (空行1つ分の\n\nが入る)
+    div_pattern = re.compile(r'<div[^>]*>(.*?)</div>', re.DOTALL)
+    divs = div_pattern.findall(text)
+
+    if divs:
+        # 最初のdivより前にあるテキスト(1行目。まだdivで囲まれていない場合がある)
+        first_div_start = text.find('<div')
+        prefix = text[:first_div_start] if first_div_start != -1 else ''
+
+        lines = [prefix] if prefix.strip() or prefix == '' else []
+        for d in divs:
+            # <br>だけ、または完全に空のdivは「空行」を表す
+            stripped = re.sub(r'<br\s*/?>', '', d).strip()
+            lines.append('' if stripped == '' and ('<br' in d or d.strip() == '') else d)
+        # 行と行の間は最低でも2個の改行(Markdown上で確実に改行・段落として
+        # 認識されるための下限)を保証する。Enterを多く押して作った、
+        # より大きい余白(空行が複数続く場合)は、その分さらに増やして反映する。
+        text = ''
+        for i, line in enumerate(lines):
+            if i == 0:
+                text = line
+            elif line == '':
+                text += '\n'  # 空行1つにつき改行を1個追加(下限の2個に上乗せ)
+            else:
+                text += '\n\n' + line
+    else:
+        # divが存在しない(単純な<br>だけの場合)
+        text = re.sub(r'<br\s*/?>', '\n\n', text)
 
     # 残った全てのHTMLタグを除去
     text = re.sub(r'<[^>]+>', '', text)
@@ -98,8 +127,9 @@ def html_to_text(raw_html):
     # HTMLエンティティをデコード(&amp; &lt; など)
     text = html_module.unescape(text)
 
-    # 3つ以上連続する改行は2つに正規化(見た目の余白は保ちつつ、肥大化を防ぐ)
-    text = re.sub(r'\n{3,}', '\n\n', text)
+    # 改行が無限に肥大化することだけを防ぐための上限(Enterを10回以上連続で
+    # 押すような極端なケースのみ制限し、通常使う2-4回程度の改行は保持する)。
+    text = re.sub(r'\n{12,}', '\n' * 11, text)
 
     return text.strip() + '\n'
 

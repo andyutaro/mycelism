@@ -1421,3 +1421,19 @@ Done processing 1166 files in 9s
 📤 GitHubにpush中...
 
 🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-23...
+    ✅ リンク追加: ['ロングポストと@andyは投資過程の証明', 'オルタナティブ移動手段としてのウォーキングとポッドキャスト']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 57ms
+Found 1166 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1166 Markdown files in 8s
+Filtered out 0 files in 348μs
+Emitting files
+Emitted 1218 files to `public` in 749ms
+Done processing 1166 files in 9s

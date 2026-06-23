@@ -52,3 +52,9 @@ article img {
   border-radius: 6px;
   object-fit: contain;
 }
+
+// 記事本文中の段落同士の間に、scribeで見ているときの空白行に近い
+// 見た目の余白(おおよそ1行分)を設ける。
+article p {
+  margin-bottom: 2rem;
+}

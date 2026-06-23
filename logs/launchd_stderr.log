@@ -95,3 +95,6 @@ Traceback (most recent call last):
   File "/opt/homebrew/Cellar/python@3.11/3.11.15/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 648, in _safe_read
     raise IncompleteRead(data, amt - len(data))
 http.client.IncompleteRead: IncompleteRead(12339 bytes read, 138247 more expected)
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   0cca0d96..f6c009fa  main -> main

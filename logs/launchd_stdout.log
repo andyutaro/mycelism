@@ -1978,3 +1978,57 @@ Filtered out 0 files in 403μs
 Emitting files
 Emitted 1226 files to `public` in 753ms
 Done processing 1173 files in 10s
+[main c64cef5d] auto update
+ 13 files changed, 292 insertions(+), 11 deletions(-)
+ create mode 100644 "content/concepts/\343\202\244\343\203\257\343\202\267\345\256\232\347\275\256\347\266\262.md"
+ create mode 100644 "content/concepts/\343\202\255\343\202\277\343\203\237\343\202\272\343\202\257\343\203\251\343\202\262.md"
+ create mode 100644 "content/concepts/\345\256\232\347\275\256\347\266\262\346\274\201.md"
+ create mode 100644 "content/concepts/\346\235\261\345\214\227\343\201\256\346\265\267.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-06-24-\343\202\252\343\203\263\343\202\267\343\203\274\343\202\272\343\203\263\360\237\220\237\343\202\244\343\203\257\343\202\267\345\256\232\347\275\256\347\266\2622026\351\226\213\345\271\225\357\274\201\346\235\261\345\214\227\343\201\256\346\265\267\343\201\257\343\201\251\343\201\206\357\274\237.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: オンシーズン🐟イワシ定置網2026開幕！東北の海はどう？...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-24...
+    ✅ リンク追加: ['2026-06-23', 'ダダ漏れをアフォードする考え方']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 60ms
+Found 1173 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1173 Markdown files in 9s
+Filtered out 0 files in 391μs
+Emitting files
+Emitted 1226 files to `public` in 755ms
+Done processing 1173 files in 10s

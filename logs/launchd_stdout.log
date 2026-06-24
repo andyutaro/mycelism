@@ -1563,3 +1563,45 @@ Filtered out 0 files in 359μs
 Emitting files
 Emitted 1220 files to `public` in 748ms
 Done processing 1168 files in 9s
+[main 71cc7735] auto update
+ 9 files changed, 154 insertions(+), 13 deletions(-)
+ create mode 100644 "content/AI\343\201\257\345\217\244\343\201\215\350\211\257\343\201\215\343\203\241\343\203\207\343\202\243\343\202\242\343\202\242\343\203\274\343\203\210\343\202\222\346\256\272\343\201\231\343\201\256\343\201\213\357\274\237.md"
+ create mode 100644 content/notes/diary/2026-06-24.md
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-24...
+    ✅ リンク追加: ['この先に見える作品2026.6.6']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 65ms
+Found 1168 input files from `content` in 13ms
+Parsing input files using 4 threads
+Parsed 1168 Markdown files in 9s
+Filtered out 0 files in 387μs
+Emitting files
+Emitted 1221 files to `public` in 782ms
+Done processing 1168 files in 9s

@@ -2270,3 +2270,48 @@ Filtered out 0 files in 459μs
 Emitting files
 Emitted 1227 files to `public` in 837ms
 Done processing 1174 files in 11s
+[main 3a00d58d] auto update
+ 9 files changed, 84 insertions(+), 5 deletions(-)
+ create mode 100644 content/notes/diary/2026-06-25.md
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: ロングポストについての考え事...
+    → 関連なし
+  解析中: 2026-06-25...
+    ✅ リンク追加: ['ロングポストについての考え事']
+  解析中: メンバーシップでやること...
+    → 関連なし
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 55ms
+Found 1174 input files from `content` in 19ms
+Parsing input files using 4 threads
+Parsed 1174 Markdown files in 19s
+Filtered out 0 files in 795μs
+Emitting files
+Emitted 1227 files to `public` in 1s
+Done processing 1174 files in 21s

@@ -33,8 +33,6 @@ C面：ゲストや他の人とのトークの会
 ・一人喋りを基調としつつ、ゲスト回でも「ポッドキャスト」そして「生活」について喋る
 　▷生活というワードチョイスは、ジェーン・スーとかぶる。他の案を考えてみると、暮らしとポッドキャスト、ポッドキャストと暮らし、ポッドキャストと日々、日常、ケ、など
 
-
-
 テーマ：ポッドキャストと生活
 「Captions-ポッドキャストと生活」
 「ポッドキャストと生活」
@@ -71,8 +69,8 @@ A面:
 
 **③ 後半「ポスト」
 
-
 ---
+
 【これはちょっとボツ気味で行く】
 記号で分類されたコーナー——
 
@@ -96,7 +94,7 @@ A面:
 
 ---
 
-### rooomとの住み分け
+### [[rooom@andyの内容]]との住み分け
 
 | Captions    | rooom        |
 | ----------- | ------------ |
@@ -104,12 +102,12 @@ A面:
 | 公開・新規リスナー向け | 限定・メンバー向け    |
 | 完成品         | 現場           |
 
+https://open.spotify.com/episode/33lESqE6xmVpZ8RtZ8tOxj?si=5H2N3E0MTv2EIDfhO7Yubw&context=spotify%3Ashow%3A4lrj5PkQvi19qfvUSAbYJJ
 
-https://open.spotify.com/episode/33lESqE6xmVpZ8RtZ8tOxj?si=5H2N3E0MTv2EIDfhO7Yubw&context=spotify%3Ashow%3A4lrj5PkQvi19qfvUSAbYJJ 
+ 
 
 何をかっこいいとするのかという基軸にのっとって作るべき
 ・喋ってる時が、漫画家で喋ってない時は編集者みたいなもの
-
 
 ---
 

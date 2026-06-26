@@ -22,3 +22,4 @@
 
 ## 関連メモ
 - [[Seekers]]
+- [[260509PodcastEXPO]]

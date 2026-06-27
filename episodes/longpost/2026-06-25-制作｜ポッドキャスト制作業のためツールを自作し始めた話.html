@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>制作｜ポッドキャスト制作業のためツールを自作し始めた話</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Mycelism"/><meta property="og:title" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話"/><meta name="twitter:description" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話 「自分の作業を他人に理解してもらいにくい」——そんな問題意識から、AIを使ったメモアプリ「scribe」と統合研究環境の構想が動き出した。制作の裏側と思考ツール自作の話。 Spotifyで聴く 要約 2週間ぶりの更新回。ポッドキャスト制作業の効率化を目的に、Claudeを活用したメモアプリ「scribe」を自作中。デジタルガーデンとポッドキャストを接続する「統合研究環境（REDE）」の構想や、思考の外部化・自動更新の仕組みについて話す。釧路遠征での森の収録や鹿の群れとの遭遇も。 キーワード scribe デジタルガーデン 統合研究環境（R..."/><meta property="og:description" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話 「自分の作業を他人に理解してもらいにくい」——そんな問題意識から、AIを使ったメモアプリ「scribe」と統合研究環境の構想が動き出した。制作の裏側と思考ツール自作の話。 Spotifyで聴く 要約 2週間ぶりの更新回。ポッドキャスト制作業の効率化を目的に、Claudeを活用したメモアプリ「scribe」を自作中。デジタルガーデンとポッドキャストを接続する「統合研究環境（REDE）」の構想や、思考の外部化・自動更新の仕組みについて話す。釧路遠征での森の収録や鹿の群れとの遭遇も。 キーワード scribe デジタルガーデン 統合研究環境（R..."/><meta property="og:image:alt" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話 「自分の作業を他人に理解してもらいにくい」——そんな問題意識から、AIを使ったメモアプリ「scribe」と統合研究環境の構想が動き出した。制作の裏側と思考ツール自作の話。 Spotifyで聴く 要約 2週間ぶりの更新回。ポッドキャスト制作業の効率化を目的に、Claudeを活用したメモアプリ「scribe」を自作中。デジタルガーデンとポッドキャストを接続する「統合研究環境（REDE）」の構想や、思考の外部化・自動更新の仕組みについて話す。釧路遠征での森の収録や鹿の群れとの遭遇も。 キーワード scribe デジタルガーデン 統合研究環境（R..."/><meta property="og:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/episodes/longpost/2026-06-25-制作｜ポッドキャスト制作業のためツールを自作し始めた話"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/episodes/longpost/2026-06-25-制作｜ポッドキャスト制作業のためツールを自作し始めた話"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="制作｜ポッドキャスト制作業のためツールを自作し始めた話 「自分の作業を他人に理解してもらいにくい」——そんな問題意識から、AIを使ったメモアプリ「scribe」と統合研究環境の構想が動き出した。制作の裏側と思考ツール自作の話。 Spotifyで聴く 要約 2週間ぶりの更新回。ポッドキャスト制作業の効率化を目的に、Claudeを活用したメモアプリ「scribe」を自作中。デジタルガーデンとポッドキャストを接続する「統合研究環境（REDE）」の構想や、思考の外部化・自動更新の仕組みについて話す。釧路遠征での森の収録や鹿の群れとの遭遇も。 キーワード scribe デジタルガーデン 統合研究環境（R..."/><meta name="generator" content="Quartz"/><meta name="robots" content="noindex, nofollow"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbXljZWxpc20vbXljZWxpc20vcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvbXljZWxpc20vbXljZWxpc20vcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/></head><body data-slug="episodes/longpost/2026-06-25-制作｜ポッドキャスト制作業のためツールを自作し始めた話"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Mycelism</a></h2><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>{if(!a.isFolder&amp;&amp;b.isFolder)return 1;if(a.isFolder&amp;&amp;!b.isFolder)return-1;if(a.isFolder&amp;&amp;b.isFolder)return a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;});let aDate=a.data?.date?new Date(a.data.date):new Date(0);return(b.data?.date?new Date(b.data.date):new Date(0)).getTime()-aDate.getTime()}&quot;,&quot;filterFn&quot;:&quot;node=>node.name!==\&quot;concepts\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>{if(node.file&amp;&amp;node.data){let m=(node.data.slug??\&quot;\&quot;).match(/\\/(\\d{4}-\\d{2}-\\d{2})-/);m&amp;&amp;(node.data.date=new Date(m[1]))}return node}&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-959"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-959" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../episodes/">episodes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../episodes/longpost/">longpost</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>制作｜ポッドキャスト制作業のためツールを自作し始めた話</a></div></nav><h1 class="article-title">制作｜ポッドキャスト制作業のためツールを自作し始めた話</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-25T00:00:00.000Z">Jun 25, 2026</time><span>53 min read</span></p></div></div><article class="content popover-hint"><h2 id="制作ポッドキャスト制作業のためツールを自作し始めた話">制作｜ポッドキャスト制作業のためツールを自作し始めた話<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#制作ポッドキャスト制作業のためツールを自作し始めた話" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>「自分の作業を他人に理解してもらいにくい」——そんな問題意識から、AIを使ったメモアプリ「scribe」と統合研究環境の構想が動き出した。制作の裏側と思考ツール自作の話。</p>
+<p><a href="https://podcasters.spotify.com/pod/show/atandy/episodes/ep-e3l8tvu" target="_blank" class="external">Spotifyで聴く<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<audio controls style="width:100%;">
+  <source src="https://anchor.fm/s/f20aee28/podcast/play/121976254/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-25%2F2a5109a9-52a9-ffd1-e5c1-94b50b6a3e8b.mp3" type="audio/mpeg"/>
+</audio>
+<h2 id="要約">要約<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#要約" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>2週間ぶりの更新回。ポッドキャスト制作業の効率化を目的に、Claudeを活用したメモアプリ「scribe」を自作中。デジタルガーデンとポッドキャストを接続する「統合研究環境（REDE）」の構想や、思考の外部化・自動更新の仕組みについて話す。釧路遠征での森の収録や鹿の群れとの遭遇も。</p>
+<h2 id="キーワード">キーワード<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#キーワード" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../concepts/scribe" class="internal" data-slug="concepts/scribe">scribe</a> <a href="../../デジタルガーデン" class="internal alias" data-slug="デジタルガーデン">デジタルガーデン</a> <a href="../../concepts/統合研究環境（REDE）" class="internal alias" data-slug="concepts/統合研究環境（REDE）">統合研究環境（REDE）</a> <a href="../../concepts/釧路" class="internal alias" data-slug="concepts/釧路">釧路</a></p>
+<h2 id="文字起こし">文字起こし<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#文字起こし" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>とうとう自分の制作活動を助けるためのウェブアプリケーションを自作するようになったという話をします。
+ポッドキャスターのAndyです。今回は2026年5月25日、木曜日更新のロングポストです。よろしくお願いいたします。
+2週間ぶりになってしまいました。いやー、不覚。
+もともとこの番組自体は不定期更新のまつもりだったんですけれども、
+にしてもね、あれこんなに空いたっけっていうぐらい久々になってますね。 だからといってちょっとサボっていたとかではなく、むしろ忙しくしていたんですけれども、
+お仕事のポッドキャストも作りつつ、魚会議の編集も進めていきつつ、 メンバーシップも更新しつつ、
+あとあれですね、あの全然進んでないんですけど、あのポッドキャストの研究を始めているので、その前提となるリサーチを、
+先行研究のレビューをやっていってるという感じで、あとあれだな、
+あとあのちょっと1回全力を出してみたいなということを持っているので、そのための新番組のプロジェクトを進めて
+いつつ、あとあれだな、お仕事番組として新番組を一つ立ち上げつつ、
+それから嬉しいことに、あのさらに別のね、ローカルの方から、ポッドキャスト制作についてのお問い合わせいただいたので、ちょっとその、
+それに向けても思考を巡らせていると、いやー、
+つつなんですよ。なんかすごい並列でいろいろやっちゃってるんですよね。
+で、僕はあの明日から2泊3日だったかな。で、クシロにちょっと行くということに、はい、しておりまして、
+あのオンエアドゥーの中でも喋るつもりなんですけど、クシロ行ってきます、ということなので、今日は
+編集を思いっきりこの後やって、心置きなくクシロに行けるようにしなきゃなーという中、喋ってます。
+今日喋らないとね、ちょっとまた日がさらに空きそうだなと思ったので、あの喋ってるという感じですね。
+で、前回と同様森に来て喋ってるんですが、2週間経つと、
+前回鳴いてたエゾハルゼミとかいなくなってますね。
+あとは鳥のさえずりもちょっと減ったな、減ったと思います。 春だけなんですよね、その鳥が。
+いわゆるさえずりっていうのは、特にオスの鳥がメスの鳥に対して呼びかけるための鳴き方だったりもするんですけど、
+もちろん種類によって変わりますけどね。 とはいえそういう鳴き方するのって、
+敵に見つかるリスクを上げる行為でもある、リスキーな行為なので、
+1年のうちの限られた期間に限るんですよね、さえずりの時期って。
+まあそのさえずりの時期が少しずつ終わっていってるのかなと。 方法欠去とかはまだ泣いてますけどね。
+ああ、シカだ。 シカが僕の右を走っていってました。
+近所の森はほぼ誰も歩いていないので、これぐらいの声量で喋っていても、
+気にする人がいないということで、 こんだけの声量で喋っていってます。
+じゃあちょっと本題に戻りましょうか。
+こんな感じで、いろいろ並列して頭脳労働を調べて整理して、
+自分なりの仮説とか企画アイデアを立ち上げて、それを自分でいろんな角度から検証して、
+これ微妙とか、ここのポイントはいいねとかっていうのをレビューして、 また別の形を作り直してみたいな、
+そういう作業を日本語を使って、 日本語をメインのツールとしてぐるぐるぐるぐるやっていくんですよ、こういうのって。
+AIに任せてもろくな企画ができないので、 これはまだまだ全然、やればやるほど得意になっていく、
+鍛え上げられる領域ですしね、僕がやるんですけど。 ちょっとそういうのをやってると、なんかちょっと頭がさすがに疲れてきたみたいで。
+で、ちょっと農立側は、おーすっごい鹿の群れ、めっちゃいるじゃん。 あれは僕の
+なんか40メートルぐらい先をめちゃめちゃ走り抜けていきましたね、群れが。 まあエゾシカが人に襲いかかってくることはないんで、
+このまま歩いてても大丈夫だと思いますけど。 何の話だっけ、そう、えーっとねー、
+あれ? なんかそんな感じで並列で頭脳ロードいろいろやっていて、ちょっと頭の中に
+まあキャッシュというかが残って、 ちょっと頭が重くなっているみたいな。
+なんかそんな感じの状態だったんですよね。
+1週間ぐらい前? だからちょっと生活の回を撮ってみても、なんかいまいち腑に落ちないというか、
+なんか おしゃべりがなんか乗り切らないなぁってなって10分で撮るのをやめちゃったりとかしてるんですよ。
+没音源が出からできてるんですよね。 こんな感じで、まあ没音源はちょっとメンバーシップに上げておきますけども、
+そんな感じでちょっと過ごしていて、なんかいまいちだったので、 その僕のこのなんかいろいろ調べたり、
+整理をしてみたり、 考え出してみたりみたいな、なんかこのサイクルをもっとなんか
+吐き出したいなぁと、吐き出してすっきりしたいなぁみたいな 欲求があって、これまでもやってたはやってたんですけど、
+なんかちょっともったいなさを感じていたんですよね。 吐き出すだけ吐き出して、それで頭の中は綺麗になって、
+なんか まあ覚えてもいられるし、書き出したことは
+そのアイディア活用もできるんですけど、 なんかもうちょいこう
+ツイッターとかでは見せられないし、ノートの フォーマットにも全く適合していない内容なのだが、
+とはいえ、面白くないということはなさそうだから、 なんか適切な形で出せたらいいなぁと思っているのだが、みたいな。
+なんかそんな感じだったんですよね。 なので、
+僕のこの脳内キャッシュをキャックリアしてすっきりさせながら、
+なんかそれ自体がコンテンツとして機能しながら、 さらにそれは実はポッドキャストとか
+いろいろ書き物とか写真とかとも繋がりを持っているので、 その繋がりも見せられる形にするという意味での
+ついていけるかな? めっちゃ言ったら、すごい動きの多い
+ポートフォリオサイトみたいなのを作ろうと思っていて。 その大前提となる、僕の頭の中をわーって書き出すことができる
+エディター、メモアプリですね。 っていうのを
+自分の苦労度で自作するに至ったと。 そんな近況でした。
+生活の面で言うと、小樽水族館に行ったりしてました。 これはまたオンエアドゥで喋ります。
+そんな感じでしたね。
+これがすごい健康にいい感じがしていて、 本当にワッと書き出すんですよ。
+ツイッター、昔のツイッターみたいなイメージです。 誰かに見せるために編集したりするのではなく、ただ
+頭の中をダダ漏れさせるっていうね。
+それだけの行為なんですけど、それをやるとシステムが駆動して データベースの中に保存してくれて、僕のポッドキャスト内での発言
+だとかとリンクさせてくれる。 そのリンクさせてもらうためにRSSを介して、僕の作っているポッドキャストたちを取り込んで
+自動更新で自動で強くなっていくみたいな。 そんな感じなんですけど。
+これちゃんと育っていくと、 僕のポッドキャストと僕の日々のノート
+これがだから1日だいたい4センチとか6センチとか わーって書いてるんですけど、今のところ。
+で、すっきりってなってるんですけど。 それらをどんどんどんどん関連づけてくれるんですよね。
+なんかそんな感じでやると 他のSNSもリンクさせていっていいと思うんですけど
+なんか僕がネット上で活動していたり、 頭の中を書き出していったりするものを
+綺麗に整理して格納して、であとはAIがそれを学習してリンクさせてもらうみたいな。 なんかそんな感じのことができて
+僕いつどういうことを考えてたんだろうとか。 なんか最近重視している
+考え方とかアイディアとかって、なんかどんなんだったかなとかっていうのを
+僕以上に他の人に見せやすいなとも思ったんですよね。 そう、ポッドキャストをやってるとやっぱ
+いろんな人に聞いてもらえるように 聞くに耐えるように編集したりとか企画考えたりとか
+という感じで作品作りにのめり込んでいってしまうので、 他の人たちがポッドキャストを息抜きの場所として使っている
+その場所を僕はガチの場所としてしまっているから ポッドキャストをガチでやってしまっている僕にとっての息抜きの場所が必要だったと
+それで さっきのメモアプリに至るわけなんですよね。
+ただ書いてすっきりするだけだとなんか全然物足りないので、 物足りないし何かに
+なんかこう活用できそうな
+落ち葉みたいな なんかそんな感じの印象があるのでそこは綺麗に
+システムが勝手に整理して保存してくれるようにしておいて 勝手にポッドキャストとリンクさせてもらったりとかするっていう
+デジタルガーデンって言葉があるんですけどそれとかね すごいいいなって思ったんですよね
+ブログとは違ってその 未完成な状態を許容する書き方
+これを文字るっていう文化がデジタルガーデンというのがあるんですけど ポッドキャストベースのデジタルガーデンをやりたいなぁというは思っているという感じです
+研究者の人とかね本当にその日々何をやっているのかが本当にわかんないなぁとか
+ポッドキャスターもそうですよね 作品ポッドキャストのエピソードを更新
+していない間 なんかどういう過程をたどって
+その新しい考えに至っているのかが めちゃめちゃわかりにくいなぁとか思っていて
+ポッドキャスターより研究者の人たちの方がよっぽど 深刻というかすごいわかりにくいなぁ
+何を日々やっているのかが本当にわからないなぁって思うことが多かったんですけど
+幸い僕はポッドキャストをやりながら たまたまちょっと研究もやりそうみたいなそういう部分に今はなっているので
+だからこそ僕はそのいわゆる研究をする人のパブリックリレーションシップ PRですね
+社会との関係性をうまく適切にマネジメントしていく その手法から開発していったら面白そうだなとか
+思って その前提としてさっきのメモアプリスクライブっていうのを自分で作って自分で使ってて
+なんか今のところいい感じです さっきの書いた内容とポッドキャストをリンクさせてみたいなのも自分の
+えっと側では 動いているしまだまだ見栄えをね整えなきゃいけないんですけど
+仕組み自体はざっくりはできてきているので これねー
+便利なんですよねちょっともっともっと作り込んで使っていきたい これどうどういうふうに例えたら伝わるのかなぁ
+エンジニアをやったことがある人に伝えるとめっちゃわかりやすい気がするんですけど 例えば IDEってあるんですよ
+なんだっけえっと何の略だっけ 統合開発環境なんですけど日本語で言うと
+Google IDEって
+インテグレーテッドデベロップメントエンヴァーロメント もちろん英語ちゃんと言うか
+インテグレーテッドデベロップメントエンヴァーロメント らしいっす
+4はプログラミングする上での必要な作業 必要なツールまるっと取り揃えてますよみたいな話です
+IDE 統合開発環境っていうのが
+エンジニアの人たちにはあって 今はちょっとわかんないですけどね
+僕全然に若いエンジニアだったんで昔 今はどうかわかんないけどそういうのがあって
+例えばその IDE の上でプログラミングコードを書いて
+書き上がったコードについては例えば GitHub っていうコードをアップロードする
+クラウドサービスにアップロードしましょうみたいな そしたらみんなチームのみんなとか社会のみんなのバージョンもありますけど
+その最新のコードをダウンロードして また自分で改善していってまたそれを GitHub っていうクラウドにアップロードしてみたいな感じで
+チームとか社会みんなでもっともっといい システムを作っていくことができるよねみたいなそういうのがあるんですよ
+IDE と GitHub 一旦これだけ
+はえーそんなんあるんやって思ってもらったら ってところなんですけど
+イメージしてね まあそういう IDE と GitHub みたいな関係性が
+これまで AI が出てくるまで全然できていた理由としてはやっぱりその コードっていうものの厳格な書き方が決まっているっていうことがすごい大きかったと思うんですよね
+ちょっとでもミスたらエラー出ますし 世界共通で同じルールを運用するこのようなルールで運用しようっていうのも明確に決まっているからこそ
+みんなで改善していくっていう動きを取りやすかった っていうお話だと思うんですけどプログラミング言語だとコーディングの世界だと
+AI が出てきている今ならばそれを AI に処理させて日本語を AI に処理させて
+自然言語で GitHub 的なこととか自然言語で IDE みたいなものとかなんか作れんじゃね?とちょっと思ってます
+僕の場合はそれがポッドキャスト制作であろうと 何かしらペーパーとかを書くためのリサーチだろうと
+調べて整理して自分なりの考えを出しそれを検証し 一つのポッドキャスト作品あるいはペーパーアーティクルにまとめる
+書き上げるっていう この過程はおおよそ一緒のものを辿ってるという感覚があるので
+僕の日記的なデイリーメモ そして自動で更新されていくポッドキャスト
+それから不定期で書く記事とかペーパーとか そういうものをすべて
+自然言語をAIに処理してもらうことによって取り込んでいって
+結局アンディって最近何考えててどういうアクションとってんの? みたいなのが分かるようにする
+僕のそういう 応業の言い方をすると知的活動をやろうと思った時には
+一旦このツールを開いておきましょうという お決まりのツールとしても機能する
+そういった意味でのIDEに対するポッドキャストとか 日本語でリサーチする人とか向けのIDEということで
+言ったら統合研究環境 統合リサーチ環境ということで
+REDEレイドって呼んでるんですけど 今このレイドを作ってます
+これは趣味なのか? いや趣味じゃないな 全然仕事の役に立ってますからね
+これ誰に見てもらわなくても僕の作業がご機嫌な状態でサクサク進むというツールとして機能するので
+閲覧数ゼロでも僕にとってはすごい便利ツールとして役立ってくれてるんですよね
+よく言えば裏側ではどんどんポッドキャストとか僕のメモとか
+読んだ文献も取り込んでいって自動で強化していく 僕にとっての研究室として機能していきつつ
+表側 他の人たちが見る画面の側では こんな風なことが最近生まれてますよとか
+こういうポッドキャスト作品とかが更新されましたよとか
+そういうのを見せていくようにしつつ その上にメンバーシップの仕組みとか
+なんならいいしネットショップの機能とかも プラグインみたいな感じでくっつけていくことができたら
+なんかいいなーって
+人文 僕は僕という自分自身をあんまり人文系とかそういう意味で括るつもりは全くないんですけど
+なんかこの先のリサーチしてまとめて一つの視点 一つのパースペクティブのもとに発信していく人たちっていうのは
+作品単位ではなくてその作品を発表する個人単位での認識に もっともっとなっていくだろうなっていうところは確信を持っていて
+とはいえそういうねいわば 現代の捉え方においてはインフルエンサーみたいなのが思い浮かぶ人多いと思うんですけど
+インフルエンサーとはちょっと違うものの 僕そういうのはちょっと苦手っていう節があるので
+じゃあ その社会環境の変化は確定だとした時に
+僕はその ナチュラルにはいどうも面白い僕ですみたいなことをやっていくという振る舞いをするのがすごく苦手なので
+じゃあ僕にとってはどのような対応の仕方があり得るのかなーみたいなのを考えた結論がさっきの
+じゃあ 仕組み作ればいいのかシステムからやればいいのかみたいな
+結論に至ったっていうところだったりします
+オタクだなぁ ちょっと今回の話はいつもにも増してオタクすぎるので
+どれぐらい聞いていただけてるかが全くわからないんですが なんかそうなると思うんですよね
+発信の場所自体は何種類にももっともっと広がっていくと思うんですよ
+論文も各種ポッドキャストもやるし何ならポッドキャストにゲスト出演もするし
+イベントで登壇もするしというね
+ポッドキャスト自体がRSSを介したいろんなプラットフォームに配信する仕組みであるっていうところが面白いメディアだったりするんですけど
+リアル空間においてもいろんな発信の場所とかいろんな調べる場所とか議論の場所というものはあるわけで
+しかも前回話したようにおそらくオフラインにおけるこの人だねって特定できるというところが
+すごく今後この先考えた時に大事になっていくだろうなと思った時に
+そういった意味での超マルチプラットフォームな発信をする主体としての個人をまとめていくためのサイトを用意するっていう
+サイトというかシステムって言った方がいいのかな
+プロトコルではない多分システムを用意するっていうのがなんかいいんじゃないかなっていう
+プロトコルをベースにしたシステムを用意するのがいいんじゃないかなっていう
+そんなことをね今は思っております
+これをね来年とか3年後とか5年後に聞いた僕がどう思うかが気になりますね
+多分恐ろしくこの先の未来からしたら時代遅れなことを言ってるんですよ
+間違いなくねめちゃめちゃ時代遅れなことをこの先の未来からしたら言ってると思うんだよなこれ
+自覚を持ってます
+まあまあそんなことをね思っており
+それを見越したシステムをちょっと自分でポチポチと作っておりますというところですね
+具体的にどういうことを最近書いてるのかとかは
+全然今公開はしてるのでインターネット上に公開はしてるのでこれ概要欄にリンク貼っておきます
+ちょっと見てみてほしいですね
+誰かに見せるために整えた文章ではないっていうところがすごく大事なので
+すさまじく見にくい文章だったり急にすごい日記書いてたりとか
+急になんかよしちょっと帰ってカレー食べるぞみたいなつぶやきですよね
+ツイートツイッターだった時代の初期のツイートみたいなことをしていたりとか
+急に僕もよくわからんっていうレベルの難しい内容の記事を引用してたり
+苦労度と殴り合いをしていたり
+いろいろやっている様が見られると思いますので
+ちょっとこれ概要欄に貼ってますね
+そんな感じでポッドキャスト活動とかその先
+葉っぱが落ちただけでした
+とかそうポッドキャスト活動とかその先の
+周りとあらゆる活動の在り方みたいなところを考えて制作してますよっていう
+そんな近況でしたね
+ちょっと今ストップウォッチも測ってないので
+どれぐらい喋ってるのかはよくわからないんですが
+伝わったのかなこれ
+いやどうなんだろうね
+これをちゃんと伝えようとしたらデジタルガーデンっていう概念と
+ポッドキャストのRSSベースでの発信活動でありますよという概念と
+そこにAIが出てきたから
+AI文字起こしが一定以上の精度を持つようになりましたよということ
+と意味と意味の間の関連付け
+これまでは人間がポチポチとやらなきゃいけなかったところを
+AIが自動化してくれましたよというところ
+文字起こしのAIとリンクする関連付けてくれるAIというところですね
+2つが発生してきましたよということと
+あと研究者にしろポッドキャスターにしろ
+作品がアーティストとかもそうなのかもしれない
+アーティストはうまくやってる人たちいるな
+研究者にしろポッドキャスターにしろ
+作品を出してない間のこの期間の
+活動してなさそうに見えてしまう
+コミュニケーション失敗えぐないという話と
+あとこの先は多分作品ベースではなくて
+その作品を制作している主体個人やチーム
+単位で重用しされたりあるいは軽視されてしまったりするような
+シーンになっていくんじゃないかなっていう予測と
+あとたまたま僕がポッドキャスターやりながら
+研究もなんかし始めるいきさつになりましたよっていう
+僕の一心情の都合と
+あとなんかいろいろ並列でやりすぎてて
+頭の中がモヤッとする瞬間がありますっていう
+僕の個人的なお悩みとこれらに基づく制作ですね
+やっぱねこんだけしゃべってくると
+頭すっきりしてきましたよ
+今日は編集頑張らなきゃいけなくて
+っていうのはですね
+明日から2泊3日で串路行くんですよね
+オンエアルーでしゃべりますが
+あれこれ俺さっきしゃべった気がするな
+やばい疲れてるのかもしれない
+串路に行って
+ちょっと鶴保護センターとか
+あとなんだっけ
+ちっちゃい水族館とか
+ちっちゃい水族館とか
+なんかいろいろ見に行くことになっておりますので
+あとあれだあれだ
+串路出現ですよ
+串路出現にちゃんと歩いたことまだないから楽しみですね
+という取材旅が
+明日控えておりますので
+ちょっとね編集頑張らなきゃいけない
+今日これから4,5本編集仕上げたいなっていうぐらいですね
+ここ2週間で編集のやり方もさらに磨きがかかったので
+こうやりゃもっとコース減らせるんだみたいなことが
+見つかったりしてるので
+爆速編集に磨きがかかっているので
+多分いけんじゃないかな
+お昼12時に森の奥をほっつき歩いてますけど
+多分なんとかなるでしょう
+ということで明日は串路に行って
+また串路に行ったよっていうおしゃべりもしようと思います
+あ、お知らせですお知らせです
+来月東京行きます
+また行きます東京
+6月行かなかったんだけどね
+3,4,5月は行ってたんですよね東京
+やばい頻度だよな本当に
+6月お休みして7月また東京に行きますと
+7月のですね
+13,14,15か
+13,14はもうお仕事の用事で
+あっちと埋まりきっちゃってますねこれ
+他物音がしましたね
+大丈夫だ
+埋まりきっちゃっているので
+15日がまた夜は
+飲み会が入ってるんですよね
+そのポッドキャスト関係の人たち
+皆さんとの飲み会が入ってるので
+それまでの時間だな
+朝からおそらく
+夕方の5時解散とかまでの間
+はぜひぜひ
+なんか喋りましょうっていう感じです
+ぜひインスタとかのDMとか
+何かしらで連絡してもらえたら
+喜んでいきます
+何話か前何エピソードか前に喋ってた
+コンカフェの店長さんからお便りいただいた件ですね
+またの機会にさせてください
+それだけはまたの機会にさせてください
+というところで
+7月の13から15東京行きますので
+15の朝から夕方5時くらいまで
+ぜひどなたか喋るなり
+コーヒー飲みに行くなりしましょう
+というところでございました
+おすすめのコーナー忘れてた
+やべやべやばい
+おすすめのコーナーやんないと
+おすすめそうですね
+ポッドキャストの最近のおすすめ
+結構更新が滞っちゃっていたから
+何エピソードかまとめてやりたいですね
+そうだな
+これ行きましょう
+夢遊東京
+夢遊は夢遊病の夢に遊ぶの
+夢遊ですね
+東京は東京です
+夢遊東京の今日時点の最新話
+394話なんですけど
+夢遊東京は100話になったら
+また1話からっていう風な数字の振り方をしてるので
+シャープ94って書いてあります
+394話です
+夢遊東京最新話の第94394
+あの頃の夏ってもう経験できないんですか
+これにしましょう
+この番組めっちゃ好きなんですよ
+雑談系なんですよね
+だからそのナレッジとかビジネスとか
+そういう文脈でポッドキャストに
+配慮になった人たちは
+多分知らないとは思います
+ただ結構かなりの人気番組だし
+結構な長寿番組ですよ
+394話っていうのがね
+394だよな確か
+確か394
+294じゃないと思うけど
+示してる通りで
+漫画編集者の千代田周平さん
+この方は担当してる作品で言うと
+地球の回転についてだっけ
+地動説についての漫画ですね
+これの担当編集者さんだった
+漫画ワンという媒体での編集者さんだった方ですね
+千代田さんとか
+確か日本三国っていう漫画
+これは僕は読んだことはまだないんですけど
+なんかすごい鳥が僕を警戒している
+そういう漫画の
+敏腕腕利き編集者さん
+33歳かな
+っていう方なんですけど
+ちなみに千代田さんは転職されているんですけどね
+漫画編集者としてのキャリアは今も
+鋭意続いていらっしゃるという方なんですけど
+その方とタクトさん
+この方はどこだっけ
+群馬だったと思う
+群馬出身の東京で活動しているデザイナーの方で
+インテリア系のデザイナーだったと思うんですけど
+お二人が話しているという番組なんですよね
+タクトさんも確か武蔵を出て
+武蔵の美術大学出て
+今はもう個人で独立して
+お仕事広がっているという方で
+第三者的な見せんから見たら東京で
+結構お仕事頑張っていて
+おそらく年収も結構稼いでいらっしゃる
+多分道須丹の平均の2倍ぐらいは稼いでいらっしゃる
+イケてる人たちですよね
+クリエイティブでそういう風に稼いでいるという意味での
+東京のみんなの憧れ的な
+分かんない田舎の憧れの人たちかもしれないけど
+っていう人たちの会話って聞くと
+すごく高尚だったりクリエイティブだったり
+思おうと思うかもしれないんですけど
+蓋を開けると
+いわば年相応の愚痴が
+なんて言ったらいいんだ
+なんて言ったらいいのかな
+なんとも言いようのないというか
+どこへやりようもない
+やり場のないやるせなさみたいな
+そういうことを3年ぐらい喋ってるみたいな
+初期はそうでもなかった気がしますけどね
+最近富にそういうやや切ないエピソードが多くて
+このやや切ないエピソードであるほど
+彼ら輝くんですよね
+彼ら独自の面白さが際立つ
+最近そういうエピソードが出てきましたので
+これオススメします
+無遊東京のあの頃の夏ってもう経験できないんですか
+これいいですよ面白かった
+これ概要欄にリンク貼っておきますので
+皆さん聞いてもらえたらと思います
+もう一個ぐらいはオススメしようか
+もう一個ぐらい何がいいかな
+そうですね
+待たせしてしまったからな皆さん
+なんかこれっていうのにしたいな
+これオススメしないとですね
+リグトリオ
+はいリグトリオですね
+これまた例えばカルチャー系のポッドキャストが好きっていう人からしたら
+いやもう言わずと知れたっていうレベルだと思うんですけど
+とはいえ一方これも他の文脈
+雑談系とかビジネス教養系から入った人たちは
+意外と知らなかったりするんじゃないでしょうか
+これ名ポッドキャストですねリグトリオ
+ついこの間終了しちゃったんですよ
+結構長く続いてた番組だったんですけどね
+これは新潟に住んでいる農家さん
+いちごとかお米とか育ってる農家の新潟さんという人と
+新潟さん別名ブリングバックさんという人と
+それから消防士の佐藤さん
+それから鍋さんという
+鍋さんは確かトラックドライバーですね長距離の
+3人でされているカルチャー系ポッドキャスト
+これリグトリオはね本当にこういろいろな意味で
+インディベンティントなポッドキャストの一つの完成形とか
+あるいはインディベンティントなポッドキャストが
+こういうことをやれるんだよということを
+示してくれた番組でもあるんですよね
+その3人それぞれが持ってきたカルチャーに関するお話
+リサーチして持ってきてくれたお話について
+3人でワイワイ喋るっていう
+そういう言ったらすごいシンプルな番組と思うかもしれないんですけど
+だからこそいろいろな内容
+いろいろなカルチャーとかコンテンツ
+それは全然僕が知らないというか
+ものについても割とスッと入ってきて
+すぐ自分も面白さをすぐつかめるように
+みんなで喋ってくれてるっていう
+なおかつ3人の喋りのグルーヴも
+すごいいい感じに回っているし
+あとあれですね
+意外とその音楽が秀逸なんですよね
+ビートっていうか
+かなりビート音楽性を意識して作られた
+作り込まれた番組だったなと思っております
+シニさんが音楽作れる方なんですよね
+作れる方というか
+作れるようになった方って言ったほうが正確かもしれない
+サムネイルも手書きですし
+そんな感じで持てるクリエイティビティを
+ポッドキャストに注ぎ込んだら
+こういうことができるようになりましたという番組ですね
+これは例えばディクトリオのドキュメンタリームービーが
+例えば制作されて
+映像を作家の方によって制作されて
+それがあれはどこだっけな
+銀座で上映会が開かれたり
+東京のですよ
+東京の銀座で上映会が開かれたりとか
+するという現象が引き起こされたりとか
+そういった意味でも
+さっき言ったようなインディペンデントなポッドキャストが
+本質的にどういうことが
+本質的にどういう特徴を持っていて
+故にどういう現象を引き起こせるのかっていうことを
+かなり色々教えてくれた番組だったんじゃないかなと
+思っております
+ディクトリオを最初から入る人にお勧めしたいのは
+おじゃま女どれみ会ですね
+これは間違いない
+おじゃま女どれみ会マジで面白かったです
+僕はおじゃま女どれみは見てなかったと思いますね
+実家にいた妹が世代で
+要は僕も世代なんですけどそんな離れてないんで
+おもちゃはあった気がします
+なんかステッキ状ロッド状の杖状の
+おもちゃが実家にあったと記憶はしていますが
+プリキュアに変わったのが
+僕何歳だった時かは覚えてないな
+5歳とかそれぐらいだったんじゃないかな
+ぐらいの世代なんですが
+そんな僕でもね
+おじゃま女どれみの何が面白くって
+どこが秀逸なのかとか
+そういうところを非常に分かりやすく解説してくれて
+だから見たということはないんですけど
+おじゃま女どれみを
+これは面白かったですよ
+そんな感じです
+そんな風に自分が知らない領域について
+面白く伝えてくれる
+面白さを共有してくれるっていうか
+っていうポッドキャストが僕は一番好きな番組でも
+好きな番組の一つ一つのタイプでもあるので
+そういった意味でディグトリオ
+特に最初に入るエピソードとしての
+おじゃま女どれみ回
+ぜひ聴いてみてください
+そんな感じかな結構喋った気がしますね
+ということで
+2026年6月25日
+木曜日のロングポスト北海道の森から
+ポッドキャスターアンディがお届けいたしました
+お疲れ様です</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.05,&quot;repelForce&quot;:1.15,&quot;centerForce&quot;:0.18,&quot;linkDistance&quot;:120,&quot;fontSize&quot;:0.75,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.88,&quot;repelForce&quot;:0.3,&quot;centerForce&quot;:0.9,&quot;linkDistance&quot;:25,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:false,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div><button class="global-graph-open" onClick="document.querySelector('.global-graph-icon').dispatchEvent(new MouseEvent('click', {bubbles: true}))">グラフビューを開く</button></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-923" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#制作ポッドキャスト制作業のためツールを自作し始めた話" data-for="制作ポッドキャスト制作業のためツールを自作し始めた話">制作｜ポッドキャスト制作業のためツールを自作し始めた話</a></li><li class="depth-0"><a href="#要約" data-for="要約">要約</a></li><li class="depth-0"><a href="#キーワード" data-for="キーワード">キーワード</a></li><li class="depth-0"><a href="#文字起こし" data-for="文字起こし">文字起こし</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../concepts/scribe" class="internal">scribe</a></li><li><a href="../../concepts/デジタルガーデン" class="internal">デジタルガーデン</a></li><li><a href="../../concepts/統合研究環境（REDE）" class="internal">統合研究環境（REDE）</a></li><li><a href="../../concepts/釧路" class="internal">釧路</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

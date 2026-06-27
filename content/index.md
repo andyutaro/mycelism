@@ -20,7 +20,7 @@ title: Mycelism
 --- 
 ## Updates
 - [[notes/diary/2026-06-26|2026-06-26]] - 2026-06-26
+- [[notes/diary/260420_ロングポスト_生活|260420_ロングポスト_生活]] - 2026-06-26
+- [[notes/article/ロングポストトークテーマ案|ロングポストトークテーマ案]] - 2026-06-26
+- [[notes/article/Seekers|Seekers]] - 2026-06-26
 - [[notes/memo/この先に見える作品2026.6.6|この先に見える作品2026.6.6]] - 2026-06-26
-- [[notes/memo/Seekersの設計思想|Seekersの設計思想]] - 2026-06-26
-- [[notes/memo/260509PodcastEXPO|260509PodcastEXPO]] - 2026-06-26
-- [[notes/memo/東京書籍|東京書籍]] - 2026-06-26

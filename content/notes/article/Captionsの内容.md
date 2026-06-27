@@ -117,3 +117,6 @@ https://open.spotify.com/episode/33lESqE6xmVpZ8RtZ8tOxj?si=5H2N3E0MTv2EIDfhO7Yub
 	・音が良くて、うるさくなくて、程よくこむずかしくて、暗くない
 
 ・自分が面白いとかかっこいいと思うものを軸としながら、楽しんでもらうための工夫を惜しまないようにしないとね
+
+## 関連メモ
+- [[Captionsのアイデア]]

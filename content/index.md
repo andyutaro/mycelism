@@ -20,7 +20,7 @@ title: Mycelism
 --- 
 ## Updates
 - [[notes/diary/2026-06-29|2026-06-29]] - 2026-06-29
+- [[notes/memo/AIRDOはいいぞ|AIRDOはいいぞ]] - 2026-06-29
+- [[notes/diary/2026-06-26|2026-06-26]] - 2026-06-29
 - [[notes/memo/Captionsのアイデア|Captionsのアイデア]] - 2026-06-29
 - [[notes/diary/書き散らし260327|書き散らし260327]] - 2026-06-29
-- [[notes/diary/2026-06-26|2026-06-26]] - 2026-06-29
-- [[notes/article/rooom@andyの内容|rooom@andyの内容]] - 2026-06-29

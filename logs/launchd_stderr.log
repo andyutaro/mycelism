@@ -191,3 +191,6 @@ Connection to github.com closed by remote host.
 client_loop: send disconnect: Broken pipe
 send-pack: unexpected disconnect while reading sideband packet
 fatal: the remote end hung up unexpectedly
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   0d9eb985..e016a7ea  main -> main

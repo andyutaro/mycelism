@@ -150,6 +150,9 @@ def text_to_html_preview(text):
     if not text:
         return ''
 
+    # B-1: 保存時に空行へ入れた <br> を空行へ戻す
+    text = re.sub(r'(?m)^<br>$', '', text)
+    text = text.rstrip('\n')
     escaped = html_module.escape(text)
 
     # 画像 ![]() -> img
@@ -357,10 +360,10 @@ def main():
 
 
 # NORMALIZE_HOOK
-from scribe_normalize import normalize as _nz_normalize
+from scribe_normalize import normalize as _nz_normalize, br_fidelity as _nz_br
 _nz_orig_html_to_text = html_to_text
 def html_to_text(raw_html):
-    return _nz_normalize(_nz_orig_html_to_text(raw_html))
+    return _nz_br(_nz_normalize(_nz_orig_html_to_text(raw_html)))
 # /NORMALIZE_HOOK
 
 if __name__ == '__main__':

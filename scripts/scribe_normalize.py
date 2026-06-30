@@ -18,5 +18,5 @@ def normalize(text):
         out.append(ln)
     text = '\n'.join(out)
     text = re.sub(r'\[\d+\]', '', text)
-    text = re.sub(r'\n{3,}', '\n\n', text).strip() + '\n'
+    text = re.sub(r'\n{12,}', '\n' * 11, text).strip() + '\n'
     return fm + text

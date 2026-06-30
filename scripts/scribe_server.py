@@ -109,14 +109,8 @@ def html_to_text(raw_html):
         # 行と行の間は最低でも2個の改行(Markdown上で確実に改行・段落として
         # 認識されるための下限)を保証する。Enterを多く押して作った、
         # より大きい余白(空行が複数続く場合)は、その分さらに増やして反映する。
-        text = ''
-        for i, line in enumerate(lines):
-            if i == 0:
-                text = line
-            elif line == '':
-                text += '\n\n'  # 空行1つ=段落区切り。後段の \n{3,}->\n\n 詰めで空行1つが残る
-            else:
-                text += '\n\n' + line
+        # 1 div = 1 行 として忠実に連結（空行も打った通りに保存）
+        text = '\n'.join(lines)
     else:
         # divが存在しない(単純な<br>だけの場合)
         text = re.sub(r'<br\s*/?>', '\n\n', text)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "notes/diary/2026-06-29.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "2026-06-29"
             }
           }
         ]
@@ -205,17 +205,21 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
-    "notes/diary/images/20260629_1565be0d.png",
-    "notes/diary/2026-06-24.md",
+    "notes/diary/2026-06-25.md",
     "notes/diary/2026-06-26.md",
+    "notes/diary/2026-06-29.md",
+    "notes/diary/2026-06-21.md",
+    "notes/diary/2026-06-22.md",
+    "notes/diary/2026-06-23.md",
+    "notes/diary/2026-06-24.md",
+    "notes/diary/書き散らし260502.md",
+    "private/TODO/やること.md",
+    "notes/diary/images/20260629_1565be0d.png",
     "concepts/釧路.md",
     "concepts/統合研究環境（REDE）.md",
     "concepts/デジタルガーデン.md",
     "concepts/scribe.md",
     "episodes/longpost/2026-06-25-制作｜ポッドキャスト制作業のためツールを自作し始めた話.md",
-    "notes/diary/2026-06-22.md",
-    "private/TODO/やること.md",
-    "notes/diary/2026-06-25.md",
     "concepts/定置網漁.md",
     "concepts/キタミズクラゲ.md",
     "concepts/東北の海.md",
@@ -224,17 +228,14 @@
     "notes/memo/オルタナティブ移動手段としてのウォーキングとポッドキャスト.md",
     "concepts/ポッドキャスト.md",
     "notes/diary/images/20260624_f86104e6.png",
-    "notes/diary/2026-06-23.md",
     "AIは古き良きメディアアートを殺すのか？.md",
     "notes/diary/260420_ロングポスト_生活.md",
-    "notes/diary/2026-06-21.md",
     "notes/article/ポッドキャストにおけるプロデュース.md",
     "ミモリラジオ.md",
     "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",
     "notes/diary/images/20260621_cb3cf93b.png",
     "notes/article/デジタルガーデン.md",
-    "notes/article/Seekers.md",
     "notes_backup_20260620/article/研究",
     "notes_backup_20260620/memo",
     "notes_backup_20260620/diary",

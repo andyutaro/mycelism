@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/diary/2026-06-29.md",
+                "file": "notes/diary/2026-06-30.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-29"
+              "title": "2026-06-30"
             }
           }
         ]
@@ -205,9 +205,10 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "notes/diary/2026-06-29.md",
+    "notes/diary/2026-06-30.md",
     "notes/diary/2026-06-25.md",
     "notes/diary/2026-06-26.md",
-    "notes/diary/2026-06-29.md",
     "notes/diary/2026-06-21.md",
     "notes/diary/2026-06-22.md",
     "notes/diary/2026-06-23.md",
@@ -235,7 +236,6 @@
     "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",
     "notes/diary/images/20260621_cb3cf93b.png",
-    "notes/article/デジタルガーデン.md",
     "notes_backup_20260620/article/研究",
     "notes_backup_20260620/memo",
     "notes_backup_20260620/diary",

@@ -114,7 +114,7 @@ def html_to_text(raw_html):
             if i == 0:
                 text = line
             elif line == '':
-                text += '\n'  # 空行1つにつき改行を1個追加(下限の2個に上乗せ)
+                text += '\n\n'  # 空行1つ=段落区切り。後段の \n{3,}->\n\n 詰めで空行1つが残る
             else:
                 text += '\n\n' + line
     else:

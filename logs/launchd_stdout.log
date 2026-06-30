@@ -3705,3 +3705,53 @@ Filtered out 0 files in 704μs
 Emitting files
 Emitted 1243 files to `public` in 2s
 Done processing 1189 files in 31s
+[main 06cdc49d] auto update
+ 26 files changed, 143 insertions(+), 58 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: デジタルガーデン...
+    ✅ リンク追加: ['ダダ漏れをアフォードする考え方']
+  解析中: 2026-06-24...
+    ✅ リンク追加: ['ダダ漏れをアフォードする考え方']
+  解析中: 2026-06-30...
+    ✅ リンク追加: ['デジタルガーデン', 'ダダ漏れをアフォードする考え方']
+  解析中: しぶさわくんFM...
+    → 関連なし
+  解析中: インディーズは「最後に聞かれるポッドキャスト」を目指そう...
+    → 関連なし
+  解析中: ダダ漏れをアフォードする考え方...
+    → 関連なし
+
+🌿 完了: 3件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 85ms
+Found 1189 input files from `content` in 28ms
+Parsing input files using 4 threads
+Parsed 1189 Markdown files in 27s
+Filtered out 0 files in 643μs
+Emitting files
+Emitted 1243 files to `public` in 2s
+Done processing 1189 files in 29s

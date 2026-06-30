@@ -362,5 +362,12 @@ def main():
         httpd.serve_forever()
 
 
+# NORMALIZE_HOOK
+from scribe_normalize import normalize as _nz_normalize
+_nz_orig_html_to_text = html_to_text
+def html_to_text(raw_html):
+    return _nz_normalize(_nz_orig_html_to_text(raw_html))
+# /NORMALIZE_HOOK
+
 if __name__ == '__main__':
     main()

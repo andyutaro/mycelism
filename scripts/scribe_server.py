@@ -113,7 +113,7 @@ def html_to_text(raw_html):
         text = '\n'.join(lines)
     else:
         # divが存在しない(単純な<br>だけの場合)
-        text = re.sub(r'<br\s*/?>', '\n\n', text)
+        text = re.sub(r'<br\s*/?>', '\n', text)
 
     # 残った全てのHTMLタグを除去
     text = re.sub(r'<[^>]+>', '', text)

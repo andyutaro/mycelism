@@ -4198,3 +4198,43 @@ Filtered out 0 files in 670μs
 Emitting files
 Emitted 1246 files to `public` in 2s
 Done processing 1190 files in 30s
+[main af231b54] auto update
+ 2 files changed, 41 insertions(+)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-01...
+    ✅ リンク追加: ['この先に見える作品2026.6.6', 'rooom@andyの内容']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 50ms
+Found 1190 input files from `content` in 15ms
+Parsing input files using 4 threads
+Parsed 1190 Markdown files in 13s
+Filtered out 0 files in 360μs
+Emitting files
+Emitted 1246 files to `public` in 792ms
+Done processing 1190 files in 14s

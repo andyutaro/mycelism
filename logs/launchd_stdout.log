@@ -3989,3 +3989,45 @@ Filtered out 0 files in 613μs
 Emitting files
 Emitted 1243 files to `public` in 2s
 Done processing 1189 files in 29s
+[main 0724be66] auto update
+ 2 files changed, 44 insertions(+)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-01...
+    ✅ リンク追加: ['2026-06-29', 'デジタルガーデン']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 83ms
+Found 1190 input files from `content` in 28ms
+Parsing input files using 4 threads
+
+Warning: content/notes/diary/2026-07-01.md isn't yet tracked by git, dates will be inaccurate
+Parsed 1190 Markdown files in 25s
+Filtered out 0 files in 686μs
+Emitting files
+Emitted 1246 files to `public` in 2s
+Done processing 1190 files in 27s

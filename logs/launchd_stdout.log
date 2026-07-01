@@ -4078,3 +4078,45 @@ Filtered out 0 files in 594μs
 Emitting files
 Emitted 1246 files to `public` in 2s
 Done processing 1190 files in 28s
+[main 35043d79] auto update
+ 7 files changed, 71 insertions(+), 9 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-06-30...
+    ✅ リンク追加: ['デジタルガーデン']
+  解析中: 2026-07-01...
+    ✅ リンク追加: ['この先に見える作品2026.6.6']
+
+🌿 完了: 2件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 86ms
+Found 1190 input files from `content` in 30ms
+Parsing input files using 4 threads
+Parsed 1190 Markdown files in 34s
+Filtered out 0 files in 672μs
+Emitting files
+Emitted 1246 files to `public` in 2s
+Done processing 1190 files in 36s

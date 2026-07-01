@@ -4031,3 +4031,50 @@ Filtered out 0 files in 686μs
 Emitting files
 Emitted 1246 files to `public` in 2s
 Done processing 1190 files in 27s
+[main f5d60d57] auto update
+ 10 files changed, 118 insertions(+), 4 deletions(-)
+ create mode 100644 content/notes/diary/2026-07-01.md
+ create mode 100644 content/notes/diary/images/20260701_ce5f8874.png
+ create mode 100644 content/notes/diary/images/20260701_f01cff00.png
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: デジタルガーデン...
+    → 関連なし
+  解析中: 2026-06-29...
+    ✅ リンク追加: ['AIRDOはいいぞ']
+  解析中: 2026-07-01...
+    ✅ リンク追加: ['2026-06-29', '2026-06-30']
+
+🌿 完了: 2件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 77ms
+Found 1190 input files from `content` in 28ms
+Parsing input files using 4 threads
+Parsed 1190 Markdown files in 27s
+Filtered out 0 files in 594μs
+Emitting files
+Emitted 1246 files to `public` in 2s
+Done processing 1190 files in 28s

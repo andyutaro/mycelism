@@ -5048,3 +5048,43 @@ Filtered out 0 files in 446μs
 Emitting files
 Emitted 1258 files to `public` in 892ms
 Done processing 1202 files in 15s
+[main d466a310] auto update
+ 3 files changed, 58 insertions(+), 1 deletion(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-02...
+    ✅ リンク追加: ['2026-06-25']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 55ms
+Found 1202 input files from `content` in 15ms
+Parsing input files using 4 threads
+Parsed 1202 Markdown files in 14s
+Filtered out 0 files in 397μs
+Emitting files
+Emitted 1258 files to `public` in 798ms
+Done processing 1202 files in 15s

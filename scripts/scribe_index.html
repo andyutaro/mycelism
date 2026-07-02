@@ -505,6 +505,50 @@ async function checkDateChange() {
 setInterval(checkDateChange, 60 * 1000); // 1分ごとに確認
 checkDateChange(); // 起動時に一度、現在の日付を記録しておく
 
+// ---- ライブ配信(REDEフェーズ1スパイク) ----
+// エディタDOMの全変化をMutationObserverで拾い、そのたびにinnerHTMLの
+// 全量スナップショットを /ws/pub へ送る。IME変換中の未確定文字列も
+// contenteditableのDOMに逐次挿入されるため、これだけで変換過程が乗る。
+// inputイベントではなくMutationObserverを使うのは、ペースト・ドロップ・
+// 埋め込み削除などinputが発火しない編集経路も1箇所で拾うため。
+// デバウンスはしない(1打鍵=1送信が仕様)。
+const LIVE_SESSION = Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+let liveSocket = null;
+let liveSeq = 0;
+
+function broadcastLive() {
+  if (!liveSocket || liveSocket.readyState !== WebSocket.OPEN) return;
+  liveSeq += 1;
+  liveSocket.send(JSON.stringify({
+    session: LIVE_SESSION,
+    seq: liveSeq,
+    html: editor.innerHTML,
+  }));
+}
+
+function connectLive() {
+  const ws = new WebSocket(`ws://${location.host}/ws/pub`);
+  ws.addEventListener('open', () => {
+    liveSocket = ws;
+    broadcastLive(); // 接続時点の内容を送っておく(閲覧者の初期表示用)
+  });
+  ws.addEventListener('close', () => {
+    liveSocket = null;
+    setTimeout(connectLive, 2000);
+  });
+  ws.addEventListener('error', () => {
+    try { ws.close(); } catch (e) {}
+  });
+}
+connectLive();
+
+new MutationObserver(broadcastLive).observe(editor, {
+  childList: true,
+  characterData: true,
+  attributes: true,
+  subtree: true,
+});
+
 // Macのスリープ復帰やタブの再アクティブ化を検知し、即座に日付をチェックする。
 // setIntervalはスリープ中は実行されないため、復帰した瞬間に1分待たず確認する。
 document.addEventListener('visibilitychange', () => {

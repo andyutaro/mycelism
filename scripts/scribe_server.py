@@ -29,6 +29,8 @@ import html as html_module
 import uuid
 import datetime
 
+import scribe_live
+
 PORT = 8765
 
 # このファイル自身の場所から、quartzリポジトリのcontent/notes/diaryを逆算する。
@@ -37,6 +39,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIARY_DIR = os.path.join(BASE_DIR, 'content', 'notes', 'diary')
 IMAGES_DIR = os.path.join(DIARY_DIR, 'images')
 INDEX_HTML_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scribe_index.html')
+WATCH_HTML_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scribe_watch.html')
 
 os.makedirs(DIARY_DIR, exist_ok=True)
 os.makedirs(IMAGES_DIR, exist_ok=True)
@@ -217,6 +220,12 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/' or self.path == '/index.html':
             self._serve_index()
+        elif self.path == '/watch':
+            self._serve_watch()
+        elif self.path == '/ws/pub':
+            scribe_live.handle_pub(self)
+        elif self.path == '/ws/sub':
+            scribe_live.handle_sub(self)
         elif self.path == '/api/load':
             self._handle_load()
         elif self.path == '/api/today':
@@ -274,6 +283,18 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(body)
         except FileNotFoundError:
             self.send_error(500, 'scribe_index.html が見つかりません')
+
+    def _serve_watch(self):
+        try:
+            with open(WATCH_HTML_PATH, 'rb') as f:
+                body = f.read()
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html; charset=utf-8')
+            self.send_header('Content-Length', str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+        except FileNotFoundError:
+            self.send_error(500, 'scribe_watch.html が見つかりません')
 
     def _handle_load(self):
         path = today_path()
@@ -349,8 +370,15 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
         pass
 
 
+class ScribeServer(socketserver.ThreadingTCPServer):
+    # ライブ配信のWebSocketは長寿命接続なので、シングルスレッドのままだと
+    # 閲覧タブが1本つながった時点で/api/save含む全リクエストが詰まる。
+    daemon_threads = True
+    allow_reuse_address = True
+
+
 def main():
-    with socketserver.TCPServer(('127.0.0.1', PORT), ScribeHandler) as httpd:
+    with ScribeServer(('127.0.0.1', PORT), ScribeHandler) as httpd:
         url = f'http://localhost:{PORT}'
         print(f'🖋  scribe is running at {url}')
         print(f'   ブラウザでこのURLを開いてください: {url}')

@@ -26,6 +26,7 @@ import json
 import os
 import re
 import html as html_module
+import secrets
 import uuid
 import datetime
 
@@ -43,6 +44,38 @@ WATCH_HTML_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scri
 
 os.makedirs(DIARY_DIR, exist_ok=True)
 os.makedirs(IMAGES_DIR, exist_ok=True)
+
+# ライブ配信の設定(pub用共有シークレット + 中継先URL)。
+# token: /ws/pub に接続できる唯一の鍵。このMacのscribeだけが持つ。
+# relay: 空ならローカル中継(このサーバー自身)。クラウド中継を使う場合は
+#        "wss://xxx.fly.dev" のようなフルURLを書く。
+LIVE_CONFIG_PATH = os.environ.get('SCRIBE_LIVE_CONFIG') or os.path.expanduser('~/.scribe_live.json')
+LIVE_CONFIG = None
+
+
+def load_live_config():
+    global LIVE_CONFIG
+    cfg = {}
+    if os.path.exists(LIVE_CONFIG_PATH):
+        try:
+            with open(LIVE_CONFIG_PATH, 'r', encoding='utf-8') as f:
+                cfg = json.load(f)
+        except (json.JSONDecodeError, OSError):
+            cfg = {}
+    changed = False
+    if not cfg.get('token'):
+        cfg['token'] = secrets.token_hex(24)
+        changed = True
+    if 'relay' not in cfg:
+        cfg['relay'] = ''
+        changed = True
+    if changed:
+        with open(LIVE_CONFIG_PATH, 'w', encoding='utf-8') as f:
+            json.dump(cfg, f, indent=2)
+        os.chmod(LIVE_CONFIG_PATH, 0o600)
+    LIVE_CONFIG = cfg
+    scribe_live.set_pub_token(cfg['token'])
+    return cfg
 
 
 def today_filename():
@@ -222,10 +255,14 @@ class ScribeHandler(http.server.BaseHTTPRequestHandler):
             self._serve_index()
         elif self.path == '/watch':
             self._serve_watch()
-        elif self.path == '/ws/pub':
+        elif self.path.startswith('/ws/pub'):
             scribe_live.handle_pub(self)
         elif self.path == '/ws/sub':
             scribe_live.handle_sub(self)
+        elif self.path == '/api/live':
+            # エディタページへの配信設定の受け渡し。このサーバーは127.0.0.1のみ
+            # にバインドされているため、トークンが外部へ漏れる経路はない。
+            self._send_json({'token': LIVE_CONFIG['token'], 'relay': LIVE_CONFIG['relay']})
         elif self.path == '/api/load':
             self._handle_load()
         elif self.path == '/api/today':
@@ -378,6 +415,7 @@ class ScribeServer(socketserver.ThreadingTCPServer):
 
 
 def main():
+    load_live_config()
     with ScribeServer(('127.0.0.1', PORT), ScribeHandler) as httpd:
         url = f'http://localhost:{PORT}'
         print(f'🖋  scribe is running at {url}')

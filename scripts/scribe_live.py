@@ -18,14 +18,35 @@ WebSocket(RFC 6455)は標準ライブラリのみで実装する(scribe本体と
 
 import base64
 import hashlib
+import hmac
+import json
 import struct
 import threading
+from urllib.parse import urlparse, parse_qs
 
 _WS_GUID = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
 
+# 1フレームの上限。全量スナップショット方式でも1日分は数百KBに収まる想定で、
+# 公開時にpubを装った巨大フレームでメモリを食い潰されるのを防ぐ。
+_MAX_FRAME = 4 * 1024 * 1024
+
 _subs = set()          # 閲覧者の生ソケット
 _last_frame = None     # 最後に配信した送信用フレーム(途中参加の閲覧者へ即送るため)
+_pubs = 0              # 書き手の接続数(0なら「Away from Screen」)
+_pub_token = None      # /ws/pub の共有シークレット。未設定ならpubを全拒否(fail closed)
 _lock = threading.Lock()
+
+
+def set_pub_token(token):
+    """書き込み口(/ws/pub)の共有シークレットを設定する。起動時に必ず呼ぶこと。"""
+    global _pub_token
+    _pub_token = token
+
+
+def _pub_authorized(handler):
+    qs = parse_qs(urlparse(handler.path).query)
+    supplied = (qs.get('token') or [''])[0]
+    return bool(_pub_token) and hmac.compare_digest(supplied, _pub_token)
 
 
 # ---- ハンドシェイク ----
@@ -85,6 +106,8 @@ def _read_frame(rfile):
         if ext is None:
             return None
         length = struct.unpack('>Q', ext)[0]
+    if length > _MAX_FRAME:
+        return None   # 異常な巨大フレームは接続ごと落とす
     mask = b''
     if masked:
         mask = _read_exact(rfile, 4)
@@ -113,12 +136,9 @@ def _make_frame(opcode, payload):
 
 # ---- 配信 ----
 
-def broadcast(payload):
-    """pubから受け取ったスナップショットを全閲覧者へ送る。"""
-    global _last_frame
-    frame = _make_frame(0x1, payload)
+def _fanout(frame):
+    """組み立て済みフレームを全閲覧者へ送る。送れなかった接続は破棄する。"""
     with _lock:
-        _last_frame = frame
         dead = []
         for conn in _subs:
             try:
@@ -129,33 +149,64 @@ def broadcast(payload):
             _subs.discard(conn)
 
 
+def broadcast(payload):
+    """pubから受け取ったスナップショットを全閲覧者へ送る。"""
+    global _last_frame
+    frame = _make_frame(0x1, payload)
+    with _lock:
+        _last_frame = frame
+    _fanout(frame)
+
+
+def _presence_frame():
+    """書き手の在席状態を伝えるメッセージ。スナップショットとはpresenceキーで区別する。"""
+    with _lock:
+        writing = _pubs > 0
+    payload = json.dumps({'presence': 'live' if writing else 'away'}).encode('utf-8')
+    return _make_frame(0x1, payload)
+
+
 # ---- 接続ハンドラ(scribe_server.pyのdo_GETから呼ばれる) ----
 
 def handle_pub(handler):
-    """書き手の接続。受信したテキストフレームを閲覧者へ中継し続ける。"""
+    """書き手の接続。受信したテキストフレームを閲覧者へ中継し続ける。
+    接続・切断のたびに在席状態(presence)を全閲覧者へ通知する。
+    共有シークレットトークン(?token=)を持つ接続だけを受け付ける。"""
+    global _pubs
+    if not _pub_authorized(handler):
+        handler.send_error(401, 'pub token required')
+        return
     if not _handshake(handler):
         return
     conn = handler.connection
     rfile = handler.rfile
-    fragments = b''
-    while True:
-        frame = _read_frame(rfile)
-        if frame is None:
-            return
-        fin, opcode, payload = frame
-        if opcode == 0x8:    # close
-            return
-        if opcode == 0x9:    # ping -> pong
-            try:
-                conn.sendall(_make_frame(0xA, payload))
-            except OSError:
+    with _lock:
+        _pubs += 1
+    _fanout(_presence_frame())
+    try:
+        fragments = b''
+        while True:
+            frame = _read_frame(rfile)
+            if frame is None:
                 return
-            continue
-        if opcode in (0x0, 0x1, 0x2):   # continuation / text / binary
-            fragments += payload
-            if fin:
-                broadcast(fragments)
-                fragments = b''
+            fin, opcode, payload = frame
+            if opcode == 0x8:    # close
+                return
+            if opcode == 0x9:    # ping -> pong
+                try:
+                    conn.sendall(_make_frame(0xA, payload))
+                except OSError:
+                    return
+                continue
+            if opcode in (0x0, 0x1, 0x2):   # continuation / text / binary
+                fragments += payload
+                if fin:
+                    broadcast(fragments)
+                    fragments = b''
+    finally:
+        with _lock:
+            _pubs -= 1
+        _fanout(_presence_frame())
 
 
 def handle_sub(handler):
@@ -169,6 +220,7 @@ def handle_sub(handler):
     try:
         if last:
             conn.sendall(last)
+        conn.sendall(_presence_frame())  # 現在の在席状態を初期表示用に送る
         # 読み取りループは切断検知とping応答のためだけに回す。
         # それ以外の受信データは一切処理しない(一方向性の担保)。
         while True:

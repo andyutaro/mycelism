@@ -526,8 +526,22 @@ function broadcastLive() {
   }));
 }
 
-function connectLive() {
-  const ws = new WebSocket(`ws://${location.host}/ws/pub`);
+// 配信設定(サーバーだけが持つpubトークン + 中継先URL)を取得してから接続する。
+// relayが空ならローカル中継、設定されていればクラウド中継(wss://...)へ直接つなぐ。
+let liveConfig = null;
+
+async function connectLive() {
+  if (!liveConfig) {
+    try {
+      const res = await fetch('/api/live', { cache: 'no-store' });
+      liveConfig = await res.json();
+    } catch (e) {
+      setTimeout(connectLive, 2000);
+      return;
+    }
+  }
+  const base = liveConfig.relay || `ws://${location.host}`;
+  const ws = new WebSocket(`${base}/ws/pub?token=${encodeURIComponent(liveConfig.token)}`);
   ws.addEventListener('open', () => {
     liveSocket = ws;
     broadcastLive(); // 接続時点の内容を送っておく(閲覧者の初期表示用)

@@ -4705,3 +4705,43 @@ Filtered out 0 files in 434μs
 Emitting files
 Emitted 1251 files to `public` in 793ms
 Done processing 1195 files in 15s
+[main c256d676] auto update
+ 4 files changed, 63 insertions(+), 3 deletions(-)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-02...
+    ✅ リンク追加: ['2026-06-25', 'やっぱりオリジナル番組あってこそだと思う']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 50ms
+Found 1195 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1195 Markdown files in 14s
+Filtered out 0 files in 424μs
+Emitting files
+Emitted 1251 files to `public` in 836ms
+Done processing 1195 files in 15s

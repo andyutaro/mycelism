@@ -4500,3 +4500,44 @@ Filtered out 0 files in 358μs
 Emitting files
 Emitted 1251 files to `public` in 785ms
 Done processing 1195 files in 14s
+[main 88f4aa47] auto update
+ 6 files changed, 73 insertions(+), 2 deletions(-)
+ create mode 100644 content/notes/diary/2026-07-02.md
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-02...
+    ✅ リンク追加: ['2026-06-25', 'やっぱりオリジナル番組あってこそだと思う']
+
+🌿 完了: 1件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 49ms
+Found 1195 input files from `content` in 15ms
+Parsing input files using 4 threads
+Parsed 1195 Markdown files in 13s
+Filtered out 0 files in 394μs
+Emitting files
+Emitted 1251 files to `public` in 802ms
+Done processing 1195 files in 14s

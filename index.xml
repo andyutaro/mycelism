@@ -6,6 +6,18 @@
       <description>Last 10 notes on Mycelism</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Mycelism</title>
+    <link>https://quartz.jzhao.xyz/</link>
+    <guid>https://quartz.jzhao.xyz/</guid>
+    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates 2026-07-02 - 2026-07-02... ]]></description>
+    <pubDate>Thu, 02 Jul 2026 01:37:33 GMT</pubDate>
+  </item><item>
+    <title>2026-07-02</title>
+    <link>https://quartz.jzhao.xyz/notes/diary/2026-07-02</link>
+    <guid>https://quartz.jzhao.xyz/notes/diary/2026-07-02</guid>
+    <description><![CDATA[ 【2026/7/2】 今朝、作業スペースへと歩いて行った時の考え事。 ちなみに朝ごはんは「椎茸炊き込みご飯・味噌汁・ホイコーロー」でした。あとマルチビタミンにマルチミネラル。 この間森でしゃべった「. ]]></description>
+    <pubDate>Thu, 02 Jul 2026 01:37:33 GMT</pubDate>
+  </item><item>
     <title>キャッチ＆リリース</title>
     <link>https://quartz.jzhao.xyz/concepts/%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%EF%BC%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9</link>
     <guid>https://quartz.jzhao.xyz/concepts/%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%EF%BC%86%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9</guid>
@@ -42,12 +54,6 @@
     <description><![CDATA[ 関連 Face the Fish ザコ サツキマス スズキ アングラー イワシ 釣り 釣りという行為は、ただ魚を獲るだけではなく、自然と向き合い、魚とのコミュニケーションを図る手段として捉えられている。釣りを通じて人々は自然環境や季節の移ろいを感じ取ることができ、地域特有の魚種やその生態についても深い理解を得られる。特に、アングラーは魚の行動パターンを読み解き、技術を駆使しながら狙った魚を釣るという知的な挑戦を楽しむ。釣りはまた、生活の一部として組み込まれ、その土地の文化や伝統とも結びついている。 サカナカイギでの扱い エピソード内で語られる釣りは、単なるレジャーや趣味を超えて、魚とのコミュニ... ]]></description>
     <pubDate>Wed, 01 Jul 2026 11:36:49 GMT</pubDate>
   </item><item>
-    <title>Mycelism</title>
-    <link>https://quartz.jzhao.xyz/</link>
-    <guid>https://quartz.jzhao.xyz/</guid>
-    <description><![CDATA[ こんにちは。北海道暮らしのポッドキャスターAndyです。 これはポッドキャストベースのデジタルガーデンとして作成してみたものです。 ・過去にオリジナルを中心として、僕が喋っているポッドキャストの内容 ・ささっと書いたメモや、清書したノート そう言ったものが延々と増え続けていきます。 これらからAIに「概念」を抽出してもらって、関係性を結んでもらった「グラフビュー」を見ていただいても楽しいのではと思います。 久々のコーディング・初めてのバイブコーディングで相当拙いものですが、盆栽のように愛でてもらえたら嬉しいです グラフビューを開く Updates 2026-07-01-サカナカイギ🐟釣りでサ... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 11:36:49 GMT</pubDate>
-  </item><item>
     <title>rooom@andyの内容</title>
     <link>https://quartz.jzhao.xyz/notes/article/rooom@andy%E3%81%AE%E5%86%85%E5%AE%B9</link>
     <guid>https://quartz.jzhao.xyz/notes/article/rooom@andy%E3%81%AE%E5%86%85%E5%AE%B9</guid>
@@ -58,12 +64,6 @@
     <link>https://quartz.jzhao.xyz/notes/diary/2026-06-30</link>
     <guid>https://quartz.jzhao.xyz/notes/diary/2026-06-30</guid>
     <description><![CDATA[ 【2026/6/30】 scribeで書くこと自体には今のところほとんど不満はない。しかし、これが保存されるときの仕組みや発信されるときの仕組みについてはだんだん限界が見えてきた。 ①マークダウン記法がだるい。 Obisidianはマークダウン記法であるのだが、僕はそもそもこのマークダウン記法が嫌いだ。そりゃエンジニアにとってみればやりやすいことこの上ないかもしれないが、日本語をのびのびと書こうと思った時にはnoteとかgoogleドキュメントのエディタのような形式の方が圧倒的に楽である。 僕はマークダウン記法に自分を合わせたくない。そのため現状scribeは「書いた内容をマークダウン記法に自... ]]></description>
-    <pubDate>Wed, 01 Jul 2026 04:34:33 GMT</pubDate>
-  </item><item>
-    <title>2026-07-01</title>
-    <link>https://quartz.jzhao.xyz/notes/diary/2026-07-01</link>
-    <guid>https://quartz.jzhao.xyz/notes/diary/2026-07-01</guid>
-    <description><![CDATA[ 【2026/7/1】 今朝森を歩きながら思ったこと ・面白さに行き当たるまでの探索にはクリエイティビティが必要だが、行き当たった面白さを伸ばしていくには処理能力やビジネスコミュニケーションの文法が重要 ・釧路よかったなー ・この先の僕にとっての良い拠点は「札幌のちょこっと外れで、ウォーカブルな地区で、車を停められて（できれば除雪の必要性がなくて）、2~3部屋で、2階以上」な気がする。あとは家賃をもったいないと感じることなく躊躇なく移動できる賃料。 ・ガイロンの各エピソードのタイトルは工夫が求められそうだ。その点、東浩紀の「人文系の学問は理系学問が設定した科学の基準からすると、科学ではない。でも... ]]></description>
     <pubDate>Wed, 01 Jul 2026 04:34:33 GMT</pubDate>
   </item>
     </channel>

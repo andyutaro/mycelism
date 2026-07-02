@@ -93,3 +93,4 @@ Traceback (most recent call last):
     self._sock.sendall(b)
 ConnectionResetError: [Errno 54] Connection reset by peer
 ----------------------------------------
+Thu Jul  2 10:27:46 JST 2026: scribeは既に起動中です。ブラウザのみ開きます。

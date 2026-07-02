@@ -4445,3 +4445,58 @@ Filtered out 0 files in 378μs
 Emitting files
 Emitted 1250 files to `public` in 796ms
 Done processing 1194 files in 14s
+[main 09b2b47d] auto update
+ 12 files changed, 260 insertions(+), 3 deletions(-)
+ create mode 100644 "content/concepts/\343\202\255\343\203\243\343\203\203\343\203\201\357\274\206\343\203\252\343\203\252\343\203\274\343\202\271.md"
+ create mode 100644 "content/concepts/\345\213\225\347\211\251\347\246\217\347\245\211.md"
+ create mode 100644 "content/concepts/\347\224\237\343\201\215\347\211\251\343\201\250\343\201\256\345\220\221\343\201\215\345\220\210\343\201\204\346\226\271.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-07-01-\343\202\265\343\202\253\343\203\212\343\202\253\343\202\244\343\202\256\360\237\220\237\351\207\243\343\202\212\343\201\247\343\202\265\343\202\253\343\203\212\343\202\222\345\202\267\343\201\244\343\201\221\343\201\246\343\201\227\343\201\276\343\201\206\343\201\223\343\201\250\343\202\222\343\201\251\343\201\206\346\215\211\343\201\210\343\202\213\357\274\237.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: サカナカイギ🐟釣りでサカナを傷つけてしまうことをどう捉える？...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+  解析中: 2026-07-02...
+    → 関連なし
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 54ms
+Found 1195 input files from `content` in 15ms
+Parsing input files using 4 threads
+
+Warning: content/notes/diary/2026-07-02.md isn't yet tracked by git, dates will be inaccurate
+Parsed 1195 Markdown files in 13s
+Filtered out 0 files in 358μs
+Emitting files
+Emitted 1251 files to `public` in 785ms
+Done processing 1195 files in 14s

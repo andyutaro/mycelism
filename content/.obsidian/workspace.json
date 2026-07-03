@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/diary/2026-06-30.md",
+                "file": "private/TODO/やること.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "2026-06-30"
+              "title": "やること"
             }
           }
         ]
@@ -205,8 +205,8 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
-    "notes/diary/2026-06-29.md",
     "notes/diary/2026-06-30.md",
+    "notes/diary/2026-06-29.md",
     "notes/diary/2026-06-25.md",
     "notes/diary/2026-06-26.md",
     "notes/diary/2026-06-21.md",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "private/MTG/小野匠さん/260630_小野さんMTG.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "260630_小野さんMTG"
             }
           }
         ]
@@ -205,6 +205,12 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "private/MTG/Madness/260408Madness Japan挨拶.md",
+    "private/MTG/小野匠さん/260630_小野さんMTG.md",
+    "private/MTG/小野匠さん",
+    "private/MTG/Madness/無題のファイル.md",
+    "private/MTG/Madness/無題のフォルダ",
+    "private/TODO/やること.md",
     "notes/diary/2026-06-30.md",
     "notes/diary/2026-06-29.md",
     "notes/diary/2026-06-25.md",
@@ -214,7 +220,6 @@
     "notes/diary/2026-06-23.md",
     "notes/diary/2026-06-24.md",
     "notes/diary/書き散らし260502.md",
-    "private/TODO/やること.md",
     "notes/diary/images/20260629_1565be0d.png",
     "concepts/釧路.md",
     "concepts/統合研究環境（REDE）.md",
@@ -230,9 +235,6 @@
     "concepts/ポッドキャスト.md",
     "notes/diary/images/20260624_f86104e6.png",
     "AIは古き良きメディアアートを殺すのか？.md",
-    "notes/diary/260420_ロングポスト_生活.md",
-    "notes/article/ポッドキャストにおけるプロデュース.md",
-    "ミモリラジオ.md",
     "notes/diary/images/20260621_7dbc450e.png",
     "notes/diary/images/20260621_575dad4b.jpg",
     "notes/diary/images/20260621_cb3cf93b.png",
@@ -244,8 +246,6 @@
     "notes/article/研究",
     "private/private_private",
     "private/MTG/BrandShift/無題のフォルダ",
-    "episodes/on-airdo",
-    "private/MTG/BrandShift",
     "assets/mushroom.jpg",
     "無題のファイル.canvas",
     "無題のファイル 1.canvas"

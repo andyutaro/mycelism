@@ -7614,3 +7614,54 @@ Filtered out 0 files in 376μs
 Emitting files
 Emitted 1266 files to `public` in 795ms
 Done processing 1210 files in 19s
+[main cae13a2a] auto update
+ 14 files changed, 1319 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\343\203\212\343\202\244\343\203\253\343\203\221\343\203\274\343\203\201.md"
+ create mode 100644 "content/concepts/\347\211\271\345\256\232\345\244\226\346\235\245\347\224\237\347\211\251.md"
+ create mode 100644 "content/concepts/\347\220\265\347\220\266\346\271\226.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-07-08-\343\202\265\343\202\253\343\203\212\343\202\253\343\202\244\343\202\256\360\237\220\237\343\202\265\343\202\253\343\203\212\343\201\256\345\244\226\346\235\245\347\250\256\345\225\217\351\241\214\343\202\222\343\201\251\343\201\206\350\200\203\343\201\210\343\202\213\357\274\237.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: サカナカイギ🐟サカナの外来種問題をどう考える？...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 64ms
+Found 1210 input files from `content` in 15ms
+Parsing input files using 4 threads
+Parsed 1210 Markdown files in 19s
+Filtered out 0 files in 438μs
+Emitting files
+Emitted 1266 files to `public` in 764ms
+Done processing 1210 files in 20s

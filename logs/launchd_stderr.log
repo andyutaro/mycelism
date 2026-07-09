@@ -513,3 +513,6 @@ To github.com:andyutaro/mycelism.git
 warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
 To github.com:andyutaro/mycelism.git
    6b72a3f5..3b4fe959  main -> main
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   3b4fe959..0f0329a7  main -> main

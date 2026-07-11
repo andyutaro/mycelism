@@ -596,3 +596,6 @@ npm notice
 warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
 To github.com:andyutaro/mycelism.git
    a5da2e87..4cc33cff  main -> main
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   4cc33cff..03c64f5a  main -> main

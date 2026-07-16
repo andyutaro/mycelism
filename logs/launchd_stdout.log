@@ -10511,3 +10511,173 @@ Filtered out 0 files in 712μs
 Emitting files
 Emitted 1284 files to `public` in 1s
 Done processing 1228 files in 49s
+[main 3ed79f7d] auto update
+ 2 files changed, 41 insertions(+)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+
+【mimoriradio】竹 (2件)
+  → 10個のconcept中 0個にリンク追加
+
+【mimoriradio】キノコ (3件)
+  → 17個のconcept中 0個にリンク追加
+
+【mimoriradio】ネコ (4件)
+  → 19個のconcept中 0個にリンク追加
+
+【mimoriradio】ブナ (3件)
+  → 14個のconcept中 0個にリンク追加
+
+【mimoriradio】薬草 (2件)
+  → 10個のconcept中 0個にリンク追加
+
+【mimoriradio】金玉 (3件)
+  → 18個のconcept中 0個にリンク追加
+
+【mimoriradio】ウミガメ (3件)
+  → 15個のconcept中 0個にリンク追加
+
+【mimoriradio】クジラ (8件)
+  → 35個のconcept中 0個にリンク追加
+
+【mimoriradio】コーヒー (4件)
+  → 19個のconcept中 0個にリンク追加
+
+【mimoriradio】サクラ (2件)
+  → 10個のconcept中 0個にリンク追加
+
+【mimoriradio】オオカミ (5件)
+  → 29個のconcept中 0個にリンク追加
+
+【mimoriradio】カミナリ (4件)
+  → 23個のconcept中 0個にリンク追加
+
+【mimoriradio】サケマス (5件)
+  → 29個のconcept中 0個にリンク追加
+
+【mimoriradio】森の見方 (4件)
+  → 23個のconcept中 0個にリンク追加
+
+【mimoriradio】コケ (4件)
+  → 19個のconcept中 0個にリンク追加
+
+【mimoriradio】土 (6件)
+  → 31個のconcept中 0個にリンク追加
+
+【mimoriradio】カラス (6件)
+  → 32個のconcept中 0個にリンク追加
+
+【mimoriradio】キツツキ (4件)
+  → 19個のconcept中 0個にリンク追加
+
+【mimoriradio】海藻 (8件)
+  → 40個のconcept中 0個にリンク追加
+
+【mimoriradio】メダカ (5件)
+  → 23個のconcept中 0個にリンク追加
+
+【mimoriradio】うんこ (6件)
+  → 30個のconcept中 0個にリンク追加
+
+【mimoriradio】マメ (4件)
+  → 21個のconcept中 0個にリンク追加
+
+【sakanakaigi】イワシ (2件)
+  → 9個のconcept中 0個にリンク追加
+
+【sakanakaigi】アングラー (2件)
+  → 8個のconcept中 0個にリンク追加
+
+【sakanakaigi】カキ (2件)
+  → 9個のconcept中 0個にリンク追加
+
+【sakanakaigi】ハルノサカナ (2件)
+  → 11個のconcept中 0個にリンク追加
+
+【sakanakaigi】ワカメ (2件)
+  → 10個のconcept中 0個にリンク追加
+
+【sakanakaigi】オナガワ (2件)
+  → 8個のconcept中 0個にリンク追加
+
+【sakanakaigi】ギンザケ (2件)
+  → 9個のconcept中 0個にリンク追加
+
+【sakanakaigi】スズキ (3件)
+  → 12個のconcept中 0個にリンク追加
+
+【sakanakaigi】コトバ (2件)
+  → 11個のconcept中 0個にリンク追加
+
+【sakanakaigi】サツキマス (2件)
+  → 10個のconcept中 0個にリンク追加
+
+【sakanakaigi】ギョキョウ (2件)
+  → 12個のconcept中 0個にリンク追加
+
+【sakanakaigi】ザコ (4件)
+  → 17個のconcept中 0個にリンク追加
+
+【sakanakaigi】Face the Fish (2件)
+  → 10個のconcept中 0個にリンク追加
+
+🌿 完了: 合計0件のリンクを追加
+🌿 全concept処理開始: 948件
+
+🌿 完了: 0件 / スキップ: 948件 / エラー: 0件
+🌿 全エピソード処理開始
+
+📻 sakanakaigi (LISTEN)
+  完了: 0件 / スキップ: 66件 / トランスクリプトなし: 0件
+
+📻 mimoriradio (LISTEN)
+  完了: 0件 / スキップ: 117件 / トランスクリプトなし: 0件
+
+📻 longpost (LISTEN)
+  完了: 0件 / スキップ: 14件 / トランスクリプトなし: 0件
+
+🌿 全処理完了！
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 82ms
+Found 1235 input files from `content` in 27ms
+Parsing input files using 4 threads
+
+Warning: content/concepts/ファーム富田.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/concepts/ラベンダー.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/concepts/ローストビーフ丼.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/concepts/富良野.md isn't yet tracked by git, dates will be inaccurate
+
+Warning: content/concepts/美瑛.md isn't yet tracked by git, dates will be inaccurate
+Parsed 1235 Markdown files in 51s
+Filtered out 0 files in 667μs
+Emitting files
+Emitted 1291 files to `public` in 2s
+Done processing 1235 files in 52s

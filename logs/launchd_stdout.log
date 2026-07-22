@@ -12804,3 +12804,54 @@ Filtered out 0 files in 419μs
 Emitting files
 Emitted 1295 files to `public` in 825ms
 Done processing 1239 files in 19s
+[main c393d44d] auto update
+ 12 files changed, 266 insertions(+), 3 deletions(-)
+ create mode 100644 "content/concepts/\343\202\252\343\203\252\343\202\270\343\203\212\343\203\253\343\203\253\343\202\242\343\203\274.md"
+ create mode 100644 "content/concepts/\343\203\253\343\202\242\343\203\274.md"
+ create mode 100644 "content/concepts/\343\203\253\343\202\242\343\203\274\343\202\253\343\203\251\343\203\274.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-07-22-\343\203\253\343\202\242\343\203\274\343\202\253\343\202\244\343\202\256\342\221\241\360\237\216\243\343\202\252\343\203\252\343\202\270\343\203\212\343\203\253\343\203\253\343\202\242\343\203\274\343\201\256\350\211\262\343\202\222\350\200\203\343\201\210\343\202\210\343\201\206\360\237\220\237\360\237\220\240\360\237\220\241.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: ルアーカイギ②🎣オリジナルルアーの色を考えよう🐟🐠🐡...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 60ms
+Found 1239 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1239 Markdown files in 16s
+Filtered out 0 files in 405μs
+Emitting files
+Emitted 1295 files to `public` in 787ms
+Done processing 1239 files in 17s

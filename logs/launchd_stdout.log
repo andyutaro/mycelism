@@ -16433,3 +16433,53 @@ Filtered out 0 files in 555μs
 Emitting files
 Emitted 1310 files to `public` in 2s
 Done processing 1254 files in 1m
+[main e8f3c7a5] auto update
+ 12 files changed, 247 insertions(+), 3 deletions(-)
+ create mode 100644 "content/concepts/\343\202\277\343\202\244\343\202\242\343\203\203\343\203\227\343\203\253\343\202\242\343\203\274.md"
+ create mode 100644 "content/concepts/\347\225\252\345\244\226\347\267\250.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-07-29-\347\225\252\345\244\226\347\267\250\360\237\216\243\343\201\252\343\202\223\343\201\240\343\201\213\346\234\200\350\277\221\345\277\231\343\201\227\343\201\213\343\201\243\343\201\237\343\201\252\360\237\220\237\360\237\220\240\360\237\220\241.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: 番外編🎣なんだか最近忙しかったな🐟🐠🐡...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 89ms
+Found 1254 input files from `content` in 32ms
+Parsing input files using 4 threads
+Parsed 1254 Markdown files in 56s
+Filtered out 0 files in 602μs
+Emitting files
+Emitted 1310 files to `public` in 2s
+Done processing 1254 files in 58s

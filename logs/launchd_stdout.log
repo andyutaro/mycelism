@@ -17036,3 +17036,55 @@ Filtered out 0 files in 597μs
 Emitting files
 Emitted 1315 files to `public` in 2s
 Done processing 1259 files in 56s
+[main 6f3d8438] auto update
+ 12 files changed, 751 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\343\202\265\343\203\274\343\203\211\343\203\227\343\203\254\343\202\244\343\202\271.md"
+ create mode 100644 "content/concepts/\346\235\261\344\272\254\343\202\253\343\203\225\343\202\247\343\203\273\351\212\255\346\271\257.md"
+ create mode 100644 "content/concepts/\346\240\274\345\256\211\343\203\237\343\203\245\343\203\274\343\202\270\343\202\242\343\203\240.md"
+ create mode 100644 "content/concepts/\351\203\275\344\274\232\343\201\256\343\202\252\343\202\242\343\202\267\343\202\271.md"
+ create mode 100644 "content/episodes/longpost/2026-07-30-\347\224\237\346\264\273\357\275\234\346\235\261\344\272\254\343\201\256\343\202\252\343\202\242\343\202\267\343\202\271\343\202\222\346\225\231\343\201\210\343\201\246\343\201\273\343\201\227\343\201\204from\351\233\250\343\201\256\346\243\256\343\200\220\343\201\212\343\201\237\343\202\210\343\202\212\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 1件
+  処理中: 生活｜東京のオアシスを教えてほしいfrom雨の森【おたより】...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (4個)
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 104ms
+Found 1259 input files from `content` in 30ms
+Parsing input files using 4 threads
+Parsed 1259 Markdown files in 57s
+Filtered out 0 files in 564μs
+Emitting files
+Emitted 1315 files to `public` in 5s
+Done processing 1259 files in 1m

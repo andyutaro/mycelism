@@ -17293,3 +17293,55 @@ Filtered out 0 files in 522μs
 Emitting files
 Emitted 1320 files to `public` in 2s
 Done processing 1264 files in 1m
+[main f624c24c] auto update
+ 14 files changed, 501 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\343\203\210\343\203\211\343\203\257\343\203\251.md"
+ create mode 100644 "content/concepts/\343\203\216\343\203\274\343\202\271\343\203\236\343\203\263.md"
+ create mode 100644 "content/concepts/\346\234\255\345\271\214\345\215\203\347\247\213\345\272\265.md"
+ create mode 100644 "content/concepts/\351\207\216\344\273\230\345\215\212\345\263\266.md"
+ create mode 100644 "content/episodes/on-airdo/2026-07-30-#84 \351\212\230\350\217\223\343\203\216\343\203\274\343\202\271\343\203\236\343\203\263\343\201\250\347\265\266\346\231\257\343\201\256\343\201\212\343\201\237\343\202\210\343\202\212\345\233\236\343\200\234AIRDO\346\251\237\345\206\205\343\201\247\343\201\204\343\201\237\343\201\240\343\201\204\343\201\237\343\201\212\346\211\213\347\264\231\343\201\250\344\270\200\347\267\222\343\201\253\343\200\220\343\201\212\343\202\223\343\201\210\343\201\202\343\201\251\343\201\205\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着: 1件
+  処理中: #84 銘菓ノースマンと絶景のおたより回〜AIRDO機内でいただいたお手紙と一緒...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 82ms
+Found 1264 input files from `content` in 29ms
+Parsing input files using 4 threads
+Parsed 1264 Markdown files in 51s
+Filtered out 0 files in 604μs
+Emitting files
+Emitted 1320 files to `public` in 2s
+Done processing 1264 files in 53s

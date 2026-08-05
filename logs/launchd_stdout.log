@@ -21413,3 +21413,54 @@ Filtered out 0 files in 661μs
 Emitting files
 Emitted 1326 files to `public` in 2s
 Done processing 1270 files in 1m
+[main e82f409a] auto update
+ 10 files changed, 273 insertions(+), 3 deletions(-)
+ create mode 100644 "content/concepts/\343\203\207\343\202\243\343\203\254\343\202\257\343\202\267\343\203\247\343\203\263.md"
+ create mode 100644 "content/concepts/\347\267\250\351\233\206\346\212\200\350\241\223.md"
+ create mode 100644 "content/concepts/\350\201\264\343\201\215\346\211\213\343\201\256\350\246\226\347\202\271.md"
+ create mode 100644 "content/episodes/longpost/2026-08-05-\345\210\266\344\275\234\357\275\234\343\203\235\343\203\203\343\203\211\343\202\255\343\203\243\343\202\271\343\203\210\343\201\256\350\201\264\343\201\215\346\211\213\343\201\250\343\201\227\343\201\246\346\204\217\350\255\230\343\201\227\343\201\246\343\201\204\343\202\213\343\201\223\343\201\250from\346\243\256\343\200\220\343\201\212\343\201\237\343\202\210\343\202\212\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 1件
+  処理中: 制作｜ポッドキャストの聴き手として意識していることfrom森【おたより】...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (4個)
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 61ms
+Found 1270 input files from `content` in 27ms
+Parsing input files using 4 threads
+Parsed 1270 Markdown files in 1m
+Filtered out 0 files in 584μs
+Emitting files
+Emitted 1326 files to `public` in 2s
+Done processing 1270 files in 1m

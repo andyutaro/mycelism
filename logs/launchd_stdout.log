@@ -22734,3 +22734,55 @@ Filtered out 0 files in 540μs
 Emitting files
 Emitted 1337 files to `public` in 2s
 Done processing 1281 files in 1m
+[main def43340] auto update
+ 10 files changed, 279 insertions(+), 3 deletions(-)
+ create mode 100644 content/concepts/web2.0.md
+ create mode 100644 "content/concepts/\343\203\227\343\203\251\343\203\203\343\203\210\343\203\225\343\202\251\343\203\274\343\203\240\344\276\235\345\255\230.md"
+ create mode 100644 "content/concepts/\343\203\233\343\203\274\343\203\240\343\203\232\343\203\274\343\202\270.md"
+ create mode 100644 "content/concepts/\343\203\241\343\202\277\343\202\257\343\202\275\345\214\226\357\274\210Enshittification\357\274\211.md"
+ create mode 100644 "content/episodes/longpost/2026-08-09-\345\210\266\344\275\234\357\275\234\344\273\212\343\201\223\343\201\235\343\201\202\343\201\210\343\201\246\343\200\214\343\203\233\343\203\274\343\203\240\343\203\232\343\203\274\343\202\270\343\200\215 from\346\243\256.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 1件
+  処理中: 制作｜今こそあえて「ホームページ」 from森...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (4個)
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 82ms
+Found 1281 input files from `content` in 30ms
+Parsing input files using 4 threads
+Parsed 1281 Markdown files in 1m
+Filtered out 0 files in 585μs
+Emitting files
+Emitted 1337 files to `public` in 2s
+Done processing 1281 files in 1m

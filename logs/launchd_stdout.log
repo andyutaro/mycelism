@@ -24216,3 +24216,56 @@ Filtered out 0 files in 585μs
 Emitting files
 Emitted 1343 files to `public` in 2s
 Done processing 1287 files in 2m
+[main 71dcdb78] auto update
+ 14 files changed, 734 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\345\244\247\346\275\256\343\203\273\345\260\217\346\275\256.md"
+ create mode 100644 "content/concepts/\345\271\262\346\275\256.md"
+ create mode 100644 "content/concepts/\346\272\200\346\275\256.md"
+ create mode 100644 "content/concepts/\346\275\256\345\271\262\347\213\251\343\202\212.md"
+ create mode 100644 "content/concepts/\346\275\256\346\261\220.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-08-12-\343\202\246\343\203\237\360\237\214\212\346\272\200\346\275\256\343\203\273\345\271\262\346\275\256\343\201\243\343\201\246\343\201\252\343\201\253\357\274\237\345\244\247\346\275\256\343\203\273\345\260\217\346\275\256\343\201\243\343\201\246\343\201\252\343\201\253\357\274\237.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: ウミ🌊満潮・干潮ってなに？大潮・小潮ってなに？...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 112ms
+Found 1287 input files from `content` in 34ms
+Parsing input files using 4 threads
+Parsed 1287 Markdown files in 2m
+Filtered out 0 files in 1ms
+Emitting files
+Emitted 1343 files to `public` in 4s
+Done processing 1287 files in 2m

@@ -24776,3 +24776,55 @@ Filtered out 0 files in 561μs
 Emitting files
 Emitted 1348 files to `public` in 2s
 Done processing 1292 files in 1m
+[main d45219d8] auto update
+ 14 files changed, 1008 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\343\201\223\343\201\266\343\201\227.md"
+ create mode 100644 "content/concepts/\343\201\257\343\201\255\343\202\202\343\202\223\345\261\213.md"
+ create mode 100644 "content/concepts/\345\262\251\350\246\213\346\262\242.md"
+ create mode 100644 "content/concepts/\350\213\245\351\266\217\346\231\202\344\273\243\343\201\252\343\202\213\343\201\250.md"
+ create mode 100644 "content/episodes/on-airdo/2026-08-13-#86 AIRDO\345\237\267\350\241\214\345\275\271\345\223\241\343\201\253\350\201\236\343\201\217\357\274\201\346\234\255\345\271\214\343\201\212\343\201\231\343\201\231\343\202\201\345\261\205\351\205\222\345\261\213\343\201\250\343\200\201\345\234\260\345\205\203\343\201\256\351\212\230\350\217\223\343\200\214\343\201\223\343\201\266\343\201\227\343\200\215\343\200\220\343\201\212\343\202\223\343\201\210\343\201\202\343\201\251\343\201\205\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着: 1件
+  処理中: #86 AIRDO執行役員に聞く！札幌おすすめ居酒屋と、地元の銘菓「こぶし」【お...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 86ms
+Found 1292 input files from `content` in 29ms
+Parsing input files using 4 threads
+Parsed 1292 Markdown files in 1m
+Filtered out 0 files in 587μs
+Emitting files
+Emitted 1348 files to `public` in 2s
+Done processing 1292 files in 1m

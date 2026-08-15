@@ -25381,3 +25381,55 @@ Filtered out 0 files in 440μs
 Emitting files
 Emitted 1353 files to `public` in 2s
 Done processing 1297 files in 1m
+[main e0f4d800] auto update
+ 11 files changed, 685 insertions(+), 4 deletions(-)
+ create mode 100644 "content/concepts/Web\343\202\265\343\202\244\343\203\210\350\207\252\344\275\234.md"
+ create mode 100644 "content/concepts/\343\202\263\343\203\263\343\203\206\343\203\263\343\203\204\343\201\256\351\207\215\350\244\207.md"
+ create mode 100644 "content/concepts/\343\203\227\343\203\255\343\202\270\343\202\247\343\202\257\343\203\210\343\203\273\343\203\230\343\202\244\343\203\253\343\203\273\343\203\241\343\202\242\343\203\252\343\203\274.md"
+ create mode 100644 "content/concepts/\343\203\252\343\202\242\343\202\257\343\202\267\343\203\247\343\203\263\343\202\263\343\203\263\343\203\206\343\203\263\343\203\204.md"
+ create mode 100644 "content/episodes/longpost/2026-08-15-\345\210\266\344\275\234\357\275\234Podcast\343\201\256\345\206\205\345\256\271\343\201\213\343\201\266\343\202\212\343\201\257\346\260\227\343\201\253\343\201\233\343\201\232\350\241\214\343\201\223\343\201\206from\346\243\256\343\200\220\343\201\212\343\201\237\343\202\210\343\202\212\303\2272\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 1件
+  処理中: 制作｜Podcastの内容かぶりは気にせず行こうfrom森【おたより×2】...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (4個)
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 82ms
+Found 1297 input files from `content` in 29ms
+Parsing input files using 4 threads
+Parsed 1297 Markdown files in 2m
+Filtered out 0 files in 659μs
+Emitting files
+Emitted 1353 files to `public` in 2s
+Done processing 1297 files in 2m

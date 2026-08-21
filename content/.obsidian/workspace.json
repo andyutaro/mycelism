@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/TODO/やること.md",
+                "file": "notes/diary/書き散らし260326.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "やること"
+              "title": "書き散らし260326"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "野村",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +94,8 @@
               "title": "新規タブ"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,12 +206,12 @@
   },
   "active": "dae912ec0398de56",
   "lastOpenFiles": [
+    "private/TODO/やること.md",
     "private/MTG/小野匠さん/260630_小野さんMTG.md",
     "private/MTG/Madness/260408Madness Japan挨拶.md",
     "private/MTG/小野匠さん",
     "private/MTG/Madness/無題のファイル.md",
     "private/MTG/Madness/無題のフォルダ",
-    "private/TODO/やること.md",
     "notes/diary/2026-06-30.md",
     "notes/diary/2026-06-29.md",
     "notes/diary/2026-06-25.md",

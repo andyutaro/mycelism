@@ -33650,3 +33650,54 @@ Filtered out 0 files in 616μs
 Emitting files
 Emitted 1377 files to `public` in 2s
 Done processing 1321 files in 2m
+[main bc32bebe] auto update
+ 12 files changed, 258 insertions(+), 3 deletions(-)
+ create mode 100644 "content/concepts/\343\202\246\343\202\260\343\202\244.md"
+ create mode 100644 "content/concepts/\347\222\260\345\242\203\351\201\251\345\277\234.md"
+ create mode 100644 "content/concepts/\350\200\220\344\271\205\351\255\232.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-09-02-\343\202\246\343\202\260\343\202\244\360\237\220\237\343\201\251\343\201\223\343\201\247\343\202\202\347\224\237\343\201\215\343\201\246\343\201\204\343\201\221\343\202\213\350\200\220\344\271\205\351\255\232.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: ウグイ🐟どこでも生きていける耐久魚...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 93ms
+Found 1321 input files from `content` in 31ms
+Parsing input files using 4 threads
+Parsed 1321 Markdown files in 2m
+Filtered out 0 files in 671μs
+Emitting files
+Emitted 1377 files to `public` in 2s
+Done processing 1321 files in 2m

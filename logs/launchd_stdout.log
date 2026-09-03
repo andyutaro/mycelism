@@ -34178,3 +34178,57 @@ Filtered out 0 files in 1ms
 Emitting files
 Emitted 1384 files to `public` in 18s
 Done processing 1328 files in 4m
+[main 2355b5a5] auto update
+ 14 files changed, 819 insertions(+), 6 deletions(-)
+ create mode 100644 "content/concepts/\343\202\265\343\203\263\343\203\211\343\203\252\343\202\242.md"
+ create mode 100644 "content/concepts/\344\270\211\351\232\216\346\273\235\345\205\254\345\234\222.md"
+ create mode 100644 "content/concepts/\344\270\255\345\263\266\345\205\254\345\234\222.md"
+ create mode 100644 "content/concepts/\345\214\227\346\265\267\351\201\223\347\264\205\350\221\211.md"
+ create mode 100644 "content/concepts/\345\233\233\345\255\243\345\275\251\350\241\227\351\201\223.md"
+ create mode 100644 "content/concepts/\346\251\230\343\202\263\343\203\274\343\203\222\343\203\274\345\272\227.md"
+ create mode 100644 "content/episodes/on-airdo/2026-09-03-#89 \347\264\205\350\221\211\343\202\267\343\203\274\343\202\272\343\203\263\343\201\257\343\200\201\346\234\255\345\271\214\343\202\275\343\202\246\343\203\253\343\203\225\343\203\274\343\203\211\343\200\214\343\202\265\343\203\263\343\203\211\343\203\252\343\202\242\343\200\215\343\202\204\343\202\263\343\203\274\343\203\222\343\203\274\343\201\250\345\205\261\343\201\253\360\237\215\201\343\200\220\343\201\212\343\202\223\343\201\210\343\201\202\343\201\251\343\201\205\343\200\221.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着: 1件
+  処理中: #89 紅葉シーズンは、札幌ソウルフード「サンドリア」やコーヒーと共に🍁【おんえ...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 111ms
+Found 1328 input files from `content` in 40ms
+Parsing input files using 4 threads
+Parsed 1328 Markdown files in 4m
+Filtered out 0 files in 1ms
+Emitting files
+Emitted 1384 files to `public` in 8s
+Done processing 1328 files in 4m

@@ -35156,3 +35156,52 @@ Filtered out 0 files in 702μs
 Emitting files
 Emitted 1386 files to `public` in 2s
 Done processing 1330 files in 2m
+[main 451bad2e] auto update
+ 13 files changed, 232 insertions(+), 4 deletions(-)
+ create mode 100644 "content/concepts/\345\234\260\347\220\203\346\270\251\346\232\226\345\214\226.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-09-09-\360\237\220\237\344\273\212\351\200\261\343\201\257Podcast\343\200\214\350\201\264\343\201\217\346\226\260\343\201\227\343\201\204\347\220\206\347\247\221\343\200\215\343\201\247\343\203\252\343\203\252\343\203\274\343\202\271\343\201\227\343\201\246\343\201\204\343\201\276\343\201\231\357\274\201\360\237\220\237.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: 🐟今週はPodcast「聴く新しい理科」でリリースしています！🐟...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 118ms
+Found 1330 input files from `content` in 30ms
+Parsing input files using 4 threads
+Parsed 1330 Markdown files in 9h
+Filtered out 0 files in 737μs
+Emitting files
+Emitted 1386 files to `public` in 2s
+Done processing 1330 files in 9h

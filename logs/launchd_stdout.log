@@ -37311,3 +37311,55 @@ Filtered out 0 files in 716μs
 Emitting files
 Emitted 1397 files to `public` in 2s
 Done processing 1341 files in 2m
+[main fabf59c2] auto update
+ 11 files changed, 437 insertions(+), 4 deletions(-)
+ create mode 100644 "content/concepts/\343\202\257\343\203\252\343\202\250\343\202\244\343\202\277\343\203\274.md"
+ create mode 100644 "content/concepts/\343\203\235\343\203\203\343\203\211\343\202\255\343\203\243\343\202\271\343\203\210\343\202\271\343\202\277\343\203\274\343\202\242\343\203\257\343\203\274\343\203\211.md"
+ create mode 100644 "content/concepts/\345\256\256\345\237\216.md"
+ create mode 100644 "content/concepts/\350\201\267\346\245\255\343\201\250\343\201\227\343\201\246\343\201\256\345\260\217\350\252\254\345\256\266.md"
+ create mode 100644 "content/episodes/longpost/2026-09-16-\345\210\266\344\275\234\357\275\234\343\201\212\343\201\213\343\201\222\346\247\230\343\201\247\345\254\211\343\201\227\343\201\204\343\201\223\343\201\250\343\201\214\343\201\202\343\202\212\343\201\276\343\201\227\343\201\237from\346\243\256.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 1件
+  処理中: 制作｜おかげ様で嬉しいことがありましたfrom森...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (4個)
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 81ms
+Found 1341 input files from `content` in 32ms
+Parsing input files using 4 threads
+Parsed 1341 Markdown files in 2m
+Filtered out 0 files in 656μs
+Emitting files
+Emitted 1397 files to `public` in 2s
+Done processing 1341 files in 3m

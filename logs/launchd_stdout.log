@@ -39270,3 +39270,54 @@ Filtered out 0 files in 435μs
 Emitting files
 Emitted 1412 files to `public` in 904ms
 Done processing 1355 files in 1m
+[main 7b22f3c4] auto update
+ 13 files changed, 611 insertions(+), 4 deletions(-)
+ create mode 100644 "content/concepts/MADNESS\343\202\270\343\203\243\343\203\221\343\203\263.md"
+ create mode 100644 "content/concepts/\345\245\263\345\267\235\343\202\264\343\203\274\343\203\253\343\203\207\343\203\263\343\203\231\343\202\244.md"
+ create mode 100644 "content/concepts/\351\207\243\343\202\212\344\274\201\347\224\273.md"
+ create mode 100644 "content/episodes/sakanakaigi/2026-09-23-\343\203\253\343\202\242\343\203\274\360\237\216\243\343\203\216\343\203\252\343\201\247\346\261\272\343\201\276\343\202\213 #\343\202\265\343\202\253\343\203\212\343\202\253\343\202\244\343\202\256 \351\207\243\343\202\212\344\274\201\347\224\273.md"
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 1件
+  処理中: ルアー🎣ノリで決まる #サカナカイギ 釣り企画...
+  ✅ エピソードページ生成
+  ✅ conceptページ更新 (6個)
+
+📻 mimoriradio を処理中...
+  新着なし
+
+🔗 シリーズリンクを更新中...
+
+📝 concept説明文を更新中...
+
+🎙 トランスクリプトを取得中...
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 1件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 67ms
+Found 1355 input files from `content` in 19ms
+Parsing input files using 4 threads
+Parsed 1355 Markdown files in 1m
+Filtered out 0 files in 668μs
+Emitting files
+Emitted 1412 files to `public` in 926ms
+Done processing 1355 files in 1m

@@ -2946,3 +2946,6 @@ fatal: the remote end hung up unexpectedly
 warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
 To github.com:andyutaro/mycelism.git
    99b0b328..0c8c98ef  main -> main
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   0c8c98ef..2a1eca2b  main -> main

@@ -41368,3 +41368,45 @@ Filtered out 0 files in 1ms
 Emitting files
 Emitted 1418 files to `public` in 3s
 Done processing 1361 files in 12m
+[main 881f4b86] auto update
+ 2 files changed, 41 insertions(+)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着なし
+
+📻 on-airdo を処理中...
+  新着なし
+
+📻 sakanakaigi を処理中...
+  新着: 2件
+  処理中: お知らせ🐟いいことをおこそうキャンペーンbyサカナカイギ × MADNESS...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfbCd7PFqUot6dMJ8Uwix'}
+  処理中: サカナカイギ🎣釣り人のマナー・トラブルをどう考える？...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfbCd9DeCVgfgXxny1Xnu'}
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 62ms
+Found 1361 input files from `content` in 16ms
+Parsing input files using 4 threads
+Parsed 1361 Markdown files in 26m
+Filtered out 0 files in 710μs
+Emitting files
+Emitted 1418 files to `public` in 2s
+Done processing 1361 files in 26m

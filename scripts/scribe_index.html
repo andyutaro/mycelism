@@ -541,9 +541,14 @@ async function connectLive() {
     }
   }
   const base = liveConfig.relay || `ws://${location.host}`;
-  const ws = new WebSocket(`${base}/ws/pub?token=${encodeURIComponent(liveConfig.token)}`);
+  // トークンはURLに載せない(2026-10-28)。**クエリ文字列は中継やプロキシのログに
+  // 残る**ため、接続直後の最初のフレームで渡す。ブラウザのWebSocketは独自ヘッダを
+  // 付けられないので、URLを避ける方法はこれになる。
+  const ws = new WebSocket(`${base}/ws/pub`);
   ws.addEventListener('open', () => {
     liveSocket = ws;
+    // **何よりも先に認証を送る。** 中継はこれを受けるまで在席に数えず、放送もしない
+    ws.send(JSON.stringify({ auth: liveConfig.token }));
     broadcastLive(); // 接続時点の内容を送っておく(閲覧者の初期表示用)
   });
   ws.addEventListener('close', () => {

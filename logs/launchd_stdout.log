@@ -54884,3 +54884,57 @@ Filtered out 0 files in 549μs
 Emitting files
 Emitted 1418 files to `public` in 911ms
 Done processing 1361 files in 2h
+[main 24a772d6] auto update
+ 2 files changed, 71 insertions(+)
+🌿 Mycelism 更新を開始します...
+
+📻 longpost を処理中...
+  新着: 2件
+  処理中: 制作｜Podcastを「一旦始めない！」と決める時 from森...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrgU6qrfeNfpbf3p1T'}
+  処理中: 制作｜ポッドキャストスターアワード受賞！近況てんこもりウォーク...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLriMDYayZSE3tThp6C'}
+
+📻 on-airdo を処理中...
+  新着: 6件
+  処理中: #93 大自然の温泉「野湯」とは？周りの美味しいものも一緒に巡る秘湯旅【おんえあ...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrpnfXQ4FjDmNWquYe'}
+  処理中: 🎉100回記念告知🎉「北海道イチオシグルメ」キャンペーン【おんえあどぅ】...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrrYLUeB5cQx8P61r2'}
+  処理中: #94 砂澤ビッキと漆黒の駅そば。小さいけど文化が開くオトイネップ村に行こう！【...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrtNU2iNRzZ7EP2zNm'}
+  処理中: #95 幻のアーチ橋と飛行機訓練、札幌のくるみ最中〜おたよりで集まる北海道の魅力...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrvJJKVvaJMih7mkSw'}
+  処理中: #96 北海道銘菓「六花亭」大好きリスナーと別海町アイス・自然の楽しみ方まで〜お...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLrwsZmF5eBcMAHGhRf'}
+  処理中: #97 AIRDO機の「翼イラスト」とぬいぐるみ回 • ᴥ • ベア・ドゥってど...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgbLryTognxuq8zPMKfX9'}
+
+📻 sakanakaigi を処理中...
+  新着なし
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 105ms
+Found 1361 input files from `content` in 31ms
+Parsing input files using 4 threads
+Parsed 1361 Markdown files in 15m
+Filtered out 0 files in 671μs
+Emitting files
+Emitted 1418 files to `public` in 2s
+Done processing 1361 files in 15m

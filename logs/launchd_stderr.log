@@ -3996,3 +3996,6 @@ npm notice New major version of npm available! 11.19.1 -> 12.2.2
 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
 npm notice To update run: npm install -g npm@12.2.2
 npm notice
+warning: in the working copy of 'logs/launchd_stderr.log', CRLF will be replaced by LF the next time Git touches it
+To github.com:andyutaro/mycelism.git
+   6061f926..8ace60a6  main -> main

@@ -68566,3 +68566,36 @@ Filtered out 0 files in 2ms
 Emitting files
 Emitted 1418 files to `public` in 7s
 Done processing 1361 files in 6m
+[main 82546ca5] auto update
+ 2 files changed, 87 insertions(+)
+
+  処理中: クラシ 🐟 サカナをつまみにこれからの人生どうする話🐟...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJeS6cyc9itZfipvBnnt'}
+  処理中: 🎊Star Award🎊ローカルポッドキャスター賞受賞！ありがとうございました！...
+  ❌ エラー: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJeS8CUVHcUrQYfZd1LA'}
+
+📻 mimoriradio を処理中...
+  新着なし
+📋 Updatesセクションを更新しました
+
+🔗 ノート間リンクを解析中...
+
+🏗 ビルド中...
+
+📤 GitHubにpush中...
+
+🌿 完了！ 新規処理: 0件
+🌿 ノート間リンクの解析を開始します...
+
+🌿 完了: 0件のノートにリンクを追加しました
+
+ Quartz v4.5.2  
+
+Cleaned output directory `public` in 92ms
+Found 1361 input files from `content` in 26ms
+Parsing input files using 4 threads
+Parsed 1361 Markdown files in 3m
+Filtered out 0 files in 397μs
+Emitting files
+Emitted 1418 files to `public` in 868ms
+Done processing 1361 files in 3m
